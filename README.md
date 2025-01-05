@@ -1,4 +1,4 @@
-# Olá! Eu sou [Seu Nome ou Usuário no GitHub] 👋
+# Olá! Eu sou Domingos Nascimento. 👋
 
 Sou um **Desenvolvedor Fullstack Júnior** apaixonado por **design**, **programação** e **experiência do usuário (UI/UX)**. Trabalho principalmente com **.NET**, **Blazor**, **SQL Server**, **HTML**, **CSS** e **JavaScript**, buscando sempre criar soluções inovadoras e intuitivas.
 
