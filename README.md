@@ -1,25 +1,25 @@
-# Olá! Eu sou Domingos Nascimento. 👋
+# Hello! I'm Domingos Nascimento. 👋
 
-Sou um **Desenvolvedor Fullstack Júnior** apaixonado por **design**, **programação** e **experiência do usuário (UI/UX)**. Trabalho principalmente com **.NET**, **Blazor**, **SQL Server**, **HTML**, **CSS** e **JavaScript**, buscando sempre criar soluções inovadoras e intuitivas.
+I'm a **Junior Fullstack Developer** passionate about **design**, **programming**, and **user experience (UI/UX)**. I primarily work with **.NET**, **Blazor**, **SQL Server**, **HTML**, **CSS**, and **JavaScript**, always striving to create innovative and intuitive solutions.
 
-### 🚀 O que eu faço
-- Desenvolvimento de **aplicações web** usando **.NET** e **Blazor**.
-- Foco na criação de interfaces de usuário **intuitivas** e **atrativas** (UI/UX).
-- Uso de **SQL Server** para gerenciamento de dados e integração com front-end.
-- Estou sempre aprendendo novas tecnologias e aprimorando minhas habilidades de **design e programação**.
+### 🚀 What I Do
+- **Web application** development using **.NET** and **Blazor**.
+- Focus on creating **intuitive** and **attractive** user interfaces (UI/UX).
+- Using **SQL Server** for data management and front-end integration.
+- Continuously learning new technologies and enhancing my **design and programming** skills.
 
-### 📚 Minhas Habilidades
-- **Linguagens**: C#, JavaScript, HTML, CSS
+### 📚 My Skills
+- **Languages**: C#, JavaScript, HTML, CSS
 - **Frameworks**: ASP.NET Core, Blazor
-- **Banco de dados**: SQL Server
-- **Ferramentas**: Git, Visual Studio, Figma
+- **Database**: SQL Server
+- **Tools**: Git, Visual Studio Code, Figma
 
-### 🌱 Atualmente estou focado em:
-- Melhorar minhas habilidades em **UI/UX**.
-- Explorar novas abordagens em **desenvolvimento front-end**.
-- Continuar aprendendo sobre **design minimalista**.
+### 🌱 Currently Focused On:
+- Improving my **UI/UX** skills.
+- Exploring new approaches in **front-end development**.
+- Continuing to learn about **minimalist design**.
 
 ---
 
-## 📬 Conecte-se comigo
-- **E-mail**: domingosady11son@gmail.com
+## 📬 Connect with Me
+- **Email**: domingosady11son@gmail.com
