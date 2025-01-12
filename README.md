@@ -1,4 +1,4 @@
-# Hello! I'm Domingos Nascimento. 👋
+# Hello! I'm Domingos Nascimento.
 
 I'm a **Junior Fullstack Developer** focused on **design**, **programming**, **user experience (UI/UX)**, and **Docker**. I work with **.NET**, **Blazor**, **SQL Server**, **HTML**, **CSS**, **JavaScript**, and **Docker** to create intuitive and efficient solutions.
 
