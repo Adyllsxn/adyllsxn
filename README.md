@@ -17,4 +17,4 @@ I'm a **Junior Fullstack Developer** focused on **design**, **programming**, **u
 ---
 
 ## 📬 Connect with Me
-- **Email**: domingosady11son@gmail.com
+- **Email**: domingosadyllsxn@gmail.com
