@@ -1,0 +1,123 @@
+@import url(config.css);
+
+
+.wrapper span{
+    position: fixed;
+    bottom: -180px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    background-color: #18191f;
+    box-shadow: 0 0 50px  #0072ff,
+                0 0 100px #0072ff,
+                0 0 150px #0072ff,
+                0 0 200px #0072ff;
+    animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2){
+    left: 100%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+}
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content h2{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-family: montserrat;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+}
+.content-txt{
+    margin-top: 30px;
+    color: var(--color000);
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+.button-inicio{
+    margin: -50px 0;
+    text-align: var(--font-logo);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.button-inicio a{
+    text-decoration: none;
+}
+.button-inicio a button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--color000);
+    font-size: 20px;
+    font-weight: bolder;
+}

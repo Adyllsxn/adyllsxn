@@ -1,0 +1,11 @@
+@import url(config.css);
+
+@media screen and (max-width: 900px) {
+
+    header .lang, .container-botoes{
+        display: none;
+    }
+    .content-p{
+        text-align: center;
+    }
+}

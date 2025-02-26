@@ -1,0 +1,57 @@
+@import url(config.css);
+.botao-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 130px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--color001);
+}
+.menu-flutuante {
+    width: 130px;
+    padding: 5px;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.menu-flutuante .botao-extra {
+    width: 100%;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color001);
+}
+.menu-flutuante .botao-extra:hover:nth-child(1){
+    background-color: var(--wa);
+}
+.menu-flutuante .botao-extra:hover:nth-child(2){
+    background-color: var(--fb);
+}
+.menu-flutuante .botao-extra:hover:nth-child(3){
+    background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D, #FCAF45);
+}
+
+.container-botoes:hover .menu-flutuante {
+    opacity: 1;
+    visibility: visible;
+}

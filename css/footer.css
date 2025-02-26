@@ -1,0 +1,64 @@
+@import url(config.css);
+
+footer{
+    height: 100vh;
+}
+
+footer#footer .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer .footer-top{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+#footer .footer-top h2{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+#footer .footer-top a{
+    text-decoration: none;
+}
+#footer .footer-top a button{
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--color003);
+    background-color: var(--color004);
+    font-size: 16px;
+}
+
+#footer .footer-down{
+    color: var(--color000);
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+#footer .footer-down p{
+    border-top: 2px solid var(--color000);
+    padding-top: 10px;
+}
+#footer .button-footer a{
+    text-decoration: none;
+}
+#footer .button-footer button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--color000);
+    font-size: 20px;
+    font-weight: bolder;
+}

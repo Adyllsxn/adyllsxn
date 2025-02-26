@@ -1,0 +1,47 @@
+@import url(config.css);
+header {
+    width: 100%;
+    padding: 40px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .lang span{
+    color: var(--color001);
+    font-weight: bolder;
+}
+header .lang a{
+    text-decoration: none;
+    color: var(--color001);
+    font-weight: bolder;
+    transition: .2s;
+    display: inline-block;
+}   
+header .lang a:hover {
+    transform: scale(1.05);
+}
+header .lang a:nth-child(1){
+    color: var(--color004);
+}
+header .lang a:nth-child(2){
+    color: var(--color001);
+}
+header .lang a:hover{
+    text-decoration: underline;
+}
+header .logo h4{
+    color: var(--color001);
+    font-family: "Audiowide", serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 50px var(--color003);
+}
+header .logo h4 span{
+    color: var(--color004);
+    font-size: 30px;
+}
+
