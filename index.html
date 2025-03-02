@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,12 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/section-inicio.css">
+        <link rel="stylesheet" href="css/section-work.css">
+        <link rel="stylesheet" href="css/section-about.css">
     <!-- /CSS-->
 
     <!-- JAVASCRIPT-->
-        <script src="js/menu-responsivo.js" defer></script>
-        <script src="js/script.js" defer></script>
+     <script src="js/srcroll.js" defer></script>
     <!-- /JAVASCRIPT -->
 
     <!-- GOOGLE FONTS -->
@@ -39,7 +40,7 @@
             </section>
 
             <section class="lang">
-                <a href="#">PT</a><span> │ </span><a href="#">EN</a>
+                <a href="index.html">PT</a><span> │ </span><a href="#">EN</a>
             </section>
         </div>
     </header>
@@ -63,27 +64,107 @@
                 <h2>
                     <b>Domingos Nascimento</b>
                 </h2>
-                <p class="content-txt"> &lt;/ Developer & Designer &gt;</p>
+                <p class="content-txt"> &lt;/ Desenvolvedor & Designer &gt;</p>
             </div>
-            </div>
-
-            <div class="button-inicio">
-                <a href="#footer">
-                    <button>
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                </a>
             </div>
         </div>
+        <div class="marquee-container">
+                <div class="marquee-content">
+                    <span>🔥 Promoção Especial! </span>
+                    <span>📅 Evento no dia 15! </span>
+                    <span>⚡ Novidades chegando! </span>
+                    <span>🚀 Fica ligado! </span>
+                </div>
+            </div>
     </section>
 
 
     <section id="about">
-        
+        <div class="interface">
+            <div class="txt-funciona">
+                <h3>&lt;/ Sobre <span>Min</span> &gt;</h3>
+            </div>
+
+            <div class="instrucoes">
+                <article class="instru-funciona">
+                    <h3>&lt;/ Sobre <span>Min</span> &gt;</h3>
+                </article>
+                
+                <article class="instru-box">
+                    <div class="img-instru-box">
+                        <img src="img/code.png" alt="">
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>Quem <span>Sou Eu</span></h4>
+                        <p>
+                            Sou um desenvolvedor full stack apaixonado por tecnologia e design. Trabalho com .NET, Blazor e SQL Server, criando soluções inovadoras e eficientes. 
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="instru-box">
+                    <div class="img-instru-box">
+                        <img src="img/design_services.png" alt="">
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>O Que Eu <span>Faço</span></h4>
+                        <p>
+                            Desenvolvo aplicações web, focando em experiência do usuário, desempenho e escalabilidade. Tenho experiência com backend em C# e frontend minimalista.
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="instru-box">
+                    <div class="img-instru-box">
+                        <img src="img/rocket_launch.png" alt="">
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>Minha <span>Jornada</span></h4>
+                        <p>
+                            Desde pequeno sempre fui curioso sobre tecnologia. Hoje, estudo Engenharia Informática e busco crescer como desenvolvedor, combinando código com design para criar experiências impactantes.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
     <section id="work">
-
+        <div class="interface">
+            
+            <h1> &lt;/ Developer & Designer &gt; </h1>
+            <div class="timeline">
+                <div class="container left">
+                    <h3>BACKEND</h3>
+                    <p><span>C#</span> <span>.NET</span> </p>
+                    <p><span>ASP.NET Core</span></p>
+                </div>
+                <div class="container right">
+                    <h3>ARQUITETURAS</h3>
+                    <p><span>Clean Architecture</span> <span>Monolítico</span></p>
+                    <p><span>Slice Vertical Architecture</span> <span>Restfull</span></p>
+                </div>
+                <div class="container left">
+                    <h3>FRONTEND</h3>
+                    <p><span>HTML</span> <span>CSS</span> <span>JS</span></p>
+                    <p><span>Blazor</span> <span>React JS</span></p>
+                    <p><span>Tailwind CSS</span></p>
+                </div>
+                <div class="container right">
+                    <h3>BANCO DE DADOS</h3>
+                    <p><span>SQL Server</span> <span>PostgreSQL</span> </p>
+                </div>
+                <div class="container left">
+                    <h3>FERRAMENTAS</h3>
+                    <p><span>Docker</span> <span>Git</span></p>
+                    <p><span>Figma</span> <span>Photoshop</span></p>
+                </div>
+                <div class="container right">
+                    <h3>PRINCÍPIOS & METODOLOGIAS</h3>
+                    <p><span>SOLID</span> <span>Clean Code</span> </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="portifolio">
@@ -92,17 +173,17 @@
 
     <footer id="footer">
         <div class="interface">
-            <div class="button-footer">
-                <a href="#inicio">
+            <div class="footer-top">
+                <a href="#inicio" class="button-footer-top">
                     <button>
                         <i class="bi bi-chevron-up"></i>
                     </button>
                 </a>
             </div>
-            <div class="footer-top">
+            <div class="footer-middle">
                 <h2>Thank For Visite my portifolio</h2>
-                <a href="#">
-                    <button>Send a message &nbsp;<i class="bi bi-arrow-up-right"></i></button>
+                <a href="#" class="effect rise">
+                    <button>Baixar CV</i></button>
                 </a>
             </div>
             <div class="footer-down">
@@ -113,7 +194,7 @@
 
     <div class="container-botoes">
         <div class="botao-flutuante">
-            &lt;/ Contact &gt;
+            &lt;/ CONTATOS &gt;
         </div>
 
         <div class="menu-flutuante">

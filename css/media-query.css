@@ -9,3 +9,39 @@
         text-align: center;
     }
 }
+@media screen and (max-width: 878px){
+    
+    section#about .interface{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .txt-funciona,
+    .instrucoes {
+        display: block;
+        width: 100%;
+    }
+
+    section#about .txt-funciona {
+        display: none;
+    }
+    section#about .instrucoes .instru-funciona{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    section#about .instrucoes .instru-funciona h3{
+        font-size: 1.8em;
+        line-height: 50px;
+        font-weight: 300;
+    }
+    section#about .instrucoes .instru-funciona h3 span{
+        font-weight: 700;
+    }
+
+    section#about .instrucoes .instru-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}

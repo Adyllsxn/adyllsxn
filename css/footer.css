@@ -1,8 +1,5 @@
 @import url(config.css);
 
-footer{
-    height: 100vh;
-}
 
 footer#footer .interface{
     display: flex;
@@ -11,28 +8,55 @@ footer#footer .interface{
     flex-direction: column;
 }
 #footer .footer-top{
-    height: 85vh;
+    padding: 10px 0;
+}
+#footer .footer-top .button-footer-top{
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#footer .footer-top .button-footer-top button{
+    border: none;
+    color: var(--color004);
+    font-size: 40px;
+    font-weight: bolder;
+    background: transparent;
+    cursor: pointer;
+}
+#footer .footer-top .button-footer-top button:hover{
+    color: var(--color000);
+}
+
+#footer .footer-middle{
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 25px;
 }
-#footer .footer-top h2{
+#footer .footer-middle h2{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     font-size: 40px;
     text-align: center;
 }
-#footer .footer-top a{
+#footer .footer-middle a{
     text-decoration: none;
+    animation: rise 2s infinite alternate;
 }
-#footer .footer-top a button{
+@keyframes rise {
+            from { transform: translateY(10px); }
+            to { transform: translateY(-10px); }
+}
+
+#footer .footer-middle a button{
     border: none;
-    padding: 18px;
+    padding: 9px 22px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 7px;
     color: var(--color003);
     background-color: var(--color004);
     font-size: 16px;

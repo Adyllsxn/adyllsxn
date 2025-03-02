@@ -10,6 +10,8 @@
     --color002: #111;
     --color003: #18191f;
     --color004: #0072ff;
+    --color005: #18191ffb;
+    --color006: #18191fe8;
 
     --wa: #25D366;
     --fb: #1877F2;
@@ -31,7 +33,7 @@ body {
 }
 
 #inicio{height: 100vh;}
-#about{background: #E1306C; height: 100vh;}
-#other{background: #FCAF45; height: 100vh;}
-#portifolio{background: #25D366; height: 100vh;}
-#footer{background: transparent; height: 100vh;}
+#about{background: var(--color000);}
+#work{background: var(--color005); }
+#portifolio{background: var(--color000); height: 100vh;}
+#footer{background: var(--color005); height: 100vh;}
