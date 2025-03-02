@@ -34,6 +34,6 @@ body {
 
 #inicio{height: 100vh;}
 #about{background: var(--color000);}
-#work{background: var(--color005); }
+#work{background: var(--color005); height: 100vh; }
 #portifolio{background: var(--color000); height: 100vh;}
 #footer{background: var(--color005); height: 100vh;}
