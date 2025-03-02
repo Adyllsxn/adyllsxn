@@ -43,6 +43,18 @@ footer#footer .interface{
     font-size: 40px;
     text-align: center;
 }
+#footer .footer-middle .fade-in {
+    opacity: 5; 
+    animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 #footer .footer-middle a{
     text-decoration: none;
     animation: rise 2s infinite alternate;
