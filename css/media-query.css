@@ -10,7 +10,12 @@
     }
 }
 @media screen and (max-width: 800px){ 
+    /*          </MARQUE>          */
+    #work .marquee-content {
+        display: inline-flex;
+    }
 
+    /**/
     section#about .interface .txt-funciona,
     .instrucoes {
         display: block;

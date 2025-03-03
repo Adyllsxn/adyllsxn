@@ -1,1 +1,52 @@
 @import url(config.css);
+
+#work {
+    color: var(--color001);
+    width: 100%;
+}
+.work-text h3{
+    text-align: center;
+    padding: 34px 0;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.work-text h3 span{
+    font-weight: 200;
+}
+
+.marquee-container{
+    overflow: hidden;
+    box-shadow: 0 0 50px  #18191ffb,
+                2 0 100px #18191ffb,
+                2 0 150px #18191ffb,
+                2 0 200px #18191ffb;
+    padding: 40px 0;
+}
+.marquee-content {
+    display: flex;
+    gap: 10px; 
+    white-space: nowrap;
+    animation: scroll 16s linear infinite;
+}
+
+.marquee-content span {
+    font-size: 20px;
+}
+.tech-container {
+    display: inline-block;
+    align-items: center;
+    flex-wrap: nowrap; 
+    margin-left: 50px;
+}
+.tech-container span i {
+    margin-right: 2px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
