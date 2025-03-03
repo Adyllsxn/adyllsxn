@@ -90,7 +90,7 @@
     font-family: montserrat;
     font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 12px;
+    letter-spacing: 4px;
     text-align: center;
 }
 .content-txt{
@@ -114,11 +114,11 @@
     color: var(--color000);
 }
 .marquee-content {
-            display: flex;
-            gap: 10px; /* Espaço entre os itens */
-            white-space: nowrap;
-            animation: scroll 16s linear infinite;
-        }
+    display: flex;
+    gap: 10px; 
+    white-space: nowrap;
+    animation: scroll 16s linear infinite;
+}
 
 .marquee-content span {
     font-size: 20px;

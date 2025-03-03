@@ -29,11 +29,11 @@ body {
 .interface {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 0 4%;
+    padding: 0 6%;
 }
 
 #inicio{height: 100vh;}
-#about{background: var(--color000);}
+#about{background: var(--color000); }
 #work{background: var(--color005); }
 #portifolio{background: var(--color000);}
 #footer{background: var(--color005); height: 100vh;}

@@ -9,39 +9,29 @@
         text-align: center;
     }
 }
-@media screen and (max-width: 878px){
-    
-    section#about .interface{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .txt-funciona,
+@media screen and (max-width: 800px){ 
+
+    section#about .interface .txt-funciona,
     .instrucoes {
         display: block;
         width: 100%;
     }
 
-    section#about .txt-funciona {
-        display: none;
+    section#about .interface .txt-funciona {
+        position: static;
     }
-    section#about .instrucoes .instru-funciona{
-        display: block;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-    section#about .instrucoes .instru-funciona h3{
-        font-size: 1.8em;
+    section#about .interface .txt-funciona h3 {
+        font-size: 3em;
         line-height: 50px;
-        font-weight: 300;
+        text-align: center;
     }
-    section#about .instrucoes .instru-funciona h3 span{
-        font-weight: 700;
+    section#about .interface .instrucoes{
+        width: 100%;
+        padding: 0 3%;
     }
-
-    section#about .instrucoes .instru-box {
+    section#about .interface .instrucoes .instru-box {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 }

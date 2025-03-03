@@ -82,7 +82,7 @@ footer#footer .interface{
 }
 #footer .footer-down p{
     border-top: 2px solid var(--color000);
-    padding-top: 10px;
+    padding-top: 10px 3%;
 }
 #footer .button-footer a{
     text-decoration: none;
