@@ -35,10 +35,6 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 
 ## 💼 Projetos em destaque
 
-- 🎓 **Sistema Acadêmico UTANGA**  
-  Plataforma para interação entre estudantes universitários, com chat, publicações, eventos e mais.  
- [Ver projeto](https://github.com/Adyllsxn/sistema-academico)
-
 - 📚 **Sistema de Empréstimo de Livros**  
   Backend em .NET para gestão de biblioteca com API RESTful.  
   [Ver projeto](https://github.com/Adyllsxn/emprestimo-livros)
