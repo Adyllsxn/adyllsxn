@@ -3,8 +3,11 @@
 ![visitors](https://komarev.com/ghpvc/?username=Adyllsxn&label=Profile%20views&color=0e75b6&style=flat)
 <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" height="200"/>
 
-
 Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções práticas. Trabalho com .NET, Blazor, React, SQL Server, HTML, CSS e JavaScript, sempre buscando criar experiências simples, eficientes e com boa usabilidade.
+
+---
+
+## 📊 Top Linguagens
 
 <div align="left">
   <img 
