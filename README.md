@@ -1,7 +1,11 @@
 # Olá, Eu sou Domingos Nascimento Jr.
 
 <div align="left">
-<img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&theme=tokyonight&hide_border=false" />
+<img 
+  width="45%" 
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&theme=tokyonight&hide_border=true" 
+  style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 4px;" 
+/>
 </div>
 
 ## Tecnologias
