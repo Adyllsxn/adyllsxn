@@ -1,10 +1,10 @@
 # 👋 Olá, eu sou Domingos Nascimento Jr.
 
 ![visitors](https://komarev.com/ghpvc/?username=Adyllsxn&label=Profile%20views&color=0e75b6&style=flat)
+<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" height="200"/>
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" height="200"/>
 
-Sou um **Fullstack Developer** apaixonado por tecnologia, design limpo e soluções práticas. Trabalho com **.NET, Blazor, SQL Server, HTML, CSS e JavaScript**, sempre buscando criar experiências simples e eficientes.
+Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções práticas. Trabalho com .NET, Blazor, React, SQL Server, HTML, CSS e JavaScript, sempre buscando criar experiências simples, eficientes e com boa usabilidade.
 
 <div align="left">
   <img 
@@ -37,7 +37,7 @@ Sou um **Fullstack Developer** apaixonado por tecnologia, design limpo e soluç�
 
 - 🎓 **Sistema Acadêmico UTANGA**  
   Plataforma para interação entre estudantes universitários, com chat, publicações, eventos e mais.  
-  [Ver projeto](https://github.com/Adyllsxn/sistema-academico)
+ [Ver projeto](https://github.com/Adyllsxn/sistema-academico)
 
 - 📚 **Sistema de Empréstimo de Livros**  
   Backend em .NET para gestão de biblioteca com API RESTful.  
