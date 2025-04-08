@@ -36,15 +36,21 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 
 ---
 
-## 💼 Projetos em destaque
+### 💼 Projetos em destaque
 
-- 📚 **Sistema de Empréstimo de Livros**  
-  Backend em .NET para gestão de biblioteca com API RESTful.  
-  [Ver projeto](https://github.com/Adyllsxn/emprestimo-livros)
+#### 📚 Sistema de Livros  
+Backend em .NET para gestão de biblioteca com API RESTful.  
+[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/emprestimo-livros)
+[![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
 
-- 🎮 **E-commerce de Jogos (Em construção)**  
-  Loja online para venda de jogos digitais com login e carrinho.  
-  *Em breve...*
+
+
+#### 🎮 E-commerce de Jogos  
+Loja online com login e carrinho.  
+[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+[![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
+
+
 
 ---
 
