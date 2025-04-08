@@ -36,7 +36,8 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 
 ---
 
-### 💼 Projetos em destaque
+## 💼 Projetos em destaque
+
 
 #### 📚 Sistema de Livros  
 Backend em .NET para gestão de biblioteca com API RESTful.  
