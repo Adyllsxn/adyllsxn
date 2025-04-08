@@ -50,7 +50,6 @@ Backend em .NET para gestão de biblioteca com API RESTful.
 Loja online com login e carrinho.  
 *Em breve...*
 
-
 ---
 
 ## 🌐 Onde me encontrar
