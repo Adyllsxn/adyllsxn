@@ -46,9 +46,6 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 
 <br> <!-- Quebra de linha para separar os projetos -->
 
-
-<br> <!-- Quebra de linha para separar os projetos -->
-
 #### 🎮 E-commerce de Jogos  
 Loja online com login e carrinho.  
 *Em breve...*
