@@ -4,9 +4,9 @@
 <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" height="200"/>
 
 
-Sou um Fullstack Developer com experiência em .NET, Blazor, SQL Server, JavaScript, HTML e CSS, apaixonado por design e sempre buscando a simplicidade e eficiência em minhas soluções. Atualmente, sou estudante de Engenharia de Computação, o que me permite combinar o conhecimento acadêmico com a prática no desenvolvimento de software.
+Sou Fullstack Developer com experiência em .NET, Blazor, SQL Server, JavaScript, HTML e CSS, e sou apaixonado por criar soluções simples e eficientes. Atualmente, estou me aprofundando em Engenharia de Software, o que me permite combinar teoria e prática para desenvolver software de qualidade.
 
-Com uma abordagem focada em criar experiências digitais intuitivas e funcionais, estou sempre em busca de novos desafios, seja no backend ou no frontend, para melhorar a usabilidade e a performance dos sistemas. Tenho um grande interesse por design, sempre tentando unir estética e funcionalidade em meus projetos
+Sempre em busca de novos desafios, meu foco está em criar experiências digitais intuitivas que unem design funcional e estética. Seja no backend ou frontend, estou sempre atento à usabilidade e performance, buscando impactar positivamente os projetos em que me envolvo.
 
 <br> <!-- Quebra de linha para separar os projetos -->
 
