@@ -1,4 +1,4 @@
-# 👋 Olá, eu sou Domingos Nascimento Jr.
+# 👋 Olá, eu sou Domingos Nascimento
 
 ![visitors](https://komarev.com/ghpvc/?username=Adyllsxn&label=Profile%20views&color=0e75b6&style=flat)
 <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" height="200"/>
