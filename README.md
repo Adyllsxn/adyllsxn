@@ -40,10 +40,10 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 
 
 ### 🔐 Sistema de Geração e Análise de Senhas Fortes
-**NOME**: LockGen
-**DESCRIÇÃO**: LockGen é uma aplicação web que gera senhas fortes e analisa a complexidade das senhas criadas.
-
+**NOME**: LockGen.  
+**DESCRIÇÃO**: LockGen é uma aplicação web que gera senhas fortes e analisa a complexidade das senhas criadas.  
 [![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/lockgen) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adyllsxn.github.io/lockgen/)
+
 
 <br> <!-- Quebra de linha para separar os projetos -->
 
