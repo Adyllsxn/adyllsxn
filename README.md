@@ -3,10 +3,9 @@
 ![visitors](https://komarev.com/ghpvc/?username=Adyllsxn&label=Profile%20views&color=0e75b6&style=flat)
 <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" height="200"/>
 
+Sou **Fullstack Developer** apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
 
-Sou Fullstack Developer com experiência em .NET, Blazor, SQL Server, JavaScript, HTML e CSS, e sou apaixonado por criar soluções simples e eficientes. Atualmente, estou me aprofundando em Engenharia de Software, o que me permite combinar teoria e prática para desenvolver software de qualidade.
-
-Sempre em busca de novos desafios, meu foco está em criar experiências digitais intuitivas que unem design funcional e estética. Seja no backend ou frontend, estou sempre atento à usabilidade e performance, buscando impactar positivamente os projetos em que me envolvo.
+Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permite combinar teoria e prática para desenvolver software de alta qualidade. Sempre em busca de novos desafios, meu foco é em criar **experiências digitais intuitivas**.
 
 <br> <!-- Quebra de linha para separar os projetos -->
 
