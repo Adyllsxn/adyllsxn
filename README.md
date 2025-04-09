@@ -7,6 +7,7 @@ Sou um Fullstack Developer com experiência em .NET, Blazor, SQL Server, JavaScr
 
 Com uma abordagem focada em criar experiências digitais intuitivas e funcionais, estou sempre em busca de novos desafios, seja no backend ou no frontend, para melhorar a usabilidade e a performance dos sistemas. Tenho um grande interesse por design, sempre tentando unir estética e funcionalidade em meus projetos
 
+<br> <!-- Quebra de linha para separar os projetos -->
 ---
 
 ## 📊 Top Linguagens
