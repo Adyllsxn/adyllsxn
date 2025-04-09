@@ -52,6 +52,7 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 **DESCRIÇÃO**: Plataforma para gestão de igrejas, ajudando na organização de membros, eventos e finanças. Facilita o cadastro de membros, a criação de eventos e o controle financeiro da igreja.  
 *Em breve...*
 
+<br> <!-- Quebra de linha para separar os projetos -->
 
 ---
 
