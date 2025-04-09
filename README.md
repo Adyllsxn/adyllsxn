@@ -47,9 +47,11 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 
 <br> <!-- Quebra de linha para separar os projetos -->
 
-#### 🎮 E-commerce de Jogos  
-Loja online com login e carrinho.  
+### 🔐 Sistema de Gestão da Igreja Ministério Sossego em Cristo
+**NOME**: Kairos  
+**DESCRIÇÃO**: Plataforma para gestão de igrejas, ajudando na organização de membros, eventos e finanças. Facilita o cadastro de membros, a criação de eventos e o controle financeiro da igreja.  
 *Em breve...*
+
 
 ---
 
