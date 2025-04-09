@@ -39,9 +39,9 @@ Sou um Fullstack Developer apaixonado por tecnologia, design limpo e soluções 
 ## 💼 Projetos em destaque
 
 
-#### 🔐 Sistema de Geração e Análise de Senhas Fortes
-*Nome*: LockGen  
-*Descrição*: Aplicação desenvolvida com **.NET** e **Blazor WASM** para geração e análise de senhas fortes. A API RESTful realiza validações, sugestões e recomendações para melhorar a segurança das senhas geradas.  
+### 🔐 Sistema de Geração e Análise de Senhas Fortes
+**NOME**: LockGen  
+**DESCRIÇÃO**: Aplicação desenvolvida com **.NET** e **Blazor WASM** para geração e análise de senhas fortes. A API RESTful realiza validações, sugestões e recomendações para melhorar a segurança das senhas geradas.  
 [![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/lockgen) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adyllsxn.github.io/lockgen/)
 
 <br> <!-- Quebra de linha para separar os projetos -->
