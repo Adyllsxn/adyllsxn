@@ -55,9 +55,9 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 <br> <!-- Quebra de linha para separar os projetos -->
 
-### ⛪️ Sistema de Gestão da Igreja Ministério Sossego em Cristo (*Em Construção*)
+### ⛪️ Sistema de Gestão de Eventos e Cultos - Ministério Sossego em Cristo (Em Desenvolvimento)
 **NOME**: Kairos  
-**DESCRIÇÃO**: Plataforma para gestão de igrejas, ajudando na organização de membros, eventos e finanças. Facilita o cadastro de membros, a criação de eventos e o controle financeiro da igreja.  
+**DESCRIÇÃO**: Plataforma web para agendamento de cultos e eventos, com notificações, presença e chat para membros.
 *Em breve...*
 
 <br> <!-- Quebra de linha para separar os projetos -->
