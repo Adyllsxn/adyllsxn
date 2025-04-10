@@ -51,16 +51,16 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 **NOME**: LockGen.  
 **DESCRIÇÃO**: Aplicação web que gera senhas aleatórias e seguras com letras, números e símbolos. O usuário define o comprimento da senha desejada.  
 [![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/lockgen) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adyllsxn.github.io/lockgen/)
-
+#
 
 <br> <!-- Quebra de linha para separar os projetos -->
-
+#
 ### ⛪️ Sistema de Gestão de Eventos e Cultos - Ministério Sossego em Cristo (Em Desenvolvimento)
 **NOME**: Kairos  
 **DESCRIÇÃO**: Plataforma web para agendamento de cultos e eventos, com notificações, presença e chat para membros.
 
 *Em breve...*
-
+#
 <br> <!-- Quebra de linha para separar os projetos -->
 
 ---
