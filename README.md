@@ -16,7 +16,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 ---
 
-<h2>🌐 Onde me encontrar</h2>
+<h2>Onde me encontrar</h2>
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
@@ -24,7 +24,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 ---
 
 
-<h2>🚀 Tecnologias que uso</h2> 
+<h2>Tecnologias que uso</h2> 
 
 <div style="display: inline_block"><br>
   <img align="center" alt="C#" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
@@ -41,7 +41,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 ---
 
-<h2>💼 Projetos em destaque</h2> 
+<h2>Projetos em destaque</h2> 
 
 <h3>Sistema de Geração e Análise de Senhas Fortes</h3>
 
@@ -53,12 +53,12 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 #
 
 #
-### ⛪️ Sistema de Gestão de Eventos e Cultos - Ministério Sossego em Cristo (Em Desenvolvimento)
+<h3>Sistema de Gestão de Eventos e Cultos - Ministério Sossego em Cristo (Em Desenvolvimento)</h3>
 **NOME**: Kairos  
 **DESCRIÇÃO**: Plataforma web para agendamento de cultos e eventos, com notificações, presença e chat para membros.
 
 *Em breve...*
-
+#
 ---
 
 <h2>Estatísticas do GitHub</h2>
