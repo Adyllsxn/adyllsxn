@@ -7,9 +7,11 @@
 <img align="center" alt="" src="./src/header-gif.gif">
 
 <p>
+  
 Olá Sou **Domingos Nascimento Jr.**, **Fullstack Developer** apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
 
 Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permite combinar teoria e prática para desenvolver software de alta qualidade. Sempre em busca de novos desafios, meu foco é em criar **experiências digitais intuitivas**.
+
 </p>
 
 ---
