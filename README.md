@@ -16,7 +16,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 ---
 
-<h2>Onde me encontrar</h2>
+<h2>ONDE ME ENCONTRAR</h2>
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
@@ -24,7 +24,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 ---
 
 
-<h2>Tecnologias que uso</h2> 
+<h2>TECNOLOGIAS QUE USO</h2> 
 
 <div style="display: inline_block"><br>
   <img align="center" alt="C#" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
@@ -41,7 +41,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 ---
 
-<h2>Projetos em destaque</h2> 
+<h2>PROJETOS EM DESTAQUE</h2> 
 
 <h3>Sistema de Geração e Análise de Senhas Fortes</h3>
 
@@ -62,7 +62,7 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 #
 ---
 
-<h2>Estatísticas do GitHub</h2>
+<h2>ESTATÍSTICAS DO GITHUB</h2>
 <div style="text-align: center;" align="center">
   <br>
   <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Adyllsxn&hide_title=true&show_icons=true&include_all_commits=false&count_private=true&line_height=25&hide=issues&bg_color=000&title_color=FF00F6&text_color=FFF&border_radius=10&border_color=FFF&icon_color=FF00F6&theme=jolly" alt="GitHub stats">
