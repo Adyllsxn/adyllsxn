@@ -1,31 +1,28 @@
-# 👋 Olá, eu sou Domingos Nascimento
-
-![visitors](https://komarev.com/ghpvc/?username=Adyllsxn&label=Profile%20views&color=0e75b6&style=flat)
-<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" height="200"/>
-
-Sou **Fullstack Developer** apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
-
-Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permite combinar teoria e prática para desenvolver software de alta qualidade. Sempre em busca de novos desafios, meu foco é em criar **experiências digitais intuitivas**.
-
-<br> <!-- Quebra de linha para separar os projetos -->
-
----
-
-## 📊 Top Linguagens
-
-<div align="left">
-  <img 
-    width="45%" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&theme=tokyonight&hide_border=true" 
-    style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 4px;" 
-  />
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=FF00F6&center=true&vCenter=true&random=false&width=524&lines=%E2%8A%B9+Welcome+to+my+profile!+%CB%99%E1%B5%95%CB%99+%E2%8A%B9+" alt="Typing SVG">
+  </a>
 </div>
 
-<br> <!-- Quebra de linha para separar os projetos -->
+<img align="center" alt="" src="./src/header-gif.gif">
+
+<p>
+Olá Sou **Domingos Nascimento Jr.**, **Fullstack Developer** apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
+
+Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permite combinar teoria e prática para desenvolver software de alta qualidade. Sempre em busca de novos desafios, meu foco é em criar **experiências digitais intuitivas**.
+</p>
 
 ---
 
-## 🚀 Tecnologias que uso
+<h2>🌐 Onde me encontrar</h2>
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
+
+---
+
+
+<h2>🚀 Tecnologias que uso</h2> 
 
 <div style="display: inline_block"><br>
   <img align="center" alt="C#" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
@@ -40,32 +37,35 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
   <img align="center" alt="Figma" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />       
 </div>
 
-<br> <!-- Quebra de linha para separar os projetos -->
-
 ---
+<br>
 
-## 💼 Projetos em destaque
+<h2>💼 Projetos em destaque</h2> 
 
+<h3>Sistema de Geração e Análise de Senhas Fortes</h3>
 
-### 🔐 Sistema de Geração e Análise de Senhas Fortes
-**NOME**: LockGen.  
-**DESCRIÇÃO**: Aplicação web que gera senhas aleatórias e seguras com letras, números e símbolos. O usuário define o comprimento da senha desejada.  
+**Nome**: LockGen.  
+**Descrição**: Aplicação web que gera senhas aleatórias e seguras com letras, números e símbolos. O usuário define o comprimento da senha desejada. 
+
 [![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/lockgen) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adyllsxn.github.io/lockgen/)
+
 #
 
-<br> <!-- Quebra de linha para separar os projetos -->
 #
 ### ⛪️ Sistema de Gestão de Eventos e Cultos - Ministério Sossego em Cristo (Em Desenvolvimento)
 **NOME**: Kairos  
 **DESCRIÇÃO**: Plataforma web para agendamento de cultos e eventos, com notificações, presença e chat para membros.
 
 *Em breve...*
-#
-<br> <!-- Quebra de linha para separar os projetos -->
 
 ---
 
-## 🌐 Onde me encontrar
+<h2>Estatísticas do GitHub</h2>
+<div style="text-align: center;" align="center">
+  <br>
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Adyllsxn&hide_title=true&show_icons=true&include_all_commits=false&count_private=true&line_height=25&hide=issues&bg_color=000&title_color=FF00F6&text_color=FFF&border_radius=3&border_color=36123c&icon_color=FF00F6&theme=jolly" alt="GitHub stats">
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
+  <a href="https://github.com/Adyllsxn/github-readme-stats">
+    <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Adyllsxn&line_height=10&card_width=290&layout=compact&hide_title=false&count_private=true&langs_count=4&show_icons=true&title_color=FF00F6&hide=html,scss,less&bg_color=000&text_color=8B8B8B&border_radius=3&border_color=561760&count_private=true" alt="Most Used Languages">
+  </a>
+</div>
