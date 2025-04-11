@@ -40,7 +40,6 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 </div>
 
 ---
-<br>
 
 <h2>💼 Projetos em destaque</h2> 
 
