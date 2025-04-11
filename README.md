@@ -55,8 +55,8 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 #
 <h3>Sistema de Gestão de Eventos e Cultos - Ministério Sossego em Cristo (Em Desenvolvimento)</h3>
 
-**NOME**: Kairos  
-**DESCRIÇÃO**: Plataforma web para agendamento de cultos e eventos, com notificações, presença e chat para membros.
+**Nome**: Kairos  
+**Descrição**: Plataforma web para agendamento de cultos e eventos, com notificações, presença e chat para membros.
 
 *Em breve...*
 #
