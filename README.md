@@ -1,14 +1,14 @@
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=FFF&center=true&vCenter=true&random=false&width=524&lines=%E2%8A%B9+Olá+eu+sou+Domingos+Nascimento!+%CB%99%E1%B5%95%CB%99+%E2%8A%B9+" alt="Typing SVG">
-  </a>
+  
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=Olá+eu+Domingos+Nascimento)](https://git.io/typing-svg)
+
 </div>
 
 <img align="center" alt="" src="./src/header-gif.gif">
 
 <p>
   
-**Fullstack Developer** apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
+Sou **Fullstack Developer** apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
 
 Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permite combinar teoria e prática para desenvolver software de alta qualidade. Sempre em busca de novos desafios, meu foco é em criar **experiências digitais intuitivas**.
 
