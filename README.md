@@ -23,7 +23,6 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 ---
 
-
 <h2>TECNOLOGIAS QUE USO</h2> 
 
 <div style="display: inline_block"><br>
