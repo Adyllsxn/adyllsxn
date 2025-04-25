@@ -1,6 +1,6 @@
 <div align="center">
   
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=Olá+eu+Domingos+Nascimento)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=Olá,+eu+Domingos+Nascimento)](https://git.io/typing-svg)
 
 </div>
 
@@ -8,9 +8,10 @@
 
 <p>
   
-Sou **Fullstack Developer**, apaixonado por criar soluções simples e eficientes. Busco sempre melhorar a usabilidade, performance e estética em meus projetos, tanto no **backend** quanto no **frontend**.
+Sou **Fullstack Developer**, apaixonado por transformar ideias em soluções funcionais. Tenho como foco a criação de aplicações com excelente **usabilidade**, alta **performance** e design **intuitivo**.
 
-Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permite combinar teoria e prática para desenvolver software de alta qualidade. Sempre em busca de novos desafios, meu foco é em criar **experiências digitais intuitivas**.
+Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e prática para desenvolver sistemas robustos e escaláveis. Estou sempre pronto para novos desafios e novas formas de impactar pessoas através da tecnologia.
+
 
 </p>
 
@@ -20,6 +21,8 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
+[![Email](https://img.shields.io/badge/Email-domingosady11son@email.com-informational?style=for-the-badge&logo=gmail)](mailto:domingosady11son@email.com)
+
 
 ---
 
@@ -40,6 +43,16 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 ---
 
+<h2>APRENDENDO AGORA</h2>
+
+- React Native
+- SignalR (tempo real com C#)
+- ML.NET (machine learning com .NET)
+- Arquitetura limpa & DDD
+
+
+---
+
 <h2>PROJETOS EM DESTAQUE</h2> 
 
 <h3>Sistema de Geração e Análise de Senhas Fortes</h3>
@@ -51,12 +64,12 @@ Atualmente, estou me aprofundando em **Engenharia de Software**, o que me permit
 
 #
 
-<h3>Sistema de Gestão de Eventos e Cultos (Em Construção)</h3>
+<h3>Sistema de Gestão de Eventos e Cultos</h3>
 
-**Nome**: Keiro.  
-**Descrição**: Em Breve
+**Nome**: Keiro  
+**Descrição**: Sistema para facilitar a organização de cultos e eventos, com gestão de participantes, presença, e envio de lembretes.  
+📌 *Em desenvolvimento — lançamento em breve!*
 
-*Em Breve ..*
 
 #
 
