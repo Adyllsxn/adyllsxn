@@ -21,7 +21,7 @@ Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e p
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
-[![Email](https://img.shields.io/badge/Email-domingosady11son@email.com-informational?style=for-the-badge&logo=gmail)](mailto:domingosady11son@email.com)
+[![Email](https://img.shields.io/badge/Email-domingosadyllsxn@email.com-informational?style=for-the-badge&logo=gmail)](mailto:domingosadyllsxn@email.com)
 
 
 ---
