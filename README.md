@@ -67,7 +67,7 @@ Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e p
 <h3>Sistema de Gestão de Eventos e Cultos</h3>
 
 **Nome**: Keiro  
-**Descrição**: Sistema para facilitar a organização de cultos e eventos, com gestão de participantes, presença, e envio de lembretes.  
+**Descrição**: Sistema para facilitar a organização de cultos e eventos, com gestão de participantes, presença e envio de lembretes.  
 📌 *Em desenvolvimento — lançamento em breve!*
 
 
