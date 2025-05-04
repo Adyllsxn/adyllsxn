@@ -12,7 +12,6 @@ Sou **Fullstack Developer**, apaixonado por transformar ideias em soluções fun
 
 Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e prática para desenvolver sistemas robustos e escaláveis. Estou sempre pronto para novos desafios e novas formas de impactar pessoas através da tecnologia.
 
-
 </p>
 
 ---
