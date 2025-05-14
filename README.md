@@ -56,7 +56,7 @@ Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e p
 <h3>Sistema de Compartilhamento de Conteúdos Acadêmicos</h3>
 
 **Nome**: Student.  
-**Descrição**: Plataforma para compartilhamento de conteúdos acadêmicos, permitindo a publicação de resumos, links, vídeos e PDFs, com interação por comentários, curtidas e favoritos. 
+**Descrição**: Plataforma para compartilhamento de conteúdos acadêmicos, permitindo a publicação de resumos, links e PDFs, com interação por comentários, curtidas e favoritos. 
 
 [![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/student) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Adyllsxn/student)
 
