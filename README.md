@@ -54,12 +54,12 @@ Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e p
 
 <h2>PROJETOS EM DESTAQUE</h2> 
 
-<h3>Sistema de Geração e Análise de Senhas Fortes</h3>
+<h3>Sistema de Compartilhamento de Materiais Acadêmico</h3>
 
-**Nome**: LockGen.  
+**Nome**: Student.  
 **Descrição**: Aplicação web que gera senhas aleatórias e seguras com letras, números e símbolos. O usuário define o comprimento da senha desejada. 
 
-[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/lockgen) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adyllsxn.github.io/lockgen/)
+[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/student) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Adyllsxn/student)
 
 #
 
