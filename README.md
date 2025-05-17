@@ -58,7 +58,7 @@ Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e p
 **Nome**: Keiro  
 **Descrição**: Sistema para facilitar a organização de cultos e eventos, com gestão de participantes, presença e envio de lembretes. 
 
-[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/student) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Adyllsxn/student)
+[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/kairos) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Adyllsxn/student)
 
 #
 
