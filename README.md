@@ -1,6 +1,6 @@
 <div align="center">
   
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=Olá,+eu+Domingos+Nascimento)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=Hello,+I'm+Domingos+Nascimento)](https://git.io/typing-svg)
 
 </div>
 
@@ -8,64 +8,62 @@
 
 <p>
   
-Sou **Fullstack Developer**, apaixonado por transformar ideias em soluções funcionais. Tenho como foco a criação de aplicações com excelente **usabilidade**, alta **performance** e design **intuitivo**.
+I'm a **Fullstack Developer**, passionate about turning ideas into functional solutions. I focus on building applications with excellent **usability**, high **performance**, and **intuitive design**.
 
-Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e prática para desenvolver sistemas robustos e escaláveis. Estou sempre pronto para novos desafios e novas formas de impactar pessoas através da tecnologia.
+Currently deepening my knowledge in **Software Engineering**, I aim to bridge theory and practice to build robust and scalable systems. I'm always ready for new challenges and ways to impact people through technology.
 
 </p>
 
 ---
 
-<h2>ONDE ME ENCONTRAR</h2>
+<h2>WHERE TO FIND ME</h2>
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn-08a0b5354/)
 [![Email](https://img.shields.io/badge/Email-domingosadyllsxn@email.com-informational?style=for-the-badge&logo=gmail)](mailto:domingosadyllsxn@email.com)
 
-
 ---
 
-<h2>TECNOLOGIAS QUE USO</h2> 
+<h2>TECHNOLOGIES I USE</h2> 
 
 <div style="display: inline_block"><br>
   <img align="center" alt="C#" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-  <img align="center" alt="C#" height="40" width="50"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+  <img align="center" alt="Dotnet" height="40" width="50"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
   
   <img align="center" alt="JavaScript" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
-  <img align="center" alt="JavaScript" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-  <img align="center" alt="JavaScript" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />   
+  <img align="center" alt="Node.js" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+  <img align="center" alt="Express" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />   
           
   <img align="center" alt="HTML5" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
   <img align="center" alt="CSS3" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-  <img align="center" alt="React" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />      
+  <img align="center" alt="TailwindCSS" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />      
   <img align="center" alt="React" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
   
   <img align="center" alt="SQL Server" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
-  <img align="center" alt="Postgre" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" /> 
+  <img align="center" alt="PostgreSQL" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" /> 
 
-  
-  <img align="center" alt="Docker" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" />
-  <img align="center" alt="Docker" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+  <img align="center" alt="GitHub Actions" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" />
+  <img align="center" alt="Linux" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
   <img align="center" alt="Docker" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />         
   <img align="center" alt="Figma" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />       
 </div>
 
 ---
 
-<h2>PROJETOS EM DESTAQUE</h2> 
+<h2>FEATURED PROJECTS</h2> 
 
-<h3>Sistema de Gestão de Eventos e Cultos</h3>
+<h3>Event and Worship Management System</h3>
 
-**Nome**: Keiro  
-**Descrição**: Sistema para facilitar a organização de cultos e eventos, com gestão de participantes, presença e envio de lembretes. 
+**Name**: Kairos  
+**Description**: A system designed to organize worship services and events, manage participants, attendance, and send reminders.
 
-[![Repositório](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/kairos) [![Visualizar](https://img.shields.io/badge/Visualizar-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kairos-mu-neon.vercel.app/)
+[![Repository](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/kairos) [![Preview](https://img.shields.io/badge/Preview-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kairos-mu-neon.vercel.app/)
 
 #
 
 ---
 
-<h2>ESTATÍSTICAS DO GITHUB</h2>
+<h2>GITHUB STATS</h2>
 <div style="text-align: center;" align="center">
   <br>
   <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Adyllsxn&hide_title=true&show_icons=true&include_all_commits=false&count_private=true&line_height=25&hide=issues&bg_color=000&title_color=FF00F6&text_color=FFF&border_radius=10&border_color=FFF&icon_color=FF00F6&theme=jolly" alt="GitHub stats">
