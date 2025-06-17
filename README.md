@@ -52,15 +52,6 @@ Atualmente, me aprofundando em **Engenharia de Software**, busco unir teoria e p
 
 ---
 
-<h2>APRENDENDO AGORA</h2>
-
-- SignalR (tempo real com C#)
-- ML.NET (machine learning com .NET)
-- Arquitetura limpa & DDD
-
-
----
-
 <h2>PROJETOS EM DESTAQUE</h2> 
 
 <h3>Sistema de Gestão de Eventos e Cultos</h3>
