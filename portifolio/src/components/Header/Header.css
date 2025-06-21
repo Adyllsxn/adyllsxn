@@ -17,6 +17,11 @@ header{
 .navBarLogo .logo{
     font-size: 2rem;
     font-weight: bold;
+    text-shadow: #000 1px 1px;
+}
+.navBarLogo .logo span{
+    color: #0088d2;
+    font-size: 50px;
 }
 
 
@@ -55,6 +60,7 @@ header{
 .navLink{
     transition: 0.5s ease;
     font-size: 2rem;
+    text-shadow: #000 1px 1px;
 }
 .navLink:hover{
     color: #0088d2;
