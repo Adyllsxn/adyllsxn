@@ -5,9 +5,11 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #111;
     overflow-x: hidden;
     color: #fff;
+    background: linear-gradient(225deg, #0b0c10, #111 40%, #0071ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 li{
     list-style: none;

@@ -1,17 +1,67 @@
 /* Configuaration*/
 header{
-    background-color: #00000050;;
     position: static;
     min-height: 50px;
     padding: 10px 0;
+    z-index: -1;
 }
 .navBar{
     min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 34px;
+    padding: 0 24px;
 }
+
+/* Logo */
+.navBarLogo .logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* Menu*/
+.navMenu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navMenu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    background-color: #111111f6;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+}
+.navMenu{
+    display: flex;
+    justify-items: start;
+    align-items: start;
+    padding-left: 13%;
+    padding-top: 200px;
+    top: 0px;
+}
+.navMenu.active{
+    left: 0;
+}
+.navItem{
+    margin: 16px 0;
+}
+.navLink{
+    transition: 0.5s ease;
+    font-size: 2rem;
+}
+.navLink:hover{
+    color: #0088d2;
+}
+
+
+/* menuToggle */
 .menuToggle{
     cursor: pointer;
 }
@@ -24,10 +74,56 @@ header{
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
-
-/* Logo*/
-.navBarLogo .logo{
-    font-size: 2rem;
-    font-weight: bold;
+.menuToggle.active .bar:nth-child(2){
+    opacity: 0;
+}
+.menuToggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.menuToggle.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
 }
 
+
+@media(max-width: 768px){
+
+    /* navMenu */
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 0px;
+        gap: 0;
+        background-color: #111111f6;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .navMenu{
+        display: flex;
+        justify-items: start;
+        align-items: start;
+        padding-top: 200px;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    .navItem{
+        margin: 16px 0;
+    }
+
+    /* menuToggle */
+    .menuToggle{
+        display: block;
+    }
+    .menuToggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menuToggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menuToggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
