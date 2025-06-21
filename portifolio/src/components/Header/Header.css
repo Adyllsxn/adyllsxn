@@ -1,0 +1,33 @@
+/* Configuaration*/
+header{
+    background-color: #00000050;;
+    position: static;
+    min-height: 50px;
+    padding: 10px 0;
+}
+.navBar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+.menuToggle{
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo*/
+.navBarLogo .logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+

@@ -1,6 +1,30 @@
+import './Home.css';
 const Home = () => {
   return (
-    <div>Home</div>
+      <section className="wrapper-conteiner">
+          <div className="wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div className="layoutContainer">
+            <div className="banner">
+                    <div className="content">
+                        <h2>
+                            <b>Animation</b>
+                        </h2>
+                    </div>
+                
+            </div>
+        </div>
+      </section>
   )
 }
 

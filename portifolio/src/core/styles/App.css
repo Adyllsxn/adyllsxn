@@ -16,3 +16,8 @@ a{
     color: white;
     text-decoration: none;
 }
+.layoutContainer{
+    padding: 0 10px;
+    margin: auto;
+    max-width: 1100px;
+}

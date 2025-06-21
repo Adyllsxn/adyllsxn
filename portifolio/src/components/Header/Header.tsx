@@ -1,26 +1,30 @@
+import './Header.css';
+
 const Header = () => {
     return (
         <header>
-        <div className="layout-container">
-            <nav className="nav-bar">
-
-                <a href="#" className="logo">Adyllsxn</a>
-    
-                <ul className="nav-menu">
-                    <li className="nav-item"> <a href="#" className="nav-link">Home</a> </li>
-                    <li className="nav-item"> <a href="#" className="nav-link">About me</a> </li>
-                    <li className="nav-item"> <a href="#" className="nav-link">Portifolio</a> </li>
-                </ul>
-    
-                <div className="hamburguer">
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                </div>
-    
-            </nav>
-        </div>
-    </header>
+            <div className="layoutContainer">
+                <nav className="navBar">
+                    <div className="navBarLogo">
+                        <a href="#" className="logo">Adyllsxn</a>
+                    </div>
+                    
+        
+                    <ul className="navMenu">
+                        <li className="navItem"> <a href="#" className="navLink">Home</a> </li>
+                        <li className="navItem"> <a href="#" className="navLink">About me</a> </li>
+                        <li className="navItem"> <a href="#" className="navLink">Portifolio</a> </li>
+                    </ul>
+        
+                    <div className="menuToggle">
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </div>
+        
+                </nav>
+            </div>
+        </header>
     )
 }
 
