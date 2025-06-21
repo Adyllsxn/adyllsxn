@@ -1,7 +1,7 @@
 import './Home.css';
 const Home = () => {
   return (
-      <section className="wrapper-conteiner">
+      <section className="wrapperConteiner">
           <div className="wrapper">
                 <span></span>
                 <span></span>
