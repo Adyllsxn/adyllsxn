@@ -74,7 +74,6 @@
   font-weight: 800;
   color: #fff;
   text-align: center;
-  margin-bottom: 1rem;
   background: linear-gradient(90deg, #fff, #00d5ff98, #0071ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,7 +84,7 @@
 .hero-desc {
   text-align: start;
   max-width: 790px;
-  font-size: 1.2rem;
+  font-size: 3rem;
   color: #FFF;
   font-weight: bold;
   text-shadow: #000 1px 1px;
