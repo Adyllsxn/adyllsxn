@@ -12,12 +12,8 @@ const Home = () => {
       <div className="layoutContainer">
         <div className="banner">
           <div className="content">
-          <h1 className="hero-title">Hi, I'm Domingos Nascimento,</h1>
-          <p className="hero-desc">
-          a Software Engineer and UI/UX Designer.
-        </p>
-
-
+            <h1 className="hero-title">Hi, I'm Domingos Nascimento,</h1>
+            <p className="hero-desc">a Software Engineer and UI/UX Designer.</p>
             <ul className="social-links">
               <li>
                 <a href="https://linkedin.com" target="_blank" rel="noreferrer">
