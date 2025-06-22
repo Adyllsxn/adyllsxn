@@ -12,11 +12,9 @@ const Home = () => {
       <div className="layoutContainer">
         <div className="banner">
           <div className="content">
-          <h1 className="hero-title">Sou Domingos Nascimento</h1>
+          <h1 className="hero-title">Hi, I'm Domingos Nascimento,</h1>
           <p className="hero-desc">
-          Desenvolvedor Fullstack focado em aplicações web, mobile e design de interfaces. Crio soluções digitais com performance, usabilidade e uma boa experiência de usuário.
-          <br /><br />
-          Trabalho com .NET, Node.js, TypeScript, React e UI/UX. Experiência com PostgreSQL, Firebase e SQL Server.
+          a Software Engineer and UI/UX Designer.
         </p>
 
 
