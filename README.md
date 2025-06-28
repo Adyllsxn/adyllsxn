@@ -1,8 +1,14 @@
+<!-- Banner animado com Capsule Render -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=cccccc&height=200&section=header&text=Welcome%20to%20my%20GitHub%20profile!&fontSize=25&fontColor=000000&animation=fadeIn&fontAlignY=40&desc=.NET%20%7C%20Node.js%20%7C%20SQL%20%7C%20UI%2FUX&descSize=18&descAlignY=60&descAlign=50" alt="Banner" />
+
+
 <div align="center">
-  
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=Hello,+I'm+Domingos+Nascimento)](https://git.io/typing-svg)
+
+  <!-- Texto animado com Typing SVG -->
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+Domingos+Nascimento" alt="Typing SVG" />
 
 </div>
+
 
 <img align="center" alt="" src="./src/header-gif.gif">
 
