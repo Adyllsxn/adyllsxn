@@ -62,7 +62,7 @@ Currently deepening my knowledge in **Software Engineering**, I aim to bridge th
 <h3>Event and Worship Management System</h3>
 
 **Name**: Kairos  
-**Description**: A system designed to organize worship services and events, manage participants, attendance, and send reminders.
+**Description**: MVP for event management with attendance control and worship categories. Built with .NET and React.
 
 [![Repository](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/kairos) [![Preview](https://img.shields.io/badge/Preview-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kairos-mu-neon.vercel.app/)
 
