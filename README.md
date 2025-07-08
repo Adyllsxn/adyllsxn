@@ -24,15 +24,11 @@ Currently deepening my knowledge in **Software Engineering**, I aim to bridge th
 
 <h2>WHERE TO FIND ME</h2>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<div style="display: flex; gap: 10px; font-size: 20px;">
-  <a href="https://www.instagram.com/adyllsxn/" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/in/adyllsxn/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://x.com/Adyllsxn" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  <a href="mailto:domingosadyllsxn@gmail.com"><i class="fas fa-envelope"></i></a>
-  <a href="https://adyllsxn.vercel.app" target="_blank"><i class="fas fa-globe"></i></a>
-</div>
+[![Instagram](https://img.icons8.com/fluency/48/instagram-new.png)](https://www.instagram.com/adyllsxn/)
+[![LinkedIn](https://img.icons8.com/fluency/48/linkedin.png)](https://www.linkedin.com/in/adyllsxn/)
+[![Twitter](https://img.icons8.com/fluency/48/twitterx.png)](https://x.com/Adyllsxn)
+[![Gmail](https://img.icons8.com/fluency/48/gmail.png)](mailto:domingosadyllsxn@gmail.com)
+[![Site](https://img.icons8.com/fluency/48/domain.png)](https://adyllsxn.vercel.app)
 
 
 ---
