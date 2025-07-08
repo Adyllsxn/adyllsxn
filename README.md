@@ -62,7 +62,7 @@ Currently deepening my knowledge in **Software Engineering**, I aim to bridge th
 
 <h2>FEATURED PROJECTS</h2> 
 
-<h3>Event and Worship Management System</h3>
+<h3>Event Management System</h3>
 
 **Name**: Kairos  
 **Description**: MVP for event management with attendance control and worship categories. Built with .NET and React.
