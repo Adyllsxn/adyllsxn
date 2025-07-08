@@ -24,11 +24,12 @@ Currently deepening my knowledge in **Software Engineering**, I aim to bridge th
 
 <h2>WHERE TO FIND ME</h2>
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn/)
-[![X (Twitter)](https://img.shields.io/badge/X-%23000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Adyllsxn)
-[![E-mail](https://img.shields.io/badge/E--mail-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:domingosadyllsxn@gmail.com)
-[![Portfólio](https://img.shields.io/badge/Site-%23007ACC?style=for-the-badge&logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
+🔗 [Instagram](https://www.instagram.com/adyllsxn/)  
+💼 [LinkedIn](https://www.linkedin.com/in/adyllsxn/)  
+🐦 [X / Twitter](https://x.com/Adyllsxn)  
+📧 [E-mail](mailto:domingosadyllsxn@gmail.com)  
+🌐 [Site pessoal](https://adyllsxn.vercel.app)
+
 
 
 
