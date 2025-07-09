@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
 }
 body{
@@ -17,7 +19,7 @@ li{
     list-style: none;
 }
 a{
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 .layoutContainer{
@@ -25,3 +27,24 @@ a{
     margin: auto;
     max-width: 1150px;
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --menu-bg: rgba(255, 255, 255, 0.95);
+  --bar-color: #000000;
+}
+
+[data-theme='dark'] {
+  --bg-color: #0f0f0f;
+  --text-color: #ffffff;
+  --menu-bg: rgba(17, 17, 17, 0.96);
+  --bar-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
