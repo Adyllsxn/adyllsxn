@@ -17,7 +17,7 @@ const Header = () => {
       <div className="layoutContainer">
         <nav className="navBar">
           <div className="navBarLogo">
-            <a href="#" className="logo">Adylls<span>x</span>n</a>
+            <a href="#" className="logo">Adyllsxn</a>
           </div>
 
           <ul className={`navMenu ${menuOpen ? 'active' : ''}`}>
