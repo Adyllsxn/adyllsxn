@@ -2,7 +2,11 @@ import './Skills.css';
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <section className='sectionSkills'>
+      <div className='layoutContainer'>
+          <h1>Skills</h1>
+      </div>
+    </section>
   )
 }
 
