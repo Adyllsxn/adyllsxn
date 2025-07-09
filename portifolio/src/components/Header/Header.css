@@ -68,7 +68,7 @@ header{
     display: flex;
     justify-items: center;
     align-items: center;
-    gap: 50px;
+    gap: 24px;
 }
 .languages .navLinkLang{
     margin-left: 10px;
