@@ -24,11 +24,13 @@
     transition: all .4s ease-in-out;
 }
 
-
 @media(max-width: 768px){
     .sectionHeroContainer{
         min-width: 300px;
         font-size: 2rem;
+    }
+    .sectionHeroContainer ul{
+        gap: 6px;
     }
 }
 
