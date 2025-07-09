@@ -1,8 +1,134 @@
-.SectionContact{
-    padding: 60px 0;
+.sectionContact {
+    display: flex;
+    flex-direction: column;
+}
+.sectionContactContant {
+    padding: 30px 0;
+    min-height: 80vh;
+}
+.contactContainer {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
-@media(max-width: 768px){
+.contactInfo {
+  flex: 1 1 45%;
+}
 
-    
+.contactInfo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.contactInfo p {
+  margin: 10px 0;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+.contactDetails{
+    padding: 20px 0;
+}
+.contactDetails p {
+  margin: 10px 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.iconCircle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconCircle:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  transform: scale(1.1);
+}
+
+
+.contactForm {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--menu-bg);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.contactForm label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+[data-theme='light'] .contactForm input,
+[data-theme='light'] .contactForm textarea {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.contactForm button {
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactForm button:hover {
+  opacity: 0.9;
+}
+
+@media(max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contactForm, .contactInfo {
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }

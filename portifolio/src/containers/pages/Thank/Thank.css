@@ -1,0 +1,33 @@
+.thankSection {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thankSection h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.thankSection p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.backHome {
+  padding: 12px 24px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.backHome:hover {
+  opacity: 0.85;
+}

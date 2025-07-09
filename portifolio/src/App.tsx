@@ -5,6 +5,7 @@ import About from './containers/pages/About/About';
 import Skills from './containers/pages/Skills/Skills';
 import Project from './containers/features/Projects/Project';
 import Contact from './containers/features/Contact/Contact';
+import Thank from './containers/pages/Thank/Thank';
 import './core/styles/App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thank" element={<Thank />} />
         </Routes>
     </>
   )

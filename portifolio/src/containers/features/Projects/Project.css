@@ -1,8 +1,35 @@
 .sectionProject{
-    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+}
+.sectionProjectContant{
+    height: 80vh;
+    padding: 40px 0;
+}
+.projectContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 400px;
+}
+.projectsContext h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: #000 1px 1px;
+    text-transform: lowercase;
+    color: hsl(199, 100%, 50%);;
+    margin-bottom: 20px;
+}
+.projectsContext p{
+    font-size: 17px;
+    font-weight: lighter;
 }
 
-@media(max-width: 768px){
 
+
+@media(max-width: 768px){
+    .projectsContext h1{
+        font-size: 2rem;
+    }
     
 }
