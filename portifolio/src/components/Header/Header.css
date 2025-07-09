@@ -51,10 +51,11 @@ header{
 .navMenu.active{
     left: 0;
 }
-.navLink{
+.navMenu .navLink{
     font-size: 2rem;
     font-weight: bolder;
     text-shadow: hsl(0, 0%, 0%) 1px 1px;
+    color: hsl(0, 0%, 100%);
     text-transform: lowercase;
     transition: all .3s ease-in-out;
 }
