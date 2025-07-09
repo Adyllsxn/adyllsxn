@@ -40,11 +40,12 @@ header{
     position: fixed;
     left: -100%;
     top: 0px;
+    z-index: 444;
 
     width: 100%;
     height: 100vh;
     background-color: #111111f6;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     padding-left: 10%;
     padding-top: 200px;
 }
@@ -77,6 +78,7 @@ header{
     font-weight: bold;
     text-transform: lowercase;
     text-shadow: hsl(0, 0%, 0%) 1px 1px;
+    display: none;
 }
 .languages .navLinkLang:nth-child(1){
     color: hsl(199, 100%, 50%);
