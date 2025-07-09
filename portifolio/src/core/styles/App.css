@@ -9,7 +9,7 @@
 body{
     overflow-x: hidden;
     color: #fff;
-    background: linear-gradient(155deg, #0b0c10, #111 40%, #0073ffd7 100%);
+    background: hsl(0, 0%, 0%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -23,5 +23,5 @@ a{
 .layoutContainer{
     padding: 0 10px;
     margin: auto;
-    max-width: 1100px;
+    max-width: 1150px;
 }
