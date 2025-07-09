@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -21,11 +22,25 @@ const Header = () => {
           </div>
 
           <ul className={`navMenu ${menuOpen ? 'active' : ''}`}>
-            <li className="navItem"><a href="#" className="navLink" onClick={closeMenu}>home</a></li>
-            <li className="navItem"><a href="#" className="navLink" onClick={closeMenu}>about</a></li>
-            <li className="navItem"><a href="#" className="navLink" onClick={closeMenu}>skills</a></li>
-            <li className="navItem"><a href="#" className="navLink" onClick={closeMenu}>projects</a></li>
-            <li className="navItem"><a href="#" className="navLink" onClick={closeMenu}>contact</a></li>
+            <li className="navItem">
+              <Link to="/" className="navLink" onClick={closeMenu}>home</Link>
+            </li>
+
+            <li className="navItem">
+              <Link to="/about" className="navLink" onClick={closeMenu}>about</Link>
+            </li>
+
+            <li className="navItem">
+              <Link to="/skills" className="navLink" onClick={closeMenu}>skills</Link>
+            </li>
+
+            <li className="navItem">
+              <Link to="/projects" className="navLink" onClick={closeMenu}>projects</Link>
+            </li>
+
+            <li className="navItem">
+              <Link to="/contact" className="navLink" onClick={closeMenu}>contact</Link>
+            </li>
           </ul>
 
           <div className={`menuToggle ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
