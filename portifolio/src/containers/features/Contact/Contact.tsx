@@ -38,12 +38,9 @@ const Contact = () => {
 
             <form
               className="contactForm"
-              action="https://formsubmit.co/domingos.nxscimento@gmail.com"
-              method="POST">
-              <input type="hidden" name="_next" value="https://adyllsxn.vercel.app/thank" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
-
+              action="https://formspree.io/f/mjkrqdko"
+              method="POST"
+            >
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Name" required />
 
@@ -54,10 +51,16 @@ const Contact = () => {
               <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
 
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write message..." required />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write message..."
+                required
+              />
 
               <button type="submit">SEND</button>
             </form>
+
 
           </div>
 
