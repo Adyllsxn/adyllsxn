@@ -26,6 +26,7 @@ header{
     background-color: hsl(0, 0%, 100%);
     transform: skew(-10deg);
     display: block;
+    box-shadow: hsl(0, 0%, 0%) 1px 1px;
 }
 
 /* Menu*/
