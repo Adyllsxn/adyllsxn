@@ -111,7 +111,7 @@
 @media(max-width: 768px) {
 
   .contactInfo h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   }
   .contactContainer {
     flex-direction: column;
@@ -122,5 +122,4 @@
     flex: 1 1 100%;
     width: 100%;
   }
-  
 }
