@@ -39,26 +39,25 @@ const Contact = () => {
             <form
               className="contactForm"
               action="https://formspree.io/f/mjkrqdko"
-              method="POST"
-            >
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name" required />
+              method="POST">
 
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email" required />
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required />
 
-              <label htmlFor="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
 
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write message..."
-                required
-              />
+                <label htmlFor="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
 
-              <button type="submit">SEND</button>
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write message..."
+                  required/>
+
+                <button type="submit">SEND</button>
             </form>
 
 
