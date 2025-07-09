@@ -20,12 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: portifolio
+        working-directory: portfolio
 
       - name: Run Linter
         run: npm run lint
-        working-directory: portifolio
+        working-directory: portfolio
 
       - name: Build project
         run: npm run build
-        working-directory: portifolio
+        working-directory: portfolio
