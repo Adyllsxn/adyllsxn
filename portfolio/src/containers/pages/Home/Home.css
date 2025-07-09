@@ -6,6 +6,9 @@
     font-size: 3rem;
     text-shadow: #000 1px 1px;
 }
+.sectionHeroContainer h1{
+    font-size: 4rem;
+}
 .sectionHeroContainer ul{
     display: flex;
     align-items: center;
@@ -32,5 +35,8 @@
     .sectionHeroContainer ul{
         gap: 6px;
     }
+    .sectionHeroContainer h1{
+    font-size: 1.9rem;
+}
 }
 
