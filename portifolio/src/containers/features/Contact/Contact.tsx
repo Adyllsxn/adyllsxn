@@ -38,26 +38,28 @@ const Contact = () => {
 
             <form
               className="contactForm"
-              action="https://formsubmit.co/domingos.nxscimento@gmail.com"
+              action="https://formspree.io/f/mjkrqdko"
               method="POST">
-              <input type="hidden" name="_next" value="https://adyllsxn.vercel.app/thank" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
 
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name" required />
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required />
 
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email" required />
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
 
-              <label htmlFor="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
+                <label htmlFor="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
 
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write message..." required />
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write message..."
+                  required/>
 
-              <button type="submit">SEND</button>
+                <button type="submit">SEND</button>
             </form>
+
 
           </div>
 
