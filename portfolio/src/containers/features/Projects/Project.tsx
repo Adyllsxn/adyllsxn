@@ -24,9 +24,8 @@ interface ProjectData {
 // Lista de projetos
 const projectsData: ProjectData[] = [
   { id: 1, type: 'programming', title: 'Kairos', description: 'Event Management System', tools: ['C#', 'ASP.NET', 'SQL Server', 'React Js'], image: kairosImg, demo: 'https://kairoschurch.vercel.app/', repo: 'https://github.com/Adyllsxn/kairos' },
-  { id: 2, type: 'programming', title: 'Fokuz ', description: 'Real-Time Chat Application', tools: ['C#', 'ASP.NET', 'SignalR', 'React Js'], image: kairosImg, demo: '#', repo: '#' },
-  { id: 3, type: 'programming', title: 'AngolaGeoAPI', description: 'REST API providing Angolan provinces and their municipalities.', tools: ['TypeScript', 'NodeJs', 'PostgreSQL', 'React Js'], image: kairosImg, demo: '#', repo: '#' },
-  { id: 4, type: 'design', title: 'Music App Design', description: 'UI para player de música.', tools: ['Figma'], image: 'music-design.png', demo: '#', figma: '#' }
+  { id: 2, type: 'programming', title: 'Fokuz ', description: 'Real-Time Chat Application', tools: ['C#', 'ASP.NET', 'SignalR', 'React Js'], image: '', demo: '#', repo: '#' },
+  { id: 3, type: 'design', title: 'Music App Design', description: 'UI para player de música.', tools: ['Figma'], image: 'music-design.png', demo: '#', figma: '#' }
 ];
 
 const Project = () => {
