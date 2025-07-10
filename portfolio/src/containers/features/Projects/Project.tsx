@@ -26,7 +26,7 @@ const projectsData: ProjectData[] = [
   { id: 1, type: 'programming', title: 'Kairos', description: 'Event Management System', tools: ['C#', 'ASP.NET', 'SQL Server', 'React Js'], image: kairosImg, demo: 'https://kairoschurch.vercel.app/', repo: 'https://github.com/Adyllsxn/kairos' },
   { id: 2, type: 'programming', title: 'Fokuz ', description: 'Real-Time Chat Application', tools: ['C#', 'ASP.NET', 'SignalR', 'React Js'], image: '', demo: '#', repo: '#' },
   { id: 3, type: 'design', title: 'Music App Design', description: 'UI para player de música.', tools: ['Figma'], image: '', demo: '#', figma: '#' },
-  { id: 4, type: 'design', title: 'Fitness App UI', description: 'Interface clean e minimalista para aplicativo fitness.', tools: ['Figma'], image: '', demo: '#', figma: '#' }
+  { id: 4, type: 'design', title: 'App Fitness', description: 'UI app fitness.', tools: ['Figma'], image: '', demo: '#', figma: '#' }
 ];
 
 const Project = () => {
