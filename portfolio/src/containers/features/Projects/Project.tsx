@@ -24,8 +24,8 @@ interface ProjectData {
 
 // Lista de projetos
 const projectsData: ProjectData[] = [
-  { id: 1, type: 'programming', title: 'Kairos', description: 'Event Management System', tools: ['C#', 'TypeScript', 'SQL Server'], image: kairosImg, demo: 'https://kairoschurch.vercel.app/', repo: 'https://github.com/Adyllsxn/kairos' },
-  { id: 2, type: 'programming', title: 'Fokuz ', description: 'Real-Time Chat Application', tools: ['C#', 'TypeScript', 'SignalR'], image: '', demo: '#', repo: '#' },
+  { id: 1, type: 'programming', title: 'Kairos', description: 'Event Management System', tools: ['C#', 'ASP.NET', 'React', 'TypeScript', 'SQL Server'], image: kairosImg, demo: 'https://kairoschurch.vercel.app/', repo: 'https://github.com/Adyllsxn/kairos' },
+  { id: 2, type: 'programming', title: 'Fokuz ', description: 'Real-Time Chat Application', tools: ['C#', 'ASP.NET', 'React', 'TypeScript', 'SignalR'], image: '', demo: '#', repo: '#' },
   { id: 3, type: 'programming', title: 'Frapi ', description: 'Mock API for frontend practice', tools: ['C#', 'ASP.NET', 'Swagger'], image: frapiImg, demo: '#', repo: 'https://github.com/Adyllsxn/frapi' },
   { id: 4, type: 'design', title: 'Music App Design', description: 'UI para player de música.', tools: ['Figma'], image: '', demo: '#', figma: '#' },
   { id: 5, type: 'design', title: 'App Fitness', description: 'UI app fitness.', tools: ['Figma'], image: '', demo: '#', figma: '#' }
