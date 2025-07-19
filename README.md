@@ -1,5 +1,5 @@
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=cccccc&height=200&section=header&text=Welcome%20to%20my%20GitHub%20profile!&fontSize=25&fontColor=000000&animation=fadeIn&fontAlignY=40&desc=.NET%20%7C%20Node.js%20%7C%20SQL%20%7C%20UI%2FUX&descSize=18&descAlignY=60&descAlign=50" alt="Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=cccccc&height=200&section=header&text=Welcome%20to%20my%20GitHub%20profile!&fontSize=25&fontColor=000000&animation=fadeIn&fontAlignY=40&desc=.NET%20%7C%20Node.js%20%7C%20SQL&descSize=18&descAlignY=60&descAlign=50" alt="Banner" />
 
 
 <div align="center">
@@ -54,8 +54,7 @@ Currently deepening my knowledge in **Software Engineering**, I aim to bridge th
 
   <img align="center" alt="GitHub Actions" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" />
   <img align="center" alt="Linux" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-  <img align="center" alt="Docker" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />         
-  <img align="center" alt="Figma" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />       
+  <img align="center" alt="Docker" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />     
 </div>
 
 ---
