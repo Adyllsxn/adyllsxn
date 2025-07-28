@@ -65,6 +65,8 @@ Currently deepening my knowledge in **Software Engineering**, I aim to bridge th
 |---------|-------------|-------------|---------|
 | **Kairos** | Event management system built with .NET + React. | [![Repo](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/kairos) | [![Preview](https://img.shields.io/badge/Live-0e75b6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kairos-lbto.onrender.com/) |
 
+| **ConnectNow** | Real-time chat using ASP.NET Core and ReactJS. | [![Repo](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adyllsxn/kairos) | - |
+
 #
 
 ---
