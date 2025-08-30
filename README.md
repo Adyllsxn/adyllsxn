@@ -4,7 +4,7 @@
 <div align="center">
 
   <!-- Texto animado com Typing SVG -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+Domingos+Nascimento;FullStack+Developer+from+Angola" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+Domingos+Nascimento;.NET%20Core%20%7C%20NestJS%20%7C%20React" alt="Typing SVG" />
 
 </div>
 
@@ -18,25 +18,28 @@ Passionate about transforming complex challenges into efficient, maintainable, a
 
 ### 🛠️ Tech Stack
 
-**Backend & APIs**
-![.NET](https://img.shields.io/badge/.NET-6.0-512BD4?logo=dotnet&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+**Languages & Markup**
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?logo=dotnet&logoColor=white)
-
-**Frontend**
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+
+**Backend & APIs**
+![.NET Core](https://img.shields.io/badge/.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+
+**Frontend & Mobile**
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
 **Database**
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 
 **Tools & DevOps**
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
