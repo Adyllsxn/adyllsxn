@@ -15,7 +15,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            Hi, I'm Domingos Nascimento, a Full Stack Developer and UI/UX Designer.
+            Hi, I&apos;m Domingos Nascimento, a Full Stack Developer and UI/UX Designer.
           </motion.h1>
 
           <motion.ul

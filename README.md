@@ -1,18 +1,17 @@
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%20%7C%20NestJS%20%7C%20React&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%20%7C%20Node.js&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
 
-<div align="center">
+<!-- Estatísticas do perfil -->
+<div align="left">
+  <img src="https://komarev.com/ghpvc/?username=Adyllsxn&color=00d9ff" alt="Profile views">
+  <img src="https://img.shields.io/github/followers/Adyllsxn?color=00d9ff&logo=github" alt="GitHub followers">
+  <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
+</div> </br>
 
-  <!-- Texto animado com Typing SVG -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+Domingos+Nascimento;.NET%20Core%20%7C%20NestJS%20%7C%20React" alt="Typing SVG" />
 
-</div>
+I'm a **FullStack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core** and **Express.js**, with a strong focus on **performance and scalability**.  
 
-<img align="center" alt="" src="./src/header-gif.gif">
-
-I'm a **FullStack Developer** with a strong foundation in **.NET Core** and **Clean Architecture**. I'm now applying these same software engineering principles to build robust and scalable APIs with **NestJS** and **TypeScript**. On the frontend, I bring interfaces to life with **React**.
-
-Passionate about transforming complex challenges into efficient, maintainable, and well-architected solutions. Currently seeking **remote opportunities** to contribute to impactful projects.
+On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **Next.js**, delivering **complete and high-quality solutions**.  
 
 ---
 
@@ -27,22 +26,21 @@ Passionate about transforming complex challenges into efficient, maintainable, a
 **Backend & APIs**
 ![.NET Core](https://img.shields.io/badge/.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
 
-**Frontend & Mobile**
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+**Frontend**
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
 **Database**
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 
 **Tools & DevOps**
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 
@@ -52,7 +50,7 @@ Passionate about transforming complex challenges into efficient, maintainable, a
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **Kairos** | Full-stack event management system built with Clean Architecture principles. | .NET 8, React, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
+| **Kairos** | Full-stack event management system built with Clean Architecture principles. | .NET 8, Next.js, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
 | **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 | **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
 
@@ -75,13 +73,19 @@ Passionate about transforming complex challenges into efficient, maintainable, a
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosadyllsxn@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
 
-- 🔭 **I'm currently open to remote opportunities**
-- 💬 **Ask me about:** .NET Core, NestJS, React, or Clean Architecture
-- 📧 **Email me:** domingosadylisxn@gmail.com
+- 💬 **Ask me about:** .NET Core, Node.js, or Clean Architecture
+- 📧 **Email me:** domingosadyllsxn@gmail.com
 
 **⚡ Fun fact:** I'm passionate about turning complex problems into simple, elegant solutions!
 
 ---
+
+<!-- Footer estiloso com frase maneira -->
+<div align="center">
+  
+  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality)
+  
+</div>
 
 <!-- Rodapé animado com efeito ondulado -->
 <p align="center">
