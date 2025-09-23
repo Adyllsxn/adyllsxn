@@ -1,0 +1,180 @@
+/* Configuaration*/
+header{
+    position: static;
+    min-height: 50px;
+    padding: 10px 0;
+    z-index: -1;
+}
+.navBar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navBarLogo .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-shadow: hsl(0, 0%, 0%) 1px 1px;
+}
+.navBarLogo .logo::after{
+    content: '';
+    width: 27%;
+    height: .2rem;
+    background-color: hsl(199, 100%, 50%);
+    transform: skew(-10deg);
+    display: block;
+    box-shadow: hsl(0, 0%, 0%) 1px 1px;
+}
+
+/* Menu*/
+.navMenu{
+    display: flex;
+    justify-items: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    z-index: 444;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #111111f6;
+    transition: all .3s ease-in-out;
+    padding-left: 10%;
+    padding-top: 200px;
+}
+.navMenu.active{
+    left: 0;
+}
+.navMenu .navLink{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-shadow: hsl(0, 0%, 0%) 1px 1px;
+    color: hsl(0, 0%, 100%);
+    text-transform: lowercase;
+    transition: all .3s ease-in-out;
+}
+.navLink:hover{
+    color: hsl(199, 100%, 50%);
+    transition: all .3s ease-in-out;
+}
+
+/* menuToggle */
+.menuToggleAndLang{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 24px;
+}
+.languages .navLinkLang{
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-shadow: hsl(0, 0%, 0%) 1px 1px;
+    display: none;
+}
+.languages .navLinkLang:nth-child(1){
+    color: hsl(199, 100%, 50%);
+}
+.menuToggle{
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color:  hsl(199, 100%, 50%);
+    transition: all 0.3s ease-in-out;
+}
+.menuToggle.active .bar:nth-child(2){
+    opacity: 0;
+}
+.menuToggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.menuToggle.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* LightDarkMode */
+.themeToggle {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.toggleSwitch {
+    position: relative;
+    width: 60px;
+    height: 28px;
+    border-radius: 50px;
+    background: #ccc;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+.toggleSwitch.light {
+    background: hsl(199, 100%, 50%);
+}
+.toggleSwitch.dark {
+    background: #2c3e50;
+}
+.toggleSwitch .icon {
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+}
+.toggleSwitch .sun {
+    position: absolute;
+    left: 8px;
+}
+.toggleSwitch .moon {
+    position: absolute;
+    right: 8px;
+}
+.sliderBall {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+.toggleSwitch.dark .sliderBall {
+    transform: translateX(32px);
+}
+
+
+
+@media(max-width: 768px){
+
+    /* navMenu */
+    .navMenu{
+        left: -100%;
+        padding-top: 240px;
+        padding-left: 30px;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    /* menuToggle */
+    .menuToggleAndLang{
+        gap: 10px;
+    }
+    /* Logo */
+    .navBarLogo .logo{
+        font-size: 1.8rem;
+    }
+}
+

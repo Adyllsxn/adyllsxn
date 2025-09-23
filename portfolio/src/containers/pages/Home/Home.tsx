@@ -1,25 +1,22 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
+import './Home.css';
 
-export default function Home() {
+const Home = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center">
-      <div className="layout-container">
-        <div className="text-center">
-          
+    <section className='sectionHero'>
+      <div className='layoutContainer'>
+        <div className='sectionHeroContainer'>
+
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            Hi, I&apos;m Domingos Nascimento, a Full Stack Developer and UI/UX Designer.
+            Hi, I'm Domingos Nascimento, a Full Stack Developer and UI/UX Designer.
           </motion.h1>
 
           <motion.ul
-            className="flex justify-center gap-6 flex-wrap"
             initial="hidden"
             animate="visible"
             variants={{
@@ -41,7 +38,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <a href="#" className="flex items-center gap-2 text-primary font-semibold text-lg">
+                <a href="#">
                   {item} <FiArrowUpRight />
                 </a>
               </motion.li>
@@ -52,4 +49,6 @@ export default function Home() {
       </div>
     </section>
   );
-}
+};
+
+export default Home;

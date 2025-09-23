@@ -1,0 +1,169 @@
+.sectionProject{
+    display: flex;
+    flex-direction: column;
+}
+.sectionProjectContant{
+    padding: 40px 0;
+}
+.projectContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.projectsContext h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: #000 1px 1px;
+    text-transform: lowercase;
+    color: hsl(199, 100%, 50%);;
+    margin-bottom: 20px;
+}
+.projectsContext p{
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+
+
+.filterButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filterButtons button {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filterButtons button:hover,
+.filterButtons button.active {
+    background-color: hsl(199, 100%, 50%);
+    color: var(--bg-color);
+}
+
+.projetsCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tools span {
+    font-size: 0.8rem;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    gap: 6px;
+}
+
+.cardButtons a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.cardButtons a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 5px 12px;
+    border: 1px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Responsivo */
+@media(max-width: 768px) {
+    .projectsContext h1 {
+        font-size: 2rem;
+    }
+
+    .projetsCards {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 768px){
+    .projectsContext h1{
+        font-size: 2rem;
+    }
+}
+
+
