@@ -8,10 +8,9 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div> </br>
 
-
 I'm a **FullStack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core** and **Express.js**, with a strong focus on **performance and scalability**.  
 
-On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **Next.js**, delivering **complete and high-quality solutions**.  
+On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **Next.js** and **React.js**, delivering **complete and high-quality solutions**.  
 
 ---
 
@@ -31,6 +30,7 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 
 **Frontend**
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
 **Database**
@@ -73,7 +73,7 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosadyllsxn@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
 
-- 💬 **Ask me about:** .NET Core, Node.js, or Clean Architecture
+- 💬 **Ask me about:** .NET Core, Node.js, React.js or Clean Architecture
 - 📧 **Email me:** domingosadyllsxn@gmail.com
 
 **⚡ Fun fact:** I'm passionate about turning complex problems into simple, elegant solutions!
