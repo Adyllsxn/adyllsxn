@@ -1,0 +1,42 @@
+.sectionHero{
+    padding: 60px 0;
+}
+.sectionHeroContainer{
+    min-width: 900px;
+    font-size: 3rem;
+    text-shadow: #000 1px 1px;
+}
+.sectionHeroContainer h1{
+    font-size: 4.5rem;
+}
+.sectionHeroContainer ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+.sectionHeroContainer ul li a{
+    color: hsl(199, 100%, 50%);
+    transition: all .4s ease-in-out;
+}
+.sectionHeroContainer ul li a:hover{
+    text-decoration: underline;
+    transition: all .4s ease-in-out;
+}
+
+@media(max-width: 768px){
+    .sectionHeroContainer{
+        min-width: 300px;
+        font-size: 2rem;
+    }
+    .sectionHeroContainer ul{
+        gap: 6px;
+    }
+    .sectionHeroContainer h1{
+    font-size: 1.9rem;
+}
+}
+
