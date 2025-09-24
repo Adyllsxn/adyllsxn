@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaFigma } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Footer from '../../../components/Footer/Footer';
+import Footer from '@/components/layout/Footer';
 import './Project.css';
 
-import kairosImg from '../../../core/assets/programming/kairos.png';
-import frapiImg from '../../../core/assets/programming/frapi.png';
+import kairosImg from '@/assets/fullstack/kairos.png';
+import frapiImg from '@/assets/backend/frapi.png';
 
 // Definir tipos dos projetos
 type ProjectType = 'programming' | 'design';

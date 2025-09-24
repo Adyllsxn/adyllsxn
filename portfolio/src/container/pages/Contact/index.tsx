@@ -1,4 +1,4 @@
-import Footer from '../../../components/Footer/Footer';
+import Footer from '@/components/layout/Footer';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 import './Contact.css';
 

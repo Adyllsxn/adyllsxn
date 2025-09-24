@@ -1,7 +1,7 @@
-import Footer from '../../../components/Footer/Footer';
+import Footer from '@/components/layout/Footer';
 import './About.css';
 
-const About = () => {
+function About ()  {
   return (
     <section className='sectionAbout'>
       <div className='sectionAboutContant'>

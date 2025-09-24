@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaLinux, FaDatabase, FaGithub, FaNpm, FaDocker } from 'react-icons/fa';
 import { SiDotnet, SiTypescript, SiPostgresql, SiTailwindcss, SiDbeaver, SiNuget, SiFigma, SiGithubactions } from 'react-icons/si';
-import Footer from '../../../components/Footer/Footer';
+import Footer from '@/components/layout/Footer';
 import './Skills.css';
 
 const Skills = () => {
