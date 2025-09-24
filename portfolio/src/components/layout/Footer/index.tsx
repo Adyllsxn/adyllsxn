@@ -1,6 +1,6 @@
 import './Footer.css';
 
-const Footer = () => {
+function Footer (){
   const currentYear = new Date().getFullYear();
 
   return (
