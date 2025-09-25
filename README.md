@@ -1,5 +1,7 @@
+** Mobile **: React Native & Expo
+
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%20%7C%20Node.js&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%20%7C%20Node.js%20%7C%20React%20Native&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
 
 <!-- Estatísticas do perfil -->
 <div align="left">
@@ -12,6 +14,8 @@ I'm a **FullStack Developer**. I build **robust backend systems and APIs** using
 
 On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **Next.js** and **React.js**, delivering **complete and high-quality solutions**.  
 
+For **mobile development**, I create **cross-platform applications** using **React Native** and **Expo**, ensuring **native-like performance** and **seamless user experiences**.
+
 ---
 
 ### 🛠️ Tech Stack
@@ -19,6 +23,7 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 **Languages & Markup**
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
@@ -28,9 +33,11 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
 
-**Frontend**
+**Frontend & Mobile**
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
 **Database**
@@ -46,6 +53,28 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 
 ---
 
+### 📱 Mobile Development
+
+**Skills & Expertise:**
+- 📱 **Cross-Platform Development** with React Native & Expo
+- 🎨 **UI/UX Implementation** following mobile design principles
+- 🔄 **State Management** with Context API, Redux, and Zustand
+- 📲 **Native Module Integration** and third-party libraries
+- 🚀 **Performance Optimization** for smooth mobile experiences
+- 🔐 **Secure Authentication** with biometric support
+- 📊 **Offline-First Applications** with sync capabilities
+
+**Mobile Tech Stack:**
+- **Framework:** React Native, Expo
+- **Navigation:** React Navigation, Expo Router
+- **State Management:** Redux Toolkit, Context API
+- **Storage:** AsyncStorage, SQLite, Realm
+- **UI Libraries:** React Native Paper, NativeBase, Styled Components
+- **Testing:** Jest, React Native Testing Library
+- **Deployment:** Expo Application Services, App Store Connect, Google Play Console
+
+---
+
 ### 🚀 Featured Projects
 
 | Project | Description | Tech Stack | Links |
@@ -53,6 +82,7 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 | **Kairos** | Full-stack event management system built with Clean Architecture principles. | .NET 8, Next.js, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
 | **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 | **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
+| **Mobile App Template** | React Native starter template with TypeScript, navigation, and state management. | React Native, TypeScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/react-native-template) |
 
 ---
 
@@ -73,17 +103,17 @@ On the **frontend**, I develop **modern, responsive, and intuitive interfaces** 
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosadyllsxn@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
 
-- 💬 **Ask me about:** .NET Core, Node.js, React.js or Clean Architecture
+- 💬 **Ask me about:** .NET Core, Node.js, React.js, React Native or Clean Architecture
 - 📧 **Email me:** domingosadyllsxn@gmail.com
 
-**⚡ Fun fact:** I'm passionate about turning complex problems into simple, elegant solutions!
+**⚡ Fun fact:** I'm passionate about turning complex problems into simple, elegant solutions across web and mobile platforms!
 
 ---
 
 <!-- Footer estiloso com frase maneira -->
 <div align="center">
   
-  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality)
+  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;Web+%26+Mobile+Solutions+for+a+Connected+World)
   
 </div>
 
