@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div> </br>
 
-I'm a **FullStack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core** and **Express.js**, with a strong focus on **performance and scalability**.  
+I'm a **Full Stack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core** and **Express.js**, with a strong focus on **performance and scalability**.  
 
 On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **Next.js** and **React.js**, delivering **complete and high-quality solutions**.  
 
