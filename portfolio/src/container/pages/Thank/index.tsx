@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaCheckCircle, FaRocket, FaHome, FaPaperPlane } from 'react-icons/fa';
+import { FaCheckCircle, FaHome, FaPaperPlane } from 'react-icons/fa';
 import styles from './style.module.css';
 
 const Thank = () => {
@@ -63,16 +63,6 @@ const Thank = () => {
               <FaHome />
               <span>Back to Homepage</span>
             </Link>
-            
-            <motion.a
-              href="/projects"
-              className={styles.viewProjects}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaRocket />
-              <span>View My Projects</span>
-            </motion.a>
           </motion.div>
 
           <motion.div

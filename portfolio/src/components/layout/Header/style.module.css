@@ -185,3 +185,121 @@
         font-size: 1.8rem;
     }
 }
+
+/* Dropdown Styles - ATUALIZADO */
+.dropdownContainer {
+    position: relative;
+}
+
+.dropdownTrigger {
+    cursor: pointer;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.dropdownIcon {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdownIcon.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--menu-bg);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdownActive {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdownLink {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.dropdownLink:hover {
+    background: rgba(30, 144, 255, 0.1);
+    color: hsl(199, 100%, 50%);
+    padding-left: 25px;
+}
+
+/* Responsive Dropdown - CORRIGIDO */
+@media (max-width: 768px) {
+    .dropdownMenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding-left: 20px;
+        margin-top: 10px;
+        min-width: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .dropdownActive {
+        max-height: 200px;
+    }
+    
+    .dropdownLink {
+        font-size: 1.5rem;
+        padding: 8px 0;
+    }
+    
+    .dropdownLink:hover {
+        padding-left: 20px;
+        background: transparent;
+    }
+    
+    /* Remove hover effects on mobile */
+    .dropdownContainer:hover .dropdownMenu {
+        max-height: 0;
+    }
+    
+    .dropdownContainer:hover .dropdownActive {
+        max-height: 200px;
+    }
+}
+
+/* Light theme adjustments */
+[data-theme='light'] .dropdownMenu {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme='light'] .dropdownLink:hover {
+    background: rgba(30, 144, 255, 0.1);
+}
