@@ -1,11 +1,12 @@
-/* Configuaration*/
-header{
+/* Header.module.css */
+.header {
     position: static;
     min-height: 50px;
     padding: 10px 0;
-    z-index: -1;
+    z-index: 1000;
 }
-.navBar{
+
+.navBar {
     min-height: 70px;
     display: flex;
     align-items: center;
@@ -13,13 +14,16 @@ header{
 }
 
 /* Logo */
-.navBarLogo .logo{
+.logo {
     font-size: 2rem;
     font-weight: bold;
     text-transform: lowercase;
     text-shadow: hsl(0, 0%, 0%) 1px 1px;
+    color: var(--text-color);
+    text-decoration: none;
 }
-.navBarLogo .logo::after{
+
+.logo::after {
     content: '';
     width: 27%;
     height: .2rem;
@@ -29,87 +33,86 @@ header{
     box-shadow: hsl(0, 0%, 0%) 1px 1px;
 }
 
-/* Menu*/
-.navMenu{
+/* Menu - SEMPRE ESCONDIDO até abrir */
+.navMenu {
     display: flex;
     justify-items: start;
     align-items: start;
     flex-direction: column;
     gap: 30px;
-
     position: fixed;
     left: -100%;
     top: 0px;
     z-index: 444;
-
     width: 100%;
     height: 100vh;
-    background-color: #111111f6;
+    background-color: var(--menu-bg);
     transition: all .3s ease-in-out;
     padding-left: 10%;
     padding-top: 200px;
+    margin: 0;
+    list-style: none;
 }
-.navMenu.active{
+
+.navMenuActive {
     left: 0;
 }
-.navMenu .navLink{
+
+.navLink {
     font-size: 2rem;
     font-weight: bolder;
     text-shadow: hsl(0, 0%, 0%) 1px 1px;
-    color: hsl(0, 0%, 100%);
+    color: var(--text-color);
     text-transform: lowercase;
     transition: all .3s ease-in-out;
+    text-decoration: none;
 }
-.navLink:hover{
+
+.navLink:hover {
     color: hsl(199, 100%, 50%);
-    transition: all .3s ease-in-out;
 }
 
 /* menuToggle */
-.menuToggleAndLang{
+.menuToggleAndLang {
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 24px;
 }
-.languages .navLinkLang{
-    margin-left: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: lowercase;
-    text-shadow: hsl(0, 0%, 0%) 1px 1px;
-    display: none;
-}
-.languages .navLinkLang:nth-child(1){
-    color: hsl(199, 100%, 50%);
-}
-.menuToggle{
+
+/* REMOVIDO languages - PT/EN */
+
+.menuToggle {
     cursor: pointer;
 }
-.bar{
+
+.bar {
     display: block;
     width: 30px;
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color:  hsl(199, 100%, 50%);
+    background-color: hsl(199, 100%, 50%);
     transition: all 0.3s ease-in-out;
 }
-.menuToggle.active .bar:nth-child(2){
+
+.menuToggleActive .bar:nth-child(2) {
     opacity: 0;
 }
-.menuToggle.active .bar:nth-child(1){
+
+.menuToggleActive .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
-.menuToggle.active .bar:nth-child(3){
+
+.menuToggleActive .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
 /* LightDarkMode */
 .themeToggle {
-    margin-left: 1rem;
     cursor: pointer;
 }
+
 .toggleSwitch {
     position: relative;
     width: 60px;
@@ -121,25 +124,31 @@ header{
     align-items: center;
     padding: 0 5px;
 }
-.toggleSwitch.light {
+
+.toggleSwitchLight {
     background: hsl(199, 100%, 50%);
 }
-.toggleSwitch.dark {
+
+.toggleSwitchDark {
     background: #2c3e50;
 }
-.toggleSwitch .icon {
+
+.toggleIcon {
     font-size: 14px;
     color: white;
     z-index: 1;
 }
-.toggleSwitch .sun {
+
+.sunIcon {
     position: absolute;
     left: 8px;
 }
-.toggleSwitch .moon {
+
+.moonIcon {
     position: absolute;
     right: 8px;
 }
+
 .sliderBall {
     position: absolute;
     top: 2px;
@@ -151,30 +160,28 @@ header{
     transition: transform 0.3s ease;
     z-index: 2;
 }
-.toggleSwitch.dark .sliderBall {
+
+.toggleSwitchDark .sliderBall {
     transform: translateX(32px);
 }
 
-
-
-@media(max-width: 768px){
-
-    /* navMenu */
-    .navMenu{
+/* Responsive */
+@media (max-width: 768px) {
+    .navMenu {
         left: -100%;
         padding-top: 240px;
         padding-left: 30px;
     }
-    .navMenu.active{
+    
+    .navMenuActive {
         left: 0;
     }
-    /* menuToggle */
-    .menuToggleAndLang{
+    
+    .menuToggleAndLang {
         gap: 10px;
     }
-    /* Logo */
-    .navBarLogo .logo{
+    
+    .logo {
         font-size: 1.8rem;
     }
 }
-
