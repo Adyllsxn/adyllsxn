@@ -53,28 +53,6 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 
 ---
 
-### 📱 Mobile Development
-
-**Skills & Expertise:**
-- 📱 **Cross-Platform Development** with React Native & Expo
-- 🎨 **UI/UX Implementation** following mobile design principles
-- 🔄 **State Management** with Context API, Redux, and Zustand
-- 📲 **Native Module Integration** and third-party libraries
-- 🚀 **Performance Optimization** for smooth mobile experiences
-- 🔐 **Secure Authentication** with biometric support
-- 📊 **Offline-First Applications** with sync capabilities
-
-**Mobile Tech Stack:**
-- **Framework:** React Native, Expo
-- **Navigation:** React Navigation, Expo Router
-- **State Management:** Redux Toolkit, Context API
-- **Storage:** AsyncStorage, SQLite, Realm
-- **UI Libraries:** React Native Paper, NativeBase, Styled Components
-- **Testing:** Jest, React Native Testing Library
-- **Deployment:** Expo Application Services, App Store Connect, Google Play Console
-
----
-
 ### 🚀 Featured Projects
 
 | Project | Description | Tech Stack | Links |
