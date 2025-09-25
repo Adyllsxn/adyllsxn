@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSun, FaMoon } from 'react-icons/fa';
-import './Header.css';
+import styles from './style.module.css';
 
-const Header = () => {
+function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
 
@@ -24,39 +24,39 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
+    <header className={styles.header}>
       <div className="layoutContainer">
-        <nav className="navBar">
-          <div className="navBarLogo">
-            <Link to="/" className="logo">Adyllsxn</Link>
+        <nav className={styles.navBar}>
+          <div className={styles.navBarLogo}>
+            <Link to="/" className={styles.logo} onClick={closeMenu}>
+              Adyllsxn
+            </Link>
           </div>
 
-          <ul className={`navMenu ${menuOpen ? 'active' : ''}`}>
-            <li className="navItem"><Link to="/" className='navLink' onClick={closeMenu}>home</Link></li>
-            <li className="navItem"><Link to="/about" className='navLink' onClick={closeMenu}>about</Link></li>
-            <li className="navItem"><Link to="/skills" className='navLink' onClick={closeMenu}>skills</Link></li>
-            <li className="navItem"><Link to="/projects" className='navLink' onClick={closeMenu}>projects</Link></li>
-            <li className="navItem"><Link to="/contact" className='navLink' onClick={closeMenu}>contact</Link></li>
+          {/* Menu SEMPRE escondido - só aparece quando active */}
+          <ul className={`${styles.navMenu} ${menuOpen ? styles.navMenuActive : ''}`}>
+            <li><Link to="/" className={styles.navLink} onClick={closeMenu}>home</Link></li>
+            <li><Link to="/about" className={styles.navLink} onClick={closeMenu}>about</Link></li>
+            <li><Link to="/skills" className={styles.navLink} onClick={closeMenu}>skills</Link></li>
+            <li><Link to="/projects" className={styles.navLink} onClick={closeMenu}>projects</Link></li>
+            <li><Link to="/contact" className={styles.navLink} onClick={closeMenu}>contact</Link></li>
           </ul>
 
-          <div className="menuToggleAndLang">
-            <div className="languages">
-              <a href="#" className='navLinkLang' >PT</a>
-              <a href="#" className='navLinkLang'>EN</a>
-            </div>
-
-            <div className="themeToggle" onClick={toggleTheme}>
-              <div className={`toggleSwitch ${theme}`}>
-                <div className="icon sun"><FaSun /></div>
-                <div className="icon moon"><FaMoon /></div>
-                <div className="sliderBall"></div>
+          <div className={styles.menuToggleAndLang}>
+            {/* REMOVIDO languages - PT/EN */}
+            
+            <div className={styles.themeToggle} onClick={toggleTheme}>
+              <div className={`${styles.toggleSwitch} ${theme === 'light' ? styles.toggleSwitchLight : styles.toggleSwitchDark}`}>
+                <div className={`${styles.toggleIcon} ${styles.sunIcon}`}><FaSun /></div>
+                <div className={`${styles.toggleIcon} ${styles.moonIcon}`}><FaMoon /></div>
+                <div className={styles.sliderBall}></div>
               </div>
             </div>
 
-            <div className={`menuToggle ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
+            <div className={`${styles.menuToggle} ${menuOpen ? styles.menuToggleActive : ''}`} onClick={toggleMenu}>
+              <span className={styles.bar}></span>
+              <span className={styles.bar}></span>
+              <span className={styles.bar}></span>
             </div>
           </div>
         </nav>

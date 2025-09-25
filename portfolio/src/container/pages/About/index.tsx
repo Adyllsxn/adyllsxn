@@ -1,46 +1,61 @@
 import Footer from '@/components/layout/Footer';
-import './About.css';
+import styles from './style.module.css';
 
-function About ()  {
+function About() {
   return (
-    <section className='sectionAbout'>
-      <div className='sectionAboutContant'>
-        <div className='layoutContainer'>
-          <div className="aboutContent" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+    <section className={styles.sectionAbout}>
+      <div className={styles.sectionAboutContent}>
+        <div className={styles.layoutContainer}>
+          <div className={styles.aboutContent}>
             
-            <div className="aboutImage" style={{ flex: '1', minWidth: '250px', textAlign: 'center' }}>
+            <div className={styles.aboutImage}>
               <img
                 src="https://github.com/Adyllsxn.png"
-                alt="Adyllsxn"
-                style={{ maxWidth: '300px', width: '100%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }}
+                alt="Adyllsxn - Domingos Nascimento"
+                className={styles.profileImage}
               />
             </div>
 
-            <div className="aboutText" style={{ flex: '2', minWidth: '300px', padding: '20px' }}>
-              <p className="sectionLabel" style={{ letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '10px' }}>ABOUT ME</p>
-              <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px' }}>
-                A Little About Me!
-              </h2>
-              <p style={{ lineHeight: '1.6', marginBottom: '20px' }}>
-                Hi! I'm Domingos Nascimento, also known as Adyllsxn, a passionate Full Stack developer who creates complete web applications by combining intuitive and responsive interfaces with efficient and secure back-ends.
-                I'm always exploring new technologies and creative ways to turn ideas into practical and functional solutions.
-                In addition to solo projects, I've worked in creative and collaborative teams, involving version control, agile methodologies, and constant communication.
-              </p>
+            <div className={styles.aboutText}>
+              <p className={styles.sectionLabel}>ABOUT ME</p>
+              <h2 className={styles.title}>My Developer Journey!</h2>
+              
+              <div className={styles.description}>
+                <p>
+                  Hey! I'm <strong>Domingos Nascimento</strong>, also known as <strong>Adyllsxn</strong>, a passionate 
+                  Full Stack Developer dedicated to creating complete digital solutions. I specialize in building 
+                  end-to-end applications that combine powerful backends with engaging user interfaces.
+                </p>
+                
+                <p>
+                  On the backend, I architect <strong>robust systems and APIs</strong> using <strong>ASP.NET Core</strong> and 
+                  <strong> Nest.js</strong>, with strong focus on performance and scalability. For the frontend, 
+                  I develop <strong>modern, responsive interfaces</strong> with <strong>Next.js</strong> and <strong>React.js</strong>, 
+                  ensuring high-quality user experiences.
+                </p>
+                
+                <p>
+                  For mobile development, I create <strong>cross-platform applications</strong> using <strong>React Native </strong>  
+                  and <strong>Expo</strong>, delivering native-like performance across devices.
+                </p>
+                
+                <p>
+                  I'm constantly exploring new technologies and methodologies to transform innovative ideas 
+                  into practical, functional solutions. I thrive in collaborative environments using version 
+                  control, agile methodologies, and clear communication.
+                </p>
+              </div>
 
               <a
                 href="/path/to/your-cv.pdf"
                 download
-                className="downloadBtn"
-                style={{
-                  padding: '12px 24px',
-                  border: '1px solid var(--text-color)',
-                  borderRadius: '6px',
-                  color: 'var(--text-color)',
-                  transition: 'all 0.3s ease',
-                  display: 'inline-block',
-                }}
+                className={styles.downloadBtn}
               >
-                DOWNLOAD CV
+                <span>DOWNLOAD CV</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 16L12 4M12 16L8 12M12 16L16 12" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M4 20H20" stroke="currentColor" strokeWidth="2"/>
+                </svg>
               </a>
             </div>
           </div>
