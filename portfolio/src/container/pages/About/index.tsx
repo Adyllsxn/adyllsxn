@@ -45,7 +45,7 @@ function About() {
                   control, agile methodologies, and clear communication.
                 </p>
               </div>
-
+              {/*
               <a
                 href="/path/to/your-cv.pdf"
                 download
@@ -56,7 +56,7 @@ function About() {
                   <path d="M12 16L12 4M12 16L8 12M12 16L16 12" stroke="currentColor" strokeWidth="2"/>
                   <path d="M4 20H20" stroke="currentColor" strokeWidth="2"/>
                 </svg>
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>

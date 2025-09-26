@@ -1,8 +1,20 @@
-// projectsData.ts
+
+//#region import img fullstack
 import kairosImg from '@/assets/fullstack/kairos.png';
-import frapiImg from '@/assets/backend/frapi.png';
-import mobileAppImg from '@/assets/mobile/kairos.png';
-import frontendImg from '@/assets/frontend/kairos.png';
+//#endregion
+
+//#region import img backend
+import frapiRestImg from '@/assets/backend/frapi-rest.png';
+import frapiGtaphglImg from '@/assets/backend/frapi-graphql.png';
+//#endregion
+
+//#region import img mobile
+
+//#endregion
+
+//#region import img frontend
+import adyllsxnImg from '@/assets/frontend/adyllsxn.png';
+//#endregion
 
 export type ProjectType = 'all' | 'frontend' | 'backend' | 'mobile' | 'fullstack';
 
@@ -20,49 +32,60 @@ export interface ProjectData {
 
 // Lista de projetos atualizada
 export const projectsData: ProjectData[] = [
+
+  //#region fullstack
   { 
     id: 1, 
     type: 'fullstack', 
     category: 'fullstack',
-    title: 'Kairos', 
-    description: 'Complete event management system', 
-    tools: ['C#', 'ASP.NET Core', 'React', 'TypeScript', 'PostgreSQL'], 
+    title: 'kairos', 
+    description: 'Full-stack event management system built with Clean Architecture principles.', 
+    tools: ['ASP.NET Core', 'React', 'PostgreSQL'], 
     image: kairosImg, 
-    demo: 'https://kairoschurch.vercel.app/', 
+    demo: 'https://kairos-topaz.vercel.app/', 
     repo: 'https://github.com/Adyllsxn/kairos' 
   },
+  //#endregion
+
+  //#region backend
   { 
     id: 2, 
     type: 'backend', 
     category: 'backend',
-    title: 'Frapi API', 
-    description: 'Mock REST APIpractice with Swagger documentation', 
-    tools: ['C#', 'ASP.NET Core', 'SQL Server', 'Swagger'], 
-    image: frapiImg, 
-    repo: 'https://github.com/Adyllsxn/frapi' 
+    title: 'frapi-rest', 
+    description: 'A mock REST API for frontend developers to practice CRUD operations.', 
+    tools: ['ASP.NET Core', 'EF InMemory', 'Swagger'], 
+    image: frapiRestImg, 
+    repo: 'https://github.com/Adyllsxn/frapi-rest' 
   },
   { 
     id: 3, 
     type: 'backend', 
     category: 'backend',
-    title: 'Frapi API', 
-    description: 'Mock REST APIpractice with Swagger documentation', 
-    tools: ['C#', 'ASP.NET Core', 'SQL Server', 'Swagger'], 
-    image: frapiImg, 
-    repo: 'https://github.com/Adyllsxn/frapi' 
+    title: 'frapi-graphql ', 
+    description: 'A mock GraphQL API for practicing queries and mutations.', 
+    tools: ['ASP.NET Core', 'EF InMemory', 'HotChocolate'], 
+    image: frapiGtaphglImg, 
+    repo: 'https://github.com/Adyllsxn/frapi-graphql' 
   },
+  //#endregion
+
+  //#region frontend
   { 
     id: 4, 
     type: 'frontend', 
     category: 'frontend',
     title: 'Portfolio Website', 
     description: 'Modern responsive portfolio with dark/light theme and smooth animations', 
-    tools: ['React', 'TypeScript', 'CSS3', 'Framer Motion'], 
-    image: frontendImg, 
+    tools: ['React', 'TypeScript', 'Framer Motion'], 
+    image: adyllsxnImg, 
     demo: 'https://adyllsxn.vercel.app', 
     repo: 'https://github.com/Adyllsxn/portfolio' 
   },
-  { 
+  //#endregion
+
+  //#region mobile
+  /*{ 
     id: 5, 
     type: 'mobile', 
     category: 'mobile',
@@ -71,5 +94,6 @@ export const projectsData: ProjectData[] = [
     tools: ['React Native', 'TypeScript', 'Expo', 'Firebase'], 
     image: mobileAppImg, 
     repo: 'https://github.com/Adyllsxn/fitness-tracker' 
-  }
+  }*/
+  //#endregion
 ];
