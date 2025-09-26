@@ -1,7 +1,7 @@
 ** Web & Mobile **
 
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%20%7C%20Node.js%20%7C%20React&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%%20%7C%20React&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
 
 <!-- Estatísticas do perfil -->
 <div align="left">
@@ -10,9 +10,9 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div> </br>
 
-I'm a **Full Stack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core** and **Express.js**, with a strong focus on **performance and scalability**.  
+I'm a **Full Stack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core**, with a strong focus on **performance and scalability**.  
 
-On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **Next.js** and **React.js**, delivering **complete and high-quality solutions**.  
+On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **React.js**, delivering **complete and high-quality solutions**.  
 
 For **mobile development**, I create **cross-platform applications** using **React Native** and **Expo**, ensuring **native-like performance** and **seamless user experiences**.
 
@@ -30,11 +30,8 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 **Backend & APIs**
 ![.NET Core](https://img.shields.io/badge/.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
 
 **Frontend & Mobile**
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
@@ -57,7 +54,7 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **Kairos** | Full-stack event management system built with Clean Architecture principles. | .NET 8, Next.js, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
+| **Kairos** | Full-stack event management system built with Clean Architecture principles. | ASP.NET Core, React JS, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
 | **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 | **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
 | **Mobile App Template** | React Native starter template with TypeScript, navigation, and state management. | React Native, TypeScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/react-native-template) |
@@ -81,7 +78,7 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosadyllsxn@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
 
-- 💬 **Ask me about:** .NET Core, Node.js, React.js, React Native or Clean Architecture
+- 💬 **Ask me about:** .NET Core, React.js, React Native or Clean Architecture
 - 📧 **Email me:** domingosadyllsxn@gmail.com
 
 **⚡ Fun fact:** I'm passionate about turning complex problems into simple, elegant solutions across web and mobile platforms!

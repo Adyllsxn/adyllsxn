@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaGitAlt, FaLinux, FaGithub, FaNpm, FaDocker } from 'react-icons/fa';
-import { SiDotnet, SiTypescript, SiPostgresql, SiTailwindcss, SiDbeaver, SiNuget, SiGithubactions, SiMongodb, SiRedis, SiNextdotjs, SiNestjs, SiReact } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaLinux, FaGithub, FaNpm, FaDocker } from 'react-icons/fa';
+import { SiDotnet, SiTypescript, SiPostgresql, SiTailwindcss, SiDbeaver, SiNuget, SiGithubactions, SiMongodb, SiRedis, SiReact } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import Footer from '@/components/layout/Footer';
 import styles from './style.module.css';
@@ -11,10 +11,6 @@ const Skills = () => {
 
   const skillsIcons = [
     { icon: <SiDotnet />, label: '.NET Core', color: '#512BD4' },
-    { icon: <SiDotnet />, label: 'ASP.NET Core', color: '#512BD4' },
-    { icon: <SiNestjs />, label: 'NestJS', color: '#E0234E' },
-    { icon: <FaNodeJs />, label: 'Node.js', color: '#339933' },
-    { icon: <SiNextdotjs />, label: 'Next.js', color: '#000000' },
     { icon: <SiReact />, label: 'React JS', color: '#61DAFB' },
     { icon: <TbBrandReactNative />, label: 'React Native', color: '#61DAFB' },
     { icon: <SiTypescript />, label: 'TypeScript', color: '#3178C6' },
