@@ -28,9 +28,8 @@ function About() {
                 </p>
                 
                 <p>
-                  On the backend, I architect <strong>robust systems and APIs</strong> using <strong>ASP.NET Core</strong> and 
-                  <strong> Nest.js</strong>, with strong focus on performance and scalability. For the frontend, 
-                  I develop <strong>modern, responsive interfaces</strong> with <strong>Next.js</strong> and <strong>React.js</strong>, 
+                  On the backend, I architect <strong>robust systems and APIs</strong> using <strong>ASP.NET Core</strong>, with strong focus on performance and scalability. For the frontend, 
+                  I develop <strong>modern, responsive interfaces</strong> with <strong>React.js</strong>, 
                   ensuring high-quality user experiences.
                 </p>
                 
