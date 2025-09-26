@@ -1,7 +1,7 @@
 ** Web & Mobile **
 
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=.NET%20Core%%20%7C%20React&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
 
 <!-- Estatísticas do perfil -->
 <div align="left">
