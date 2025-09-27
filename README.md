@@ -57,7 +57,7 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 | **Kairos** | Full-stack event management system built with Clean Architecture principles. | ASP.NET Core, React JS, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
 | **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 | **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
-| **Mobile App Template** | React Native starter template with TypeScript, navigation, and state management. | React Native, TypeScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/react-native-template) |
+| **Mobile App Climax** | A weather app that uses your location to provide real-time forecasts. | React Native, JavaScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/climax) |
 
 ---
 
