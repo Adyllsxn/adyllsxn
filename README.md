@@ -75,13 +75,8 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adyllsxn/)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://x.com/Adyllsxn)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosadyllsxn@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosa.nxscimento@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
-
-- 💬 **Ask me about:** .NET Core, React.js, React Native or Clean Architecture
-- 📧 **Email me:** domingosadyllsxn@gmail.com
-
-**⚡ Fun fact:** I'm passionate about turning complex problems into simple, elegant solutions across web and mobile platforms!
 
 ---
 
