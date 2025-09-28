@@ -6,7 +6,6 @@ import kairosImg from '@/assets/fullstack/kairos.png';
 //#region import img backend
 import frapiRestImg from '@/assets/backend/frapi-rest.png';
 import frapiGtaphglImg from '@/assets/backend/frapi-graphql.png';
-import donefylImg from '@/assets/backend/donefy.png';
 //#endregion
 
 //#region import img mobile
@@ -68,16 +67,6 @@ export const projectsData: ProjectData[] = [
     tools: ['ASP.NET Core', 'EF InMemory', 'HotChocolate'], 
     image: frapiGtaphglImg, 
     repo: 'https://github.com/Adyllsxn/frapi-graphql' 
-  },
-  { 
-    id: 6, 
-    type: 'backend', 
-    category: 'backend',
-    title: 'donefy', 
-    description: 'API built with SOLID principles, featuring Google account authentication.', 
-    tools: ['ASP.NET Core', 'PostgreSQL', 'Swagger'], 
-    image: donefylImg, 
-    repo: 'https://github.com/Adyllsxn/donefy' 
   },
   //#endregion
 
