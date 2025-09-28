@@ -1,7 +1,7 @@
 ** Web & Mobile **
 
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=FullStack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=Web%20%26%20Mobile&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
 
 <!-- Estatísticas do perfil -->
 <div align="left">
@@ -57,7 +57,7 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 | **Kairos** | Full-stack event management system built with Clean Architecture principles. | ASP.NET Core, React JS, PostgreSQL | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kairos-topaz.vercel.app/) |
 | **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 | **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
-| **Mobile App Climax** | A weather app that uses your location to provide real-time forecasts. | React Native, JavaScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/climax) |
+| **Climax** | A weather app that uses your location to provide real-time forecasts. | React Native, JavaScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/climax) |
 
 ---
 
