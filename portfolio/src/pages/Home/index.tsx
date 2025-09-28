@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
-import styles from './style.module.css';
+import { styles } from './style';
 
 const Home = () => {
   const socialLinks = [
@@ -10,21 +10,21 @@ const Home = () => {
   ];
 
   return (
-    <section className={styles.hero}>
-      <div className={styles.container}>
-        <div className={styles.content}>
+    <section style={styles.hero}>
+      <div style={styles.container}>
+        <div style={styles.content}>
           
           <motion.h1
-            className={styles.title}
+            style={styles.title}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Hi, I'm <span className={styles.titleHighlight}>Domingos Nascimento</span>
+            Hi, I'm <span style={styles.titleHighlight}>Domingos Nascimento</span>
           </motion.h1>
 
           <motion.p
-            className={styles.subtitle}
+            style={styles.subtitle}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -33,7 +33,7 @@ const Home = () => {
           </motion.p>
 
           <motion.ul
-            className={styles.links}
+            style={styles.links}
             initial="hidden"
             animate="visible"
             variants={{
@@ -47,7 +47,7 @@ const Home = () => {
             {socialLinks.map((item, index) => (
               <motion.li
                 key={index}
-                className={styles.linkItem}
+                style={styles.linkItem}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 }
@@ -56,12 +56,12 @@ const Home = () => {
               >
                 <a 
                   href={item.url} 
-                  className={styles.link}
+                  style={styles.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {item.name} 
-                  <FiArrowUpRight className={styles.icon} />
+                  <FiArrowUpRight style={styles.icon} />
                 </a>
               </motion.li>
             ))}
