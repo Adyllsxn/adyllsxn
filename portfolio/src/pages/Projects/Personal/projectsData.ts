@@ -6,10 +6,11 @@ import kairosImg from '@/assets/fullstack/kairos.png';
 //#region import img backend
 import frapiRestImg from '@/assets/backend/frapi-rest.png';
 import frapiGtaphglImg from '@/assets/backend/frapi-graphql.png';
+import donefylImg from '@/assets/backend/donefy.png';
 //#endregion
 
 //#region import img mobile
-
+import climaxlImg from '@/assets/mobile/climax.jpeg';
 //#endregion
 
 //#region import img frontend
@@ -62,11 +63,21 @@ export const projectsData: ProjectData[] = [
     id: 3, 
     type: 'backend', 
     category: 'backend',
-    title: 'frapi-graphql ', 
+    title: 'frapi-graphql', 
     description: 'A mock GraphQL API for practicing queries and mutations.', 
     tools: ['ASP.NET Core', 'EF InMemory', 'HotChocolate'], 
     image: frapiGtaphglImg, 
     repo: 'https://github.com/Adyllsxn/frapi-graphql' 
+  },
+  { 
+    id: 6, 
+    type: 'backend', 
+    category: 'backend',
+    title: 'donefy', 
+    description: 'API built with SOLID principles, featuring Google account authentication.', 
+    tools: ['ASP.NET Core', 'PostgreSQL', 'Swagger'], 
+    image: donefylImg, 
+    repo: 'https://github.com/Adyllsxn/donefy' 
   },
   //#endregion
 
@@ -85,15 +96,15 @@ export const projectsData: ProjectData[] = [
   //#endregion
 
   //#region mobile
-  /*{ 
+ { 
     id: 5, 
     type: 'mobile', 
     category: 'mobile',
-    title: 'Fitness Tracker', 
-    description: 'Cross-platform mobile app for workout tracking and progress monitoring', 
-    tools: ['React Native', 'TypeScript', 'Expo', 'Firebase'], 
-    image: mobileAppImg, 
+    title: 'climax', 
+    description: 'A weather app that uses your location to provide real-time forecasts', 
+    tools: ['React Native', 'JavaScript', 'Expo'], 
+    image: climaxlImg, 
     repo: 'https://github.com/Adyllsxn/fitness-tracker' 
-  }*/
+  }
   //#endregion
 ];
