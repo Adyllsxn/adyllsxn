@@ -78,7 +78,7 @@ export const projectsData: ProjectData[] = [
     title: 'portfolio Website', 
     description: 'Modern responsive portfolio with dark/light theme and smooth animations', 
     tools: ['React', 'TypeScript', 'Framer Motion'], 
-    image: kairosImg, 
+    image: adyllsxnImg, 
     demo: 'https://adyllsxn.vercel.app', 
     repo: 'https://github.com/Adyllsxn/portfolio' 
   },
@@ -89,7 +89,7 @@ export const projectsData: ProjectData[] = [
     title: 'kairos', 
     description: 'React with Tailwind CSS, modern responsive interface', 
     tools: ['React', 'TypeScript', 'Tailwind CSS'], 
-    image: adyllsxnImg, 
+    image: kairosImg, 
     demo: 'https://kaiross.vercel.app/', 
     repo: 'https://github.com/Adyllsxn/kairos' 
   },
