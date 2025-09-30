@@ -87,7 +87,7 @@ export const projectsData: ProjectData[] = [
     type: 'frontend', 
     category: 'frontend',
     title: 'kairos', 
-    description: 'React with Tailwind CSS and shadcn/ui - modern responsive interface', 
+    description: 'React with Tailwind CSS, modern responsive interface', 
     tools: ['React', 'TypeScript', 'Tailwind CSS'], 
     image: adyllsxnImg, 
     demo: 'https://kaiross.vercel.app/', 

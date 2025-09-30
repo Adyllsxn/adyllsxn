@@ -54,7 +54,7 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **Kairos** | Frontend project built with React, Tailwind CSS, and shadcn/ui, featuring a fully responsive and modern interface. | React JS, Tailwind CSS, shadcn/ui | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
+| **Kairos** | Frontend project built with React, Tailwind CSS, and shadcn/ui, featuring a fully responsive and modern interface. | React JS, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
 | **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 | **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
 | **Climax** | A weather app that uses your location to provide real-time forecasts. | React Native, JavaScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/climax) |
