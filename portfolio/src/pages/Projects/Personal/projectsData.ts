@@ -1,6 +1,5 @@
 
 //#region import img fullstack
-import kairosImg from '@/assets/fullstack/kairos.png';
 //#endregion
 
 //#region import img backend
@@ -14,6 +13,7 @@ import climaxlImg from '@/assets/mobile/climax.jpeg';
 
 //#region import img frontend
 import adyllsxnImg from '@/assets/frontend/adyllsxn.png';
+import kairosImg from '@/assets/frontend/kairos.png';
 //#endregion
 
 export type ProjectType = 'all' | 'frontend' | 'backend' | 'mobile' | 'fullstack';
@@ -34,7 +34,7 @@ export interface ProjectData {
 export const projectsData: ProjectData[] = [
 
   //#region fullstack
-  { 
+  /*{ 
     id: 1, 
     type: 'fullstack', 
     category: 'fullstack',
@@ -44,7 +44,7 @@ export const projectsData: ProjectData[] = [
     image: kairosImg, 
     demo: 'https://kairos-topaz.vercel.app/', 
     repo: 'https://github.com/Adyllsxn/kairos' 
-  },
+  },*/
   //#endregion
 
   //#region backend
@@ -75,12 +75,23 @@ export const projectsData: ProjectData[] = [
     id: 4, 
     type: 'frontend', 
     category: 'frontend',
-    title: 'Portfolio Website', 
+    title: 'portfolio Website', 
     description: 'Modern responsive portfolio with dark/light theme and smooth animations', 
     tools: ['React', 'TypeScript', 'Framer Motion'], 
-    image: adyllsxnImg, 
+    image: kairosImg, 
     demo: 'https://adyllsxn.vercel.app', 
     repo: 'https://github.com/Adyllsxn/portfolio' 
+  },
+  { 
+    id: 4, 
+    type: 'frontend', 
+    category: 'frontend',
+    title: 'kairos', 
+    description: 'React with Tailwind CSS and shadcn/ui - modern responsive interface', 
+    tools: ['React', 'TypeScript', 'Tailwind CSS'], 
+    image: adyllsxnImg, 
+    demo: 'https://kaiross.vercel.app/', 
+    repo: 'https://github.com/Adyllsxn/kairos' 
   },
   //#endregion
 
