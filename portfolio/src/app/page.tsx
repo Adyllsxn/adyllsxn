@@ -3,6 +3,9 @@ import Sidebar from '@/components/layouts/Sidebar';
 import MobileMenu from '@/components/layouts/MobileMenu';
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
+import Portfolio from '@/components/sections/Portfolio';
+import Services from '@/components/sections/Services';
+import Contact from '@/components/sections/Contact';
 
 export default function Home() {
   return (
@@ -21,6 +24,9 @@ export default function Home() {
       <main className="lg:ml-80">
         <Hero />
         <About />
+        <Portfolio />
+        <Services />
+        <Contact />
         <div className="h-10"></div>
       </main>
     </>
