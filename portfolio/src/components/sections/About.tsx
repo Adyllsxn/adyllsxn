@@ -4,6 +4,30 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { 
+  FaDownload, 
+  FaWhatsapp, 
+  FaEnvelope,
+  FaJs, 
+  FaReact, 
+  FaGitAlt, 
+  FaDocker,
+  FaMicrosoft,
+  FaMobileAlt,
+  FaUbuntu,
+  FaCloud,
+  FaCode
+} from 'react-icons/fa';
+import { 
+  SiTypescript, 
+  SiNextdotjs, 
+  SiSharp, 
+  SiHtml5, 
+  SiCss3,
+  SiPostgresql, 
+  SiMongodb, 
+  SiExpo
+} from 'react-icons/si';
 
 export default function About() {
   const { theme } = useTheme();
@@ -13,16 +37,49 @@ export default function About() {
   const categories = {
     languages: {
       title: language === 'pt' ? 'Linguagens' : 'Languages',
-      skills: ['JavaScript', 'TypeScript', 'C#', 'HTML/CSS', 'SQL']
+      skills: [
+        { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
+        { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
+        { name: 'C#', icon: <SiSharp className="text-purple-600" /> },
+        { name: 'HTML5', icon: <SiHtml5 className="text-orange-500" /> },
+        { name: 'CSS3', icon: <SiCss3 className="text-blue-500" /> }
+      ]
     },
     frameworks: {
       title: language === 'pt' ? 'Frameworks' : 'Frameworks',
-      skills: ['React', 'Next.js', 'ASP.NET Core', 'React Native']
+      skills: [
+        { name: 'React', icon: <FaReact className="text-cyan-400" /> },
+        { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
+        { name: '.NET Core', icon: <FaMicrosoft className="text-purple-500" /> },
+        { name: 'React Native', icon: <FaMobileAlt className="text-blue-400" /> }
+      ]
     },
     tools: {
       title: language === 'pt' ? 'Ferramentas' : 'Tools',
-      skills: ['Git', 'Azure', 'Ubuntu', 'Expo', 'MongoDB', 'PostgreSQL', 'Docker', 'VS Code']
+      skills: [
+        { name: 'Git', icon: <FaGitAlt className="text-orange-500" /> },
+        { name: 'Azure', icon: <FaCloud className="text-blue-500" /> },
+        { name: 'Ubuntu', icon: <FaUbuntu className="text-orange-600" /> },
+        { name: 'Expo', icon: <SiExpo className="text-gray-800 dark:text-white" /> },
+        { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
+        { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-700" /> },
+        { name: 'Docker', icon: <FaDocker className="text-blue-500" /> },
+        { name: 'VS Code', icon: <FaCode className="text-blue-500" /> }
+      ]
     }
+  };
+
+  const handleWhatsApp = () => {
+    const phone = '+224935751955';
+    const message = language === 'pt' 
+      ? 'Olá! Gostaria de conversar sobre um projeto.'
+      : 'Hello! I would like to discuss a project.';
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
+  const handleEmail = () => {
+    window.location.href = 'mailto:domingos.nxscimento@gmail.com';
   };
 
   return (
@@ -34,227 +91,232 @@ export default function About() {
       }}
     >
       <div className="container mx-auto px-4 sm:px-6">
-        {/* Header Section com Glow Effect */}
-        <motion.div 
-          className="text-center mb-12 lg:mb-16 relative"
-          initial={{ y: -30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          {/* Background Glow */}
-          <div className={`absolute inset-0 -z-10 rounded-full blur-3xl opacity-20 ${
-            theme === 'dark' ? 'bg-blue-500' : 'bg-blue-300'
-          }`}></div>
-          
-          <motion.p 
-            className="text-blue-500 font-bold text-sm uppercase tracking-widest mb-3 inline-block"
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+        {/* Section Title */}
+        <div className="container section-title text-center mb-12 lg:mb-16" data-aos="fade-up">
+          <span className="subtitle text-blue-500 font-bold text-sm uppercase tracking-widest mb-3">
             {language === 'pt' ? 'SOBRE MIM' : 'ABOUT ME'}
-          </motion.p>
-          
-          <motion.h2 
-            className={`text-3xl sm:text-4xl lg:text-5xl font-black mb-4 bg-gradient-to-r ${
-              theme === 'dark' 
-                ? 'from-blue-400 to-purple-500' 
-                : 'from-blue-600 to-purple-600'
-            } bg-clip-text text-transparent`}
-            initial={{ scale: 0.5, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            {language === 'pt' ? 'Minha Jornada!' : 'My Journey!'}
-          </motion.h2>
-          
-          <motion.div 
-            className={`w-20 h-1 mx-auto rounded-full ${
-              theme === 'dark' ? 'bg-gradient-to-r from-blue-500 to-purple-500' : 'bg-gradient-to-r from-blue-600 to-purple-600'
-            }`}
-            initial={{ width: 0 }}
-            whileInView={{ width: 80 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            viewport={{ once: true }}
-          ></motion.div>
-        </motion.div>
+          </span>
+          <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 ${
+            theme === 'dark' ? 'text-white' : 'text-gray-900'
+          }`}>
+            {language === 'pt' ? 'Sobre Mim' : 'About Me'}
+          </h2>
+          <p className={`text-lg max-w-3xl mx-auto leading-relaxed ${
+            theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
+          }`}>
+            {language === 'pt' 
+              ? 'Desenvolvendo soluções digitais que impulsionam negócios e encantam usuários'
+              : 'Developing digital solutions that boost businesses and delight users'
+            }
+          </p>
+        </div>
 
-        {/* Main Content */}
-        <div className="max-w-4xl mx-auto relative">
-          {/* Floating Background Elements */}
-          <motion.div 
-            className={`absolute -top-10 -left-10 w-20 h-20 rounded-full ${
-              theme === 'dark' ? 'bg-blue-500/20' : 'bg-blue-200/50'
-            } blur-xl`}
-            animate={{
-              y: [0, -20, 0],
-              x: [0, 10, 0],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          ></motion.div>
-          
-          <motion.div 
-            className={`absolute -bottom-10 -right-10 w-16 h-16 rounded-full ${
-              theme === 'dark' ? 'bg-purple-500/20' : 'bg-purple-200/50'
-            } blur-xl`}
-            animate={{
-              y: [0, 15, 0],
-              x: [0, -15, 0],
-            }}
-            transition={{
-              duration: 5,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 1
-            }}
-          ></motion.div>
-
-          {/* Text Content com Card Estiloso */}
-          <motion.div 
-            className={`relative p-8 sm:p-10 rounded-2xl backdrop-blur-sm border ${
-              theme === 'dark' 
-                ? 'bg-gray-900/50 border-gray-700/50' 
-                : 'bg-white/80 border-gray-200/50'
-            } shadow-2xl mb-8`}
-            initial={{ y: 40, opacity: 0, scale: 0.8 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
-            whileHover={{
-              boxShadow: "0 0 40px rgba(59, 130, 246, 0.5)"
-            }}
-            transition={{ 
-              type: "spring",
-              stiffness: 100,
-              damping: 15
-            }}
-            viewport={{ once: true }}
-          >
-            {/* Corner Accents */}
-            <div className={`absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 ${
-              theme === 'dark' ? 'border-blue-500' : 'border-blue-600'
-            }`}></div>
-            <div className={`absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 ${
-              theme === 'dark' ? 'border-purple-500' : 'border-purple-600'
-            }`}></div>
-            <div className={`absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 ${
-              theme === 'dark' ? 'border-green-500' : 'border-green-600'
-            }`}></div>
-            <div className={`absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 ${
-              theme === 'dark' ? 'border-yellow-500' : 'border-yellow-600'
-            }`}></div>
-
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {/* Profile Card - Lado Esquerdo */}
             <motion.div 
-              className="space-y-6"
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
+              className="lg:col-span-1"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className={`text-lg leading-relaxed font-medium ${
-                theme === 'dark' ? 'text-gray-200' : 'text-gray-700'
-              }`}>
-                {language === 'pt' 
-                  ? <>E aí! Sou o <strong className="text-blue-400 font-bold">Domingos Nascimento</strong>, também conhecido como <strong className="text-purple-400 font-bold">Adyllsxn</strong>, um desenvolvedor <span className="text-green-400 font-bold">Full Stack</span> viciado em criar experiências digitais que <span className="text-yellow-400 font-bold">impactam</span> e <span className="text-pink-400 font-bold">encantam</span>.</>
-                  : <>Hey! I'm <strong className="text-blue-400 font-bold">Domingos Nascimento</strong>, also known as <strong className="text-purple-400 font-bold">Adyllsxn</strong>, a <span className="text-green-400 font-bold">Full Stack Developer</span> obsessed with creating digital experiences that <span className="text-yellow-400 font-bold">impact</span> and <span className="text-pink-400 font-bold">delight</span>.</>
-                }
-              </p>
-              
-              <p className={`text-lg leading-relaxed font-medium ${
-                theme === 'dark' ? 'text-gray-200' : 'text-gray-700'
-              }`}>
-                {language === 'pt' 
-                  ? <>No <span className="text-red-400 font-bold">backend</span>, construo <strong className="text-blue-400">sistemas robustos</strong> com <strong className="text-green-400">ASP.NET Core</strong> - performance e escalabilidade são minha obsessão! No <span className="text-indigo-400 font-bold">frontend</span>, crio <strong className="text-purple-400">interfaces modernas</strong> com <strong className="text-cyan-400">React.js</strong> que fazem os usuários dizerem <em className="text-yellow-400">"UAU!"</em></>
-                  : <>On the <span className="text-red-400 font-bold">backend</span>, I build <strong className="text-blue-400">robust systems</strong> with <strong className="text-green-400">ASP.NET Core</strong> - performance and scalability are my obsession! On the <span className="text-indigo-400 font-bold">frontend</span>, I create <strong className="text-purple-400">modern interfaces</strong> with <strong className="text-cyan-400">React.js</strong> that make users say <em className="text-yellow-400">"WOW!"</em></>
-                }
-              </p>
-              
-              <p className={`text-lg leading-relaxed font-medium ${
-                theme === 'dark' ? 'text-gray-200' : 'text-gray-700'
-              }`}>
-                {language === 'pt' 
-                  ? <>E para <span className="text-orange-400 font-bold">mobile</span> não fico de fora! Desenvolvo apps <strong className="text-green-400">multiplataforma</strong> com <strong className="text-blue-400">React Native + Expo</strong> que rodam tão bem quanto nativos. <span className="text-pink-400">✨</span></>
-                  : <>And for <span className="text-orange-400 font-bold">mobile</span>? I'm all in! I develop <strong className="text-green-400">cross-platform apps</strong> with <strong className="text-blue-400">React Native + Expo</strong> that run as smooth as native. <span className="text-pink-400">✨</span></>
-                }
-              </p>
-            </motion.div>
-          </motion.div>
+              <div className={`profile-card rounded-2xl p-8 ${
+                theme === 'dark' 
+                  ? 'bg-gray-900/50 border border-gray-700/50' 
+                  : 'bg-white/80 border border-gray-200/50'
+              } shadow-2xl backdrop-blur-sm sticky top-24`}>
+                
+                {/* Profile Header */}
+                <div className="profile-header text-center pb-6 border-b border-gray-600/30 mb-6">
+                  <div className="profile-avatar relative mx-auto mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-500/20 relative">
+                      <img 
+                        src="https://github.com/Adyllsxn.png" 
+                        alt="Domingos Nascimento"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="status-indicator absolute bottom-2 right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                    </div>
+                  </div>
+                  
+                  <h3 className={`text-xl font-bold mb-2 ${
+                    theme === 'dark' ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Domingos Nascimento
+                  </h3>
+                  <span className="text-blue-500 font-medium text-sm">
+                    Full Stack Developer
+                  </span>
+                </div>
 
-          {/* Categorias Interativas */}
-          <motion.div 
-            className="mb-8"
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <h3 className={`text-2xl font-bold text-center mb-6 ${
-              theme === 'dark' ? 'text-white' : 'text-gray-900'
-            }`}>
-              {language === 'pt' ? '💻 Minhas Skills' : '💻 My Skills'}
-            </h3>
-            
-            {/* Botões das Categorias */}
-            <div className="flex flex-wrap justify-center gap-4 mb-6">
-              {Object.entries(categories).map(([key, category]) => (
-                <motion.button
-                  key={key}
-                  onClick={() => setActiveCategory(key)}
-                  className={`px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-wider transition-all duration-300 ${
-                    activeCategory === key
-                      ? theme === 'dark'
-                        ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/30'
-                        : 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                      : theme === 'dark'
-                        ? 'bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-600'
-                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300 border border-gray-300'
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {category.title}
-                </motion.button>
-              ))}
-            </div>
-
-            {/* Skills da Categoria Ativa */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeCategory}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="flex flex-wrap justify-center gap-3"
-              >
-                {categories[activeCategory as keyof typeof categories].skills.map((skill, index) => (
-                  <motion.span
-                    key={skill}
-                    className={`px-4 py-3 rounded-xl text-sm font-bold border-2 backdrop-blur-sm ${
+                {/* Profile Actions */}
+                <div className="profile-actions space-y-3 mb-6">
+                  <button className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 ${
+                    theme === 'dark'
+                      ? 'bg-blue-500 text-white hover:bg-blue-600'
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                  }`}>
+                    <FaDownload className="w-5 h-5" />
+                    {language === 'pt' ? 'Baixar CV' : 'Download CV'}
+                  </button>
+                  
+                  {/* WhatsApp Button */}
+                  <button 
+                    onClick={handleWhatsApp}
+                    className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 ${
                       theme === 'dark'
-                        ? 'bg-gray-800/50 text-gray-200 border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/20'
-                        : 'bg-white/80 text-gray-800 border-blue-400/30 hover:border-blue-500 hover:bg-blue-500/20'
-                    } transition-all duration-300 cursor-default`}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{
-                      scale: 1.1,
-                      y: -2,
-                    }}
-                    whileTap={{ scale: 0.95 }}
+                        ? 'bg-green-600 text-white hover:bg-green-700'
+                        : 'bg-green-500 text-white hover:bg-green-600'
+                    }`}
                   >
-                    {skill}
-                  </motion.span>
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          </motion.div>
+                    <FaWhatsapp className="w-5 h-5" />
+                    WhatsApp
+                  </button>
+
+                  {/* Email Button */}
+                  <button 
+                    onClick={handleEmail}
+                    className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 border transition-all duration-300 ${
+                      theme === 'dark'
+                        ? 'border-gray-600 text-gray-300 hover:bg-gray-800'
+                        : 'border-gray-300 text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    <FaEnvelope className="w-5 h-5" />
+                    Email
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Content - Lado Direito */}
+            <motion.div 
+              className="lg:col-span-2"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="space-y-8">
+                {/* Bio Section */}
+                <div className="bio-section">
+                  <div className="section-tag inline-block px-4 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm font-semibold mb-4">
+                    {language === 'pt' ? 'Sobre Mim' : 'About Me'}
+                  </div>
+                  <h2 className={`text-2xl font-bold mb-6 ${
+                    theme === 'dark' ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {language === 'pt' ? 'Transformando Ideias em Realidade Digital' : 'Transforming Ideas into Digital Reality'}
+                  </h2>
+                  
+                  <div className="space-y-4">
+                    <p className={`text-base leading-relaxed ${
+                      theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      {language === 'pt' 
+                        ? <>Olá! Sou o <strong className="text-blue-500">Domingos Nascimento</strong>, também conhecido como <strong className="text-blue-500">Adyllsxn</strong>, um apaixonado Desenvolvedor Full Stack dedicado a criar soluções digitais completas. Especializo-me em construir aplicações de ponta a ponta que combinam backends poderosos com interfaces de usuário envolventes.</>
+                        : <>Hey! I'm <strong className="text-blue-500">Domingos Nascimento</strong>, also known as <strong className="text-blue-500">Adyllsxn</strong>, a passionate Full Stack Developer dedicated to creating complete digital solutions. I specialize in building end-to-end applications that combine powerful backends with engaging user interfaces.</>
+                      }
+                    </p>
+                    
+                    <p className={`text-base leading-relaxed ${
+                      theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      {language === 'pt' 
+                        ? <>No backend, projeto <strong className="text-blue-500">sistemas robustos e APIs</strong> usando <strong className="text-blue-500">ASP.NET Core</strong>, com forte foco em performance e escalabilidade. Para o frontend, desenvolvo <strong className="text-blue-500">interfaces modernas e responsivas</strong> com <strong className="text-blue-500">React.js</strong>, garantindo experiências de usuário de alta qualidade.</>
+                        : <>On the backend, I architect <strong className="text-blue-500">robust systems and APIs</strong> using <strong className="text-blue-500">ASP.NET Core</strong>, with strong focus on performance and scalability. For the frontend, I develop <strong className="text-blue-500">modern, responsive interfaces</strong> with <strong className="text-blue-500">React.js</strong>, ensuring high-quality user experiences.</>
+                      }
+                    </p>
+                    
+                    <p className={`text-base leading-relaxed ${
+                      theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      {language === 'pt' 
+                        ? <>Para desenvolvimento mobile, crio <strong className="text-blue-500">aplicações multiplataforma</strong> usando <strong className="text-blue-500">React Native</strong> e <strong className="text-blue-500">Expo</strong>, entregando performance similar à nativa em todos os dispositivos.</>
+                        : <>For mobile development, I create <strong className="text-blue-500">cross-platform applications</strong> using <strong className="text-blue-500">React Native</strong> and <strong className="text-blue-500">Expo</strong>, delivering native-like performance across devices.</>
+                      }
+                    </p>
+                  </div>
+                </div>
+
+                {/* Skills Section */}
+                <div className="skills-showcase">
+                  <div className="section-tag inline-block px-4 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm font-semibold mb-4">
+                    {language === 'pt' ? 'Skills Principais' : 'Core Skills'}
+                  </div>
+                  <h3 className={`text-2xl font-bold mb-8 ${
+                    theme === 'dark' ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {language === 'pt' ? 'Proficiência Técnica' : 'Technical Proficiency'}
+                  </h3>
+
+                  {/* Categorias Interativas */}
+                  <div className="mb-8">
+                    <div className="flex flex-wrap justify-center gap-4 mb-6">
+                      {Object.entries(categories).map(([key, category]) => (
+                        <motion.button
+                          key={key}
+                          onClick={() => setActiveCategory(key)}
+                          className={`px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-wider transition-all duration-300 ${
+                            activeCategory === key
+                              ? theme === 'dark'
+                                ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/30'
+                                : 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
+                              : theme === 'dark'
+                                ? 'bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-600'
+                                : 'bg-gray-200 text-gray-700 hover:bg-gray-300 border border-gray-300'
+                          }`}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          {category.title}
+                        </motion.button>
+                      ))}
+                    </div>
+
+                    {/* Skills Grid com Ícones React */}
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={activeCategory}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}
+                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+                      >
+                        {categories[activeCategory as keyof typeof categories].skills.map((skill, index) => (
+                          <motion.div
+                            key={skill.name}
+                            className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all duration-300 cursor-default ${
+                              theme === 'dark'
+                                ? 'bg-gray-800/50 border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/20'
+                                : 'bg-white/80 border-blue-400/30 hover:border-blue-500 hover:bg-blue-500/20'
+                            }`}
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: index * 0.1 }}
+                            whileHover={{
+                              scale: 1.05,
+                              y: -2,
+                            }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <div className="text-3xl mb-2">
+                              {skill.icon}
+                            </div>
+                            <span className="text-sm font-bold text-center">
+                              {skill.name}
+                            </span>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    </AnimatePresence>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

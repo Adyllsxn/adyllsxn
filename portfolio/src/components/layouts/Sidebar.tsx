@@ -27,17 +27,16 @@ export default function Sidebar() {
   const menuItems = [
     { name: t('home'), href: '#home', icon: <FiHome size={24} /> },
     { name: t('about'), href: '#about', icon: <FiUser size={24} /> },
-    { name: t('resume'), href: '#resume', icon: <FiFileText size={24} /> },
     { name: t('portfolio'), href: '#portfolio', icon: <FiImage size={24} /> },
     { name: t('services'), href: '#services', icon: <FiLayers size={24} /> },
     { name: t('contact'), href: '#contact', icon: <FiMail size={24} /> },
   ];
 
   const socialLinks = [
-    { name: 'Twitter', href: '#', icon: <FiTwitter size={16} /> },
-    { name: 'LinkedIn', href: '#', icon: <FiLinkedin size={16} /> },
-    { name: 'Instagram', href: '#', icon: <FiInstagram size={16} /> },
-    { name: 'Github', href: '#', icon: <FiGithub size={16} /> },
+    { name: 'Twitter', href: 'https://x.com/Adyllsxn', icon: <FiTwitter size={16} /> },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/adyllsxn/', icon: <FiLinkedin size={16} /> },
+    { name: 'Instagram', href: 'https://www.instagram.com/adyllsxn/', icon: <FiInstagram size={16} /> },
+    { name: 'Github', href: 'https://github.com/Adyllsxn', icon: <FiGithub size={16} /> },
   ];
 
   const languageOptions = [
