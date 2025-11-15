@@ -20,7 +20,10 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    // ADICIONE ESTAS DUAS LINHAS:
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "include": [
     "next-env.d.ts",
@@ -28,7 +31,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    // ADICIONE ESTA LINHA:
+    "src/app/globals.d.ts"
   ],
   "exclude": ["node_modules"]
 }
