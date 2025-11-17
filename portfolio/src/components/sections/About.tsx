@@ -13,10 +13,12 @@ import {
   FaGitAlt, 
   FaDocker,
   FaMicrosoft,
-  FaMobileAlt,
   FaUbuntu,
   FaCloud,
-  FaCode
+  FaCode,
+  FaGlobe,
+  FaServer,
+  FaDatabase
 } from 'react-icons/fa';
 import { 
   SiTypescript, 
@@ -25,8 +27,7 @@ import {
   SiHtml5, 
   SiCss3,
   SiPostgresql, 
-  SiMongodb, 
-  SiExpo
+  SiMongodb
 } from 'react-icons/si';
 
 export default function About() {
@@ -49,9 +50,9 @@ export default function About() {
       title: language === 'pt' ? 'Frameworks' : 'Frameworks',
       skills: [
         { name: 'React', icon: <FaReact className="text-cyan-400" /> },
-        { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
+        { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
         { name: '.NET Core', icon: <FaMicrosoft className="text-purple-500" /> },
-        { name: 'React Native', icon: <FaMobileAlt className="text-blue-400" /> }
+        { name: 'ASP.NET Core', icon: <FaServer className="text-purple-600" /> }
       ]
     },
     tools: {
@@ -60,17 +61,30 @@ export default function About() {
         { name: 'Git', icon: <FaGitAlt className="text-orange-500" /> },
         { name: 'Azure', icon: <FaCloud className="text-blue-500" /> },
         { name: 'Ubuntu', icon: <FaUbuntu className="text-orange-600" /> },
-        { name: 'Expo', icon: <SiExpo className="text-gray-800 dark:text-white" /> },
-        { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
         { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-700" /> },
+        { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
         { name: 'Docker', icon: <FaDocker className="text-blue-500" /> },
         { name: 'VS Code', icon: <FaCode className="text-blue-500" /> }
       ]
     }
   };
 
+  const handleDownloadCV = () => {
+    // Define o arquivo baseado no idioma atual
+    const cvFile = language === 'pt' ? 'cv-pt.pdf' : 'cv-en.pdf';
+    const cvPath = `/cv/${cvFile}`;
+    
+    // Cria um link temporário para download
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.download = cvFile;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const handleWhatsApp = () => {
-    const phone = '+224935751955';
+    const phone = '+244935751955';
     const message = language === 'pt' 
       ? 'Olá! Gostaria de conversar sobre um projeto.'
       : 'Hello! I would like to discuss a project.';
@@ -129,14 +143,10 @@ export default function About() {
                 
                 {/* Profile Header */}
                 <div className="profile-header text-center pb-6 border-b border-gray-600/30 mb-6">
+                  {/* Substituindo a foto por um ícone/ilustração */}
                   <div className="profile-avatar relative mx-auto mb-6">
-                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-500/20 relative">
-                      <img 
-                        src="https://github.com/Adyllsxn.png" 
-                        alt="Domingos Nascimento"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="status-indicator absolute bottom-2 right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-500/20 relative flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
+                      <FaGlobe className="text-white text-5xl" />
                     </div>
                   </div>
                   
@@ -150,13 +160,48 @@ export default function About() {
                   </span>
                 </div>
 
-                {/* Profile Actions */}
-                <div className="profile-actions space-y-3 mb-6">
-                  <button className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 ${
-                    theme === 'dark'
-                      ? 'bg-blue-500 text-white hover:bg-blue-600'
-                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                {/* Quick Stats */}
+                <div className="quick-stats grid grid-cols-2 gap-4 mb-6">
+                  <div className={`text-center p-3 rounded-xl ${
+                    theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'
                   }`}>
+                    <div className={`text-xl font-black ${
+                      theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
+                    }`}>
+                      2+
+                    </div>
+                    <div className={`text-xs ${
+                      theme === 'dark' ? 'text-gray-400' : 'text-gray-500'
+                    }`}>
+                      {language === 'pt' ? 'Anos' : 'Years'}
+                    </div>
+                  </div>
+                  <div className={`text-center p-3 rounded-xl ${
+                    theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'
+                  }`}>
+                    <div className={`text-xl font-black ${
+                      theme === 'dark' ? 'text-green-400' : 'text-green-600'
+                    }`}>
+                      5+
+                    </div>
+                    <div className={`text-xs ${
+                      theme === 'dark' ? 'text-gray-400' : 'text-gray-500'
+                    }`}>
+                      {language === 'pt' ? 'Projetos' : 'Projects'}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Profile Actions */}
+                <div className="profile-actions space-y-3">
+                  <button 
+                    onClick={handleDownloadCV}
+                    className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 ${
+                      theme === 'dark'
+                        ? 'bg-blue-500 text-white hover:bg-blue-600'
+                        : 'bg-blue-600 text-white hover:bg-blue-700'
+                    }`}
+                  >
                     <FaDownload className="w-5 h-5" />
                     {language === 'pt' ? 'Baixar CV' : 'Download CV'}
                   </button>
@@ -224,8 +269,8 @@ export default function About() {
                       theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                     }`}>
                       {language === 'pt' 
-                        ? <>No backend, projeto <strong className="text-blue-500">sistemas robustos e APIs</strong> usando <strong className="text-blue-500">ASP.NET Core</strong>, com forte foco em performance e escalabilidade. Para o frontend, desenvolvo <strong className="text-blue-500">interfaces modernas e responsivas</strong> com <strong className="text-blue-500">React.js</strong>, garantindo experiências de usuário de alta qualidade.</>
-                        : <>On the backend, I architect <strong className="text-blue-500">robust systems and APIs</strong> using <strong className="text-blue-500">ASP.NET Core</strong>, with strong focus on performance and scalability. For the frontend, I develop <strong className="text-blue-500">modern, responsive interfaces</strong> with <strong className="text-blue-500">React.js</strong>, ensuring high-quality user experiences.</>
+                        ? <>No backend, projeto <strong className="text-blue-500">sistemas robustos e APIs</strong> usando <strong className="text-blue-500">ASP.NET Core</strong>, com forte foco em performance e escalabilidade. Para o frontend, desenvolvo <strong className="text-blue-500">interfaces modernas e responsivas</strong> com <strong className="text-blue-500">React.js</strong> e <strong className="text-blue-500">Next.js</strong>, garantindo experiências de usuário de alta qualidade.</>
+                        : <>On the backend, I architect <strong className="text-blue-500">robust systems and APIs</strong> using <strong className="text-blue-500">ASP.NET Core</strong>, with strong focus on performance and scalability. For the frontend, I develop <strong className="text-blue-500">modern, responsive interfaces</strong> with <strong className="text-blue-500">React.js</strong> and <strong className="text-blue-500">Next.js</strong>, ensuring high-quality user experiences.</>
                       }
                     </p>
                     
@@ -233,8 +278,8 @@ export default function About() {
                       theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                     }`}>
                       {language === 'pt' 
-                        ? <>Para desenvolvimento mobile, crio <strong className="text-blue-500">aplicações multiplataforma</strong> usando <strong className="text-blue-500">React Native</strong> e <strong className="text-blue-500">Expo</strong>, entregando performance similar à nativa em todos os dispositivos.</>
-                        : <>For mobile development, I create <strong className="text-blue-500">cross-platform applications</strong> using <strong className="text-blue-500">React Native</strong> and <strong className="text-blue-500">Expo</strong>, delivering native-like performance across devices.</>
+                        ? <>Minha expertise inclui desenvolvimento de <strong className="text-blue-500">aplicações web completas</strong>, desde APIs RESTful usando <strong className="text-blue-500">Minimal API</strong> ou <strong className="text-blue-500">API Controllers</strong> até interfaces de usuário responsivas. Trabalho com tecnologias modernas como <strong className="text-blue-500">TypeScript</strong>, <strong className="text-blue-500">Node.js</strong>, <strong className="text-blue-500">.NET Core</strong>, <strong className="text-blue-500">C#</strong>, e bancos de dados relacionais e não-relacionais. Também desenvolvo <strong className="text-blue-500">automações com console apps</strong>, sempre seguindo as melhores práticas de desenvolvimento.</>
+                        : <>My expertise includes developing <strong className="text-blue-500">complete web applications</strong>, from RESTful APIs using <strong className="text-blue-500">Minimal API</strong> or <strong className="text-blue-500">API Controllers</strong> to responsive user interfaces. I work with modern technologies like <strong className="text-blue-500">TypeScript</strong>, <strong className="text-blue-500">Node.js</strong>, <strong className="text-blue-500">.NET Core</strong>, <strong className="text-blue-500">C#</strong>, and both relational and non-relational databases. I also develop <strong className="text-blue-500">automations with console apps</strong>, always following development best practices.</>
                       }
                     </p>
                   </div>
@@ -305,7 +350,9 @@ export default function About() {
                             <div className="text-3xl mb-2">
                               {skill.icon}
                             </div>
-                            <span className="text-sm font-bold text-center">
+                            <span className={`text-sm font-bold text-center ${
+                              theme === 'dark' ? 'text-white' : 'text-gray-900'
+                            }`}>
                               {skill.name}
                             </span>
                           </motion.div>

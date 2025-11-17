@@ -13,8 +13,8 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const texts = {
-    pt: ['Desenvolvedor Web', 'Desenvolvedor Mobile', 'Desenvolvedor Backend'],
-    en: ['Web Developer', 'Mobile Developer', 'Backend Developer']
+    pt: ['Dev Frontend', 'Dev Backend', 'Full Stack'],
+    en: ['Frontend Dev', 'Backend Dev', 'Full Stack']
   };
 
   const currentTexts = texts[language];
@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <span className="opacity-90">
-                {language === 'pt' ? 'Sou um ' : "I'm a "}
+                {language === 'pt' ? 'Sou ' : "I'm "}
                 <span className="text-blue-500 font-semibold">
                   {displayText}
                 </span>

@@ -8,7 +8,11 @@ import {
   FaWhatsapp, 
   FaEnvelope, 
   FaPaperPlane,
-  FaGlobeAmericas
+  FaGlobeAmericas,
+  FaCode,
+  FaServer,
+  FaRobot,
+  FaLaptopCode
 } from 'react-icons/fa';
 
 export default function Contact() {
@@ -25,8 +29,8 @@ export default function Contact() {
 
   const subjectOptions = [
     { value: 'web-development', label: language === 'pt' ? '🚀 Desenvolvimento Web' : '🚀 Web Development' },
-    { value: 'mobile-app', label: language === 'pt' ? '📱 App Mobile' : '📱 Mobile App' },
-    { value: 'consulting', label: language === 'pt' ? '💼 Consultoria' : '💼 Consulting' },
+    { value: 'backend', label: language === 'pt' ? '⚙️ Backend & APIs' : '⚙️ Backend & APIs' },
+    { value: 'automation', label: language === 'pt' ? '🤖 Automação' : '🤖 Automation' },
     { value: 'other', label: language === 'pt' ? '✨ Outros' : '✨ Other' }
   ];
 

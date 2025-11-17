@@ -2465,6 +2465,900 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/src/hooks/useCurrencyConverter.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// hooks/useCurrencyConverter.ts
+__turbopack_context__.s([
+    "useCurrencyConverter",
+    ()=>useCurrencyConverter
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+;
+const useCurrencyConverter = (basePrice)=>{
+    _s();
+    const [rates, setRates] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        USD: 1,
+        EUR: 0.85,
+        BRL: 5.2,
+        KZT: 830 // 1 USD = 830 Kz (taxa aproximada)
+    });
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    // Em produção, você pode integrar com uma API de câmbio
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useCurrencyConverter.useEffect": ()=>{
+            const fetchRates = {
+                "useCurrencyConverter.useEffect.fetchRates": async ()=>{
+                    try {
+                        // Para demo, vamos usar taxas fixas
+                        // Em produção, use: await fetch('https://api.exchangerate-api.com/v4/latest/USD')
+                        setRates({
+                            USD: 1,
+                            EUR: 0.93,
+                            BRL: 5.45,
+                            KZT: 850 // Taxa atualizada
+                        });
+                        setLoading(false);
+                    } catch (error) {
+                        console.error('Erro ao buscar taxas:', error);
+                        setLoading(false);
+                    }
+                }
+            }["useCurrencyConverter.useEffect.fetchRates"];
+            fetchRates();
+        }
+    }["useCurrencyConverter.useEffect"], []);
+    const convertPrice = (amount, from, to)=>{
+        if (from === to) return amount;
+        const rateFrom = rates[from] || 1;
+        const rateTo = rates[to] || 1;
+        // Converter para USD primeiro, depois para a moeda destino
+        const amountInUSD = amount / rateFrom;
+        return Math.round(amountInUSD * rateTo);
+    };
+    const getPrices = (baseAmount, baseCurrency)=>{
+        const currencies = [
+            'KZT',
+            'USD',
+            'EUR',
+            'BRL'
+        ];
+        const prices = {};
+        currencies.forEach((currency)=>{
+            const converted = convertPrice(baseAmount, baseCurrency, currency);
+            switch(currency){
+                case 'KZT':
+                    prices.kz = `${converted.toLocaleString('pt-AO')} Kz`;
+                    break;
+                case 'USD':
+                    prices.usd = `$${converted}`;
+                    break;
+                case 'EUR':
+                    prices.eur = `€${converted}`;
+                    break;
+                case 'BRL':
+                    prices.brl = `R$ ${converted}`;
+                    break;
+            }
+        });
+        return prices;
+    };
+    return {
+        rates,
+        loading,
+        convertPrice,
+        getPrices
+    };
+};
+_s(useCurrencyConverter, "hwHodEcLiVwAtqxUdEd1eyfluqM=");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/modals/WebDevelopmentModal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// components/modals/WebDevelopmentModal.tsx
+__turbopack_context__.s([
+    "default",
+    ()=>WebDevelopmentModal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/contexts/ThemeContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/contexts/LanguageContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useCurrencyConverter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useCurrencyConverter.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/si/index.mjs [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+;
+;
+function WebDevelopmentModal({ onClose }) {
+    _s();
+    const { theme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
+    const { language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
+    // Preços base em USD (mais fácil para conversão)
+    const basePrices = {
+        landingPage: {
+            baseCurrency: 'USD',
+            baseAmount: 180
+        },
+        onePage: {
+            baseCurrency: 'USD',
+            baseAmount: 350
+        },
+        staticSite: {
+            baseCurrency: 'USD',
+            baseAmount: 500
+        },
+        dynamicSite: {
+            baseCurrency: 'USD',
+            baseAmount: 800
+        }
+    };
+    const { getPrices, loading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useCurrencyConverter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCurrencyConverter"])(basePrices.landingPage);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "WebDevelopmentModal.useEffect": ()=>{
+            document.body.style.overflow = 'hidden';
+            return ({
+                "WebDevelopmentModal.useEffect": ()=>{
+                    document.body.style.overflow = 'unset';
+                }
+            })["WebDevelopmentModal.useEffect"];
+        }
+    }["WebDevelopmentModal.useEffect"], []);
+    const technologies = [
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiHtml5"], {
+                className: "text-orange-500"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 52,
+                columnNumber: 13
+            }, this),
+            name: 'HTML5'
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiCss3"], {
+                className: "text-blue-500"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 53,
+                columnNumber: 13
+            }, this),
+            name: 'CSS3'
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiTailwindcss"], {
+                className: "text-cyan-500"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 54,
+                columnNumber: 13
+            }, this),
+            name: 'Tailwind CSS'
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiJavascript"], {
+                className: "text-yellow-400"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 55,
+                columnNumber: 13
+            }, this),
+            name: 'JavaScript'
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiTypescript"], {
+                className: "text-blue-500"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 56,
+                columnNumber: 13
+            }, this),
+            name: 'TypeScript'
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiReact"], {
+                className: "text-cyan-400"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 57,
+                columnNumber: 13
+            }, this),
+            name: 'React.js'
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiNextdotjs"], {
+                className: "text-white"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 58,
+                columnNumber: 13
+            }, this),
+            name: 'Next.js'
+        }
+    ];
+    const webTypes = [
+        {
+            type: language === 'pt' ? 'Landing Pages' : 'Landing Pages',
+            description: language === 'pt' ? 'Páginas de conversão otimizadas para capturar leads e vendas' : 'Optimized conversion pages to capture leads and sales',
+            features: language === 'pt' ? [
+                'Design Responsivo',
+                'Otimização SEO',
+                'Formulários de Contato',
+                'Integração com APIs',
+                'Entrega em 1 semana'
+            ] : [
+                'Responsive Design',
+                'SEO Optimization',
+                'Contact Forms',
+                'API Integration',
+                'Delivery in 1 week'
+            ],
+            basePrice: basePrices.landingPage
+        },
+        {
+            type: language === 'pt' ? 'One Page' : 'One Page',
+            description: language === 'pt' ? 'Sites completos em uma única página com navegação suave' : 'Complete websites in a single page with smooth navigation',
+            features: language === 'pt' ? [
+                'Scroll Suave',
+                'Animações',
+                'Design Moderno',
+                'Otimizado para Mobile',
+                'Entrega em 2 semanas'
+            ] : [
+                'Smooth Scroll',
+                'Animations',
+                'Modern Design',
+                'Mobile Optimized',
+                'Delivery in 2 weeks'
+            ],
+            basePrice: basePrices.onePage
+        },
+        {
+            type: language === 'pt' ? 'Sites Estáticos' : 'Static Sites',
+            description: language === 'pt' ? 'Sites rápidos e seguros sem necessidade de banco de dados' : 'Fast and secure websites without database requirements',
+            features: language === 'pt' ? [
+                'Alta Performance',
+                'Segurança',
+                'Baixo Custo',
+                'Fácil Manutenção',
+                'Entrega em 3 semanas'
+            ] : [
+                'High Performance',
+                'Security',
+                'Low Cost',
+                'Easy Maintenance',
+                'Delivery in 3 weeks'
+            ],
+            basePrice: basePrices.staticSite
+        },
+        {
+            type: language === 'pt' ? 'Sites Dinâmicos' : 'Dynamic Sites',
+            description: language === 'pt' ? 'Sites com integração API, conteúdo dinâmico e painel administrativo' : 'Sites with API integration, dynamic content and admin panel',
+            features: language === 'pt' ? [
+                'Integração API',
+                'Painel Admin',
+                'Conteúdo Dinâmico',
+                'Blog Integrado',
+                'Entrega em 4-6 semanas'
+            ] : [
+                'API Integration',
+                'Admin Panel',
+                'Dynamic Content',
+                'Integrated Blog',
+                'Delivery in 4-6 weeks'
+            ],
+            basePrice: basePrices.dynamicSite
+        }
+    ];
+    const methodology = language === 'pt' ? [
+        'Consulta e Análise de Requisitos',
+        'Prototipagem e Design UI/UX',
+        'Desenvolvimento com React/Next.js',
+        'Integração com APIs Externas',
+        'Otimização e Testes Responsivos',
+        'Deploy e Entrega do Projeto'
+    ] : [
+        'Consultation and Requirements Analysis',
+        'Prototyping and UI/UX Design',
+        'Development with React/Next.js',
+        'Integration with External APIs',
+        'Optimization and Responsive Testing',
+        'Deployment and Project Delivery'
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            initial: {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            },
+            className: "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm",
+            onClick: onClose,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    scale: 0.8,
+                    opacity: 0
+                },
+                animate: {
+                    scale: 1,
+                    opacity: 1
+                },
+                exit: {
+                    scale: 0.8,
+                    opacity: 0
+                },
+                transition: {
+                    type: "spring",
+                    damping: 25,
+                    stiffness: 200
+                },
+                className: `relative max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`,
+                onClick: (e)=>e.stopPropagation(),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                        onClick: onClose,
+                        className: `absolute top-4 right-4 z-10 p-3 rounded-full transition-all duration-300 ${theme === 'dark' ? 'bg-red-500/20 hover:bg-red-500/30 text-red-400' : 'bg-red-100 hover:bg-red-200 text-red-500'} shadow-lg`,
+                        animate: {
+                            scale: [
+                                1,
+                                1.1,
+                                1
+                            ],
+                            boxShadow: [
+                                '0 0 0px rgba(239, 68, 68, 0)',
+                                '0 0 20px rgba(239, 68, 68, 0.6)',
+                                '0 0 0px rgba(239, 68, 68, 0)'
+                            ]
+                        },
+                        transition: {
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaTimes"], {
+                            size: 20
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                            lineNumber: 165,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                        lineNumber: 144,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "p-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-center mb-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "inline-flex items-center justify-center w-16 h-16 bg-blue-500 rounded-full mb-4",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCode"], {
+                                            size: 28,
+                                            className: "text-white"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                            lineNumber: 172,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 171,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-3xl font-bold mb-3",
+                                        children: language === 'pt' ? 'Desenvolvimento Web' : 'Web Development'
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 174,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: `text-lg max-w-2xl mx-auto ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`,
+                                        children: language === 'pt' ? 'Sites modernos, responsivos e de alta performance com as melhores tecnologias frontend' : 'Modern, responsive and high-performance websites with the best frontend technologies'
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 177,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                lineNumber: 170,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mb-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-2xl font-bold mb-6 text-center flex items-center justify-center",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaPalette"], {
+                                                className: "mr-3 text-blue-500"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                lineNumber: 190,
+                                                columnNumber: 17
+                                            }, this),
+                                            language === 'pt' ? 'Tecnologias' : 'Technologies'
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 189,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `p-6 rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-blue-50'}`,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4",
+                                            children: technologies.map((tech, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    initial: {
+                                                        opacity: 0,
+                                                        y: 20
+                                                    },
+                                                    animate: {
+                                                        opacity: 1,
+                                                        y: 0
+                                                    },
+                                                    transition: {
+                                                        delay: index * 0.1
+                                                    },
+                                                    className: `flex flex-col items-center p-4 rounded-lg transition-all duration-300 ${theme === 'dark' ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:bg-blue-100'} shadow-md`,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-2xl mb-2",
+                                                            children: tech.icon
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                            lineNumber: 210,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-sm font-medium",
+                                                            children: tech.name
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                            lineNumber: 211,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, index, true, {
+                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                    lineNumber: 199,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                            lineNumber: 197,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 194,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                lineNumber: 188,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mb-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-center mb-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaLaptop"], {
+                                                className: "mr-3 text-green-500"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                lineNumber: 221,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-2xl font-bold",
+                                                children: language === 'pt' ? 'Tipos de Site' : 'Website Types'
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                lineNumber: 222,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 220,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                                        children: webTypes.map((webType, index)=>{
+                                            const prices = getPrices(webType.basePrice.baseAmount, webType.basePrice.baseCurrency);
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                initial: {
+                                                    opacity: 0,
+                                                    y: 20
+                                                },
+                                                animate: {
+                                                    opacity: 1,
+                                                    y: 0
+                                                },
+                                                transition: {
+                                                    delay: index * 0.1
+                                                },
+                                                className: `p-6 rounded-xl border-2 transition-all duration-300 hover:scale-105 ${theme === 'dark' ? 'bg-gray-800 border-gray-700 hover:border-blue-500' : 'bg-white border-gray-200 hover:border-blue-400'} shadow-lg`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                        className: "text-xl font-bold mb-3 text-center",
+                                                        children: webType.type
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                        lineNumber: 243,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: `text-sm mb-4 text-center ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`,
+                                                        children: webType.description
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                        lineNumber: 244,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mb-4 p-3 rounded-lg bg-blue-500/10 border border-blue-500/20",
+                                                        children: loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center justify-center py-4",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaSync"], {
+                                                                    className: "animate-spin mr-2"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                    lineNumber: 254,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: language === 'pt' ? 'Carregando preços...' : 'Loading prices...'
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                    lineNumber: 255,
+                                                                    columnNumber: 29
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                            lineNumber: 253,
+                                                            columnNumber: 27
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "grid grid-cols-2 gap-2 text-sm",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-center",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-bold",
+                                                                            children: prices.kz
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 260,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-xs opacity-70",
+                                                                            children: "Kwanza"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 261,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                    lineNumber: 259,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-center",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-bold",
+                                                                            children: prices.usd
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 264,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-xs opacity-70",
+                                                                            children: "Dólar"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 265,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                    lineNumber: 263,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-center",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-bold",
+                                                                            children: prices.eur
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 268,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-xs opacity-70",
+                                                                            children: "Euro"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 269,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                    lineNumber: 267,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-center",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-bold",
+                                                                            children: prices.brl
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 272,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-xs opacity-70",
+                                                                            children: "Real"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                            lineNumber: 273,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                    lineNumber: 271,
+                                                                    columnNumber: 29
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                            lineNumber: 258,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                        lineNumber: 251,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                        className: "space-y-2",
+                                                        children: webType.features.map((feature, featureIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center text-sm",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-green-500 mr-2",
+                                                                        children: "✓"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                        lineNumber: 283,
+                                                                        columnNumber: 29
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: theme === 'dark' ? 'text-gray-300' : 'text-gray-600',
+                                                                        children: feature
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                        lineNumber: 284,
+                                                                        columnNumber: 29
+                                                                    }, this)
+                                                                ]
+                                                            }, featureIndex, true, {
+                                                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                                lineNumber: 282,
+                                                                columnNumber: 27
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                        lineNumber: 280,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, index, true, {
+                                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                lineNumber: 232,
+                                                columnNumber: 21
+                                            }, this);
+                                        })
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 227,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                lineNumber: 219,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mb-6",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-2xl font-bold mb-6 text-center flex items-center justify-center",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaRocket"], {
+                                                className: "mr-3 text-purple-500"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                lineNumber: 299,
+                                                columnNumber: 17
+                                            }, this),
+                                            language === 'pt' ? 'Metodologia' : 'Methodology'
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 298,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `p-6 rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-purple-50'}`,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                                            children: methodology.map((step, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    initial: {
+                                                        opacity: 0,
+                                                        x: -20
+                                                    },
+                                                    animate: {
+                                                        opacity: 1,
+                                                        x: 0
+                                                    },
+                                                    transition: {
+                                                        delay: index * 0.1
+                                                    },
+                                                    className: "flex items-start space-x-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: `flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold ${theme === 'dark' ? 'bg-purple-500 text-white' : 'bg-purple-100 text-purple-600'}`,
+                                                            children: index + 1
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                            lineNumber: 314,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-sm",
+                                                            children: step
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                            lineNumber: 321,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, index, true, {
+                                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                                    lineNumber: 307,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                            lineNumber: 305,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                        lineNumber: 302,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                lineNumber: 297,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].a, {
+                                    href: "https://wa.me/935751955",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg",
+                                    whileHover: {
+                                        scale: 1.05
+                                    },
+                                    whileTap: {
+                                        scale: 0.95
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "mr-2",
+                                            children: "💬"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                            lineNumber: 338,
+                                            columnNumber: 17
+                                        }, this),
+                                        language === 'pt' ? 'Solicitar Orçamento' : 'Request Quote'
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                    lineNumber: 330,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                                lineNumber: 329,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                        lineNumber: 168,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+                lineNumber: 131,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+            lineNumber: 124,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/modals/WebDevelopmentModal.tsx",
+        lineNumber: 123,
+        columnNumber: 5
+    }, this);
+}
+_s(WebDevelopmentModal, "dsqy0cM1LiiYp70apqUjtPovWHE=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useCurrencyConverter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCurrencyConverter"]
+    ];
+});
+_c = WebDevelopmentModal;
+var _c;
+__turbopack_context__.k.register(_c, "WebDevelopmentModal");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/src/components/sections/Services.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -2474,13 +3368,17 @@ __turbopack_context__.s([
     ()=>Services
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/contexts/ThemeContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/contexts/LanguageContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modals$2f$WebDevelopmentModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/modals/WebDevelopmentModal.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
+;
 ;
 ;
 ;
@@ -2489,190 +3387,261 @@ function Services() {
     _s();
     const { theme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
     const { language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
+    const [selectedService, setSelectedService] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const services = [
         {
+            id: 'web',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCode"], {
-                className: "text-blue-500",
-                size: 40
+                size: 32
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/Services.tsx",
                 lineNumber: 22,
                 columnNumber: 13
             }, this),
             title: language === 'pt' ? 'Desenvolvimento Web' : 'Web Development',
-            description: language === 'pt' ? 'Criação de sites e aplicações web modernas, responsivas e de alta performance' : 'Creation of modern, responsive, and high-performance websites and web applications'
+            description: language === 'pt' ? 'Criação de sites e aplicações web modernas, responsivas e de alta performance.' : 'Creation of modern, responsive, and high-performance websites and web applications.'
         },
         {
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaMobile"], {
-                className: "text-green-500",
-                size: 40
-            }, void 0, false, {
-                fileName: "[project]/src/components/sections/Services.tsx",
-                lineNumber: 29,
-                columnNumber: 13
-            }, this),
-            title: language === 'pt' ? 'Desenvolvimento Mobile' : 'Mobile Development',
-            description: language === 'pt' ? 'Desenvolvimento de aplicativos nativos e híbridos para iOS e Android' : 'Development of native and hybrid apps for iOS and Android'
-        },
-        {
+            id: 'api',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaServer"], {
-                className: "text-purple-500",
-                size: 40
+                size: 32
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/Services.tsx",
-                lineNumber: 36,
+                lineNumber: 30,
                 columnNumber: 13
             }, this),
-            title: language === 'pt' ? 'Backend Development' : 'Backend Development',
-            description: language === 'pt' ? 'APIs robustas e escaláveis usando as melhores tecnologias do mercado' : 'Robust and scalable APIs using the best market technologies'
+            title: language === 'pt' ? 'API & Backend' : 'API & Backend',
+            description: language === 'pt' ? 'Desenvolvimento de APIs robustas e escaláveis para suas aplicações.' : 'Development of robust and scalable APIs for your applications.'
         },
         {
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCloud"], {
-                className: "text-cyan-500",
-                size: 40
+            id: 'automation',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaRobot"], {
+                size: 32
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/Services.tsx",
-                lineNumber: 43,
+                lineNumber: 38,
                 columnNumber: 13
             }, this),
-            title: language === 'pt' ? 'Cloud & DevOps' : 'Cloud & DevOps',
-            description: language === 'pt' ? 'Deploy, monitoramento e infraestrutura em cloud com práticas DevOps' : 'Deployment, monitoring and cloud infrastructure with DevOps practices'
-        },
-        {
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaDatabase"], {
-                className: "text-orange-500",
-                size: 40
-            }, void 0, false, {
-                fileName: "[project]/src/components/sections/Services.tsx",
-                lineNumber: 50,
-                columnNumber: 13
-            }, this),
-            title: language === 'pt' ? 'Banco de Dados' : 'Database',
-            description: language === 'pt' ? 'Design e otimização de bancos de dados relacionais e não relacionais' : 'Design and optimization of relational and non-relational databases'
-        },
-        {
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaRocket"], {
-                className: "text-red-500",
-                size: 40
-            }, void 0, false, {
-                fileName: "[project]/src/components/sections/Services.tsx",
-                lineNumber: 57,
-                columnNumber: 13
-            }, this),
-            title: language === 'pt' ? 'Consultoria Tech' : 'Tech Consulting',
-            description: language === 'pt' ? 'Consultoria especializada para escolha das melhores tecnologias para seu projeto' : 'Specialized consulting for choosing the best technologies for your project'
+            title: language === 'pt' ? 'Automação' : 'Automation',
+            description: language === 'pt' ? 'Automação de processos e fluxos de trabalho para aumentar produtividade.' : 'Automation of processes and workflows to increase productivity.'
         }
     ];
+    const handleExploreClick = (serviceId)=>{
+        setSelectedService(serviceId);
+    };
+    const handleCloseModal = ()=>{
+        setSelectedService(null);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "services",
-        className: "py-16 lg:py-20 transition-all duration-300",
+        className: "py-20 lg:py-28 transition-all duration-300",
         style: {
             backgroundColor: 'var(--background)'
         },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-4 sm:px-6",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mb-12 lg:mb-16",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-blue-500 font-bold text-sm uppercase tracking-widest mb-3 block",
-                            children: language === 'pt' ? 'SERVIÇOS' : 'SERVICES'
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/sections/Services.tsx",
-                            lineNumber: 76,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: `text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`,
-                            children: language === 'pt' ? 'O Que Eu Faço' : 'What I Do'
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/sections/Services.tsx",
-                            lineNumber: 79,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: `text-lg max-w-3xl mx-auto leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`,
-                            children: language === 'pt' ? 'Serviços completos de desenvolvimento para transformar suas ideias em realidade' : 'Complete development services to turn your ideas into reality'
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/sections/Services.tsx",
-                            lineNumber: 84,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/sections/Services.tsx",
-                    lineNumber: 75,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
-                    children: services.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0,
-                                y: 20
-                            },
-                            whileInView: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            transition: {
-                                duration: 0.5,
-                                delay: index * 0.1
-                            },
-                            viewport: {
-                                once: true
-                            },
-                            className: `rounded-2xl p-8 border transition-all duration-300 hover:scale-105 ${theme === 'dark' ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500' : 'bg-white/80 border-gray-200 hover:border-blue-500'} shadow-lg`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mb-6",
-                                    children: service.icon
-                                }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container mx-auto px-4 sm:px-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center mb-16 lg:mb-20",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 20
+                                },
+                                whileInView: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    duration: 0.5
+                                },
+                                viewport: {
+                                    once: true
+                                },
+                                className: "text-blue-500 font-bold text-sm uppercase tracking-widest mb-4 block",
+                                children: language === 'pt' ? 'SERVIÇOS' : 'SERVICES'
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/sections/Services.tsx",
+                                lineNumber: 65,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 20
+                                },
+                                whileInView: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    duration: 0.5,
+                                    delay: 0.1
+                                },
+                                viewport: {
+                                    once: true
+                                },
+                                className: `text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`,
+                                children: language === 'pt' ? 'O Que Eu Faço' : 'What I Do'
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/sections/Services.tsx",
+                                lineNumber: 74,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 20
+                                },
+                                whileInView: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    duration: 0.5,
+                                    delay: 0.2
+                                },
+                                viewport: {
+                                    once: true
+                                },
+                                className: `text-xl max-w-3xl mx-auto leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`,
+                                children: language === 'pt' ? 'Serviços completos de desenvolvimento para transformar suas ideias em realidade' : 'Complete development services to turn your ideas into reality'
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/sections/Services.tsx",
+                                lineNumber: 85,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/sections/Services.tsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto",
+                        children: services.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 30
+                                },
+                                whileInView: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    duration: 0.6,
+                                    delay: index * 0.15
+                                },
+                                viewport: {
+                                    once: true
+                                },
+                                className: `group relative rounded-xl p-8 transition-all duration-300 hover:shadow-lg ${theme === 'dark' ? 'bg-gray-800/40 hover:bg-gray-800/60' : 'bg-white hover:bg-gray-50'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'}`,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-col h-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `mb-6 p-3 rounded-lg inline-flex ${service.id === 'web' ? 'bg-blue-500/10 text-blue-500' : service.id === 'api' ? 'bg-green-500/10 text-green-500' : 'bg-purple-500/10 text-purple-500'}`,
+                                            children: service.icon
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/Services.tsx",
+                                            lineNumber: 121,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: `text-xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`,
+                                            children: service.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/Services.tsx",
+                                            lineNumber: 130,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: `leading-relaxed mb-6 flex-grow ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`,
+                                            children: service.description
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/Services.tsx",
+                                            lineNumber: 137,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mt-auto pt-4 border-t border-gray-200 dark:border-gray-700",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                onClick: ()=>handleExploreClick(service.id),
+                                                className: `group inline-flex items-center font-medium text-sm transition-all duration-300 cursor-pointer ${theme === 'dark' ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'}`,
+                                                whileHover: {
+                                                    x: 3
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "mr-2",
+                                                        children: language === 'pt' ? 'Explorar' : 'Explore'
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/sections/Services.tsx",
+                                                        lineNumber: 154,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                                        transition: {
+                                                            type: "spring",
+                                                            stiffness: 400,
+                                                            damping: 10
+                                                        },
+                                                        children: "→"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/sections/Services.tsx",
+                                                        lineNumber: 157,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/sections/Services.tsx",
+                                                lineNumber: 145,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/Services.tsx",
+                                            lineNumber: 144,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/sections/Services.tsx",
-                                    lineNumber: 110,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: `text-xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`,
-                                    children: service.title
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/sections/Services.tsx",
-                                    lineNumber: 115,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: `leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`,
-                                    children: service.description
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/sections/Services.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 119,
                                     columnNumber: 15
                                 }, this)
-                            ]
-                        }, index, true, {
-                            fileName: "[project]/src/components/sections/Services.tsx",
-                            lineNumber: 97,
-                            columnNumber: 13
-                        }, this))
-                }, void 0, false, {
-                    fileName: "[project]/src/components/sections/Services.tsx",
-                    lineNumber: 95,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/sections/Services.tsx",
-            lineNumber: 73,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+                            }, service.id, false, {
+                                fileName: "[project]/src/components/sections/Services.tsx",
+                                lineNumber: 104,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/sections/Services.tsx",
+                        lineNumber: 102,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/sections/Services.tsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this),
+            selectedService === 'web' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modals$2f$WebDevelopmentModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                onClose: handleCloseModal
+            }, void 0, false, {
+                fileName: "[project]/src/components/sections/Services.tsx",
+                lineNumber: 172,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/components/sections/Services.tsx",
-        lineNumber: 66,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
-_s(Services, "TFunZsShlVTSpAxqFhtt9BQqNME=", false, function() {
+_s(Services, "xKpyoy7WZlzLs1lEhdp3HWEYp1U=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"]
@@ -3464,4 +4433,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_components_1fa30336._.js.map
+//# sourceMappingURL=src_46a8800c._.js.map
