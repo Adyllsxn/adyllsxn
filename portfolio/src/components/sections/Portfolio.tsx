@@ -26,7 +26,7 @@ export default function Portfolio() {
         ? 'Solução completa de e-commerce com design responsivo e performance otimizada'
         : 'Complete e-commerce solution with responsive design and optimized performance',
       category: 'web',
-      image: '/images/img001.png',
+      image: '/images/img005.png',
       technologies: ['React', 'Next.js', 'TypeScript'],
       link: '#'
     },
@@ -37,7 +37,7 @@ export default function Portfolio() {
         ? 'API segura para processamento de pagamentos com múltiplos métodos'
         : 'Secure API for payment processing with multiple methods',
       category: 'api',
-      image: '/images/img001.png',
+      image: '/images/img004.png',
       technologies: ['Node.js', 'Express', 'MongoDB'],
       link: '#'
     },
@@ -48,7 +48,7 @@ export default function Portfolio() {
         ? 'Sistema inteligente para automação de campanhas e análise de resultados'
         : 'Intelligent system for campaign automation and results analysis',
       category: 'automation',
-      image: '/images/img001.png',
+      image: '/images/img006.png',
       technologies: ['Python', 'Selenium', 'PostgreSQL'],
       link: '#'
     },
@@ -59,7 +59,7 @@ export default function Portfolio() {
         ? 'Painel interativo com métricas em tempo real e visualizações avançadas'
         : 'Interactive dashboard with real-time metrics and advanced visualizations',
       category: 'web',
-      image: '/images/img001.png',
+      image: '/images/img003.png',
       technologies: ['Vue.js', 'Chart.js', 'REST API'],
       link: '#'
     }

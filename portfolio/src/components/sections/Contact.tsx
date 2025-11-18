@@ -1,31 +1,29 @@
 // components/sections/Contact.tsx
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactForm } from '@/hooks/useContactForm';
+import Alert from '@/components/ui/Alert';
 import { 
   FaWhatsapp, 
   FaEnvelope, 
   FaPaperPlane,
-  FaGlobeAmericas,
-  FaCode,
-  FaServer,
-  FaRobot,
-  FaLaptopCode
+  FaGlobeAmericas
 } from 'react-icons/fa';
 
 export default function Contact() {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const {
+    formData,
+    isSubmitting,
+    submitStatus,
+    handleChange,
+    handleSubmit,
+    resetForm
+  } = useContactForm();
 
   const subjectOptions = [
     { value: 'web-development', label: language === 'pt' ? '🚀 Desenvolvimento Web' : '🚀 Web Development' },
@@ -57,34 +55,37 @@ export default function Contact() {
     }
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulação de envio
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    console.log('Form submitted:', formData);
-    setIsSubmitting(false);
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  // Mensagens de alerta
+  const alertMessages = {
+    success: language === 'pt' 
+      ? '✅ Mensagem enviada com sucesso! Entrarei em contato em breve.' 
+      : '✅ Message sent successfully! I\'ll contact you soon.',
+    error: language === 'pt' 
+      ? '❌ Erro ao enviar mensagem. Tente novamente.' 
+      : '❌ Error sending message. Please try again.'
   };
 
   return (
     <>
+      {/* Alert Component */}
+      <Alert
+        type="success"
+        message={alertMessages.success}
+        isVisible={submitStatus === 'success'}
+        onClose={() => resetForm()}
+        autoHide={true}
+        duration={6000}
+      />
+      
+      <Alert
+        type="error"
+        message={alertMessages.error}
+        isVisible={submitStatus === 'error'}
+        onClose={() => resetForm()}
+        autoHide={true}
+        duration={6000}
+      />
+
       <section 
         id="contact" 
         className="py-16 lg:py-20 transition-all duration-300 relative overflow-hidden"
@@ -114,7 +115,6 @@ export default function Contact() {
             <span className="text-blue-500 font-bold text-sm uppercase tracking-widest mb-3 block">
               {language === 'pt' ? 'CONTATO' : 'CONTACT'}
             </span>
-            {/* Título em preto e branco igual ao Hero */}
             <h2 className={`text-4xl sm:text-5xl lg:text-6xl font-black mb-6 ${
               theme === 'dark' 
                 ? 'text-white' 
@@ -177,7 +177,7 @@ export default function Contact() {
                       }`}>
                         {item.icon}
                       </div>
-                      <div className="flex-1 min-w-0"> {/* Adicionei min-w-0 para permitir quebra */}
+                      <div className="flex-1 min-w-0">
                         <h4 className={`font-bold text-lg mb-1 ${
                           theme === 'dark' ? 'text-white' : 'text-gray-900'
                         }`}>
@@ -188,7 +188,7 @@ export default function Contact() {
                             href={item.link} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className={`text-lg font-semibold hover:text-blue-500 transition-colors block mb-1 break-all word-break-break-all overflow-wrap-break-word ${
+                            className={`text-lg font-semibold hover:text-blue-500 transition-colors block mb-1 break-all ${
                               theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                             }`}
                           >
@@ -285,52 +285,50 @@ export default function Contact() {
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {/* Name Field */}
-                  <div className="space-y-2">
-                    <label htmlFor="name" className={`block text-sm font-semibold ${
-                      theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
-                    }`}>
-                      {language === 'pt' ? 'Nome Completo' : 'Full Name'} *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 text-lg ${
-                        theme === 'dark'
-                          ? 'bg-gray-700/50 border-gray-600 text-white focus:border-blue-500 focus:bg-gray-700/80'
-                          : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500 focus:bg-white'
-                      } placeholder-gray-500`}
-                      placeholder={language === 'pt' ? 'Seu nome completo' : 'Your full name'}
-                    />
-                  </div>
+                {/* Name Field - ÚNICO campo como no HTML que funciona */}
+                <div className="space-y-2">
+                  <label htmlFor="name" className={`block text-sm font-semibold ${
+                    theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                  }`}>
+                    {language === 'pt' ? 'Nome Completo' : 'Full Name'} *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={(e) => handleChange('name', e.target.value)}
+                    required
+                    className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 text-lg ${
+                      theme === 'dark'
+                        ? 'bg-gray-700/50 border-gray-600 text-white focus:border-blue-500 focus:bg-gray-700/80'
+                        : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500 focus:bg-white'
+                    } placeholder-gray-500`}
+                    placeholder={language === 'pt' ? 'João Silva' : 'John Doe'}
+                  />
+                </div>
 
-                  {/* Email Field */}
-                  <div className="space-y-2">
-                    <label htmlFor="email" className={`block text-sm font-semibold ${
-                      theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
-                    }`}>
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 text-lg ${
-                        theme === 'dark'
-                          ? 'bg-gray-700/50 border-gray-600 text-white focus:border-blue-500 focus:bg-gray-700/80'
-                          : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500 focus:bg-white'
-                      } placeholder-gray-500`}
-                      placeholder="seu@email.com"
-                    />
-                  </div>
+                {/* Email Field */}
+                <div className="space-y-2">
+                  <label htmlFor="email" className={`block text-sm font-semibold ${
+                    theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                  }`}>
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={(e) => handleChange('email', e.target.value)}
+                    required
+                    className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 text-lg ${
+                      theme === 'dark'
+                        ? 'bg-gray-700/50 border-gray-600 text-white focus:border-blue-500 focus:bg-gray-700/80'
+                        : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500 focus:bg-white'
+                    } placeholder-gray-500`}
+                    placeholder="seu@email.com"
+                  />
                 </div>
 
                 {/* Subject Field */}
@@ -344,7 +342,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     value={formData.subject}
-                    onChange={handleChange}
+                    onChange={(e) => handleChange('subject', e.target.value)}
                     required
                     className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 text-lg appearance-none ${
                       theme === 'dark'
@@ -372,7 +370,7 @@ export default function Contact() {
                     id="message"
                     name="message"
                     value={formData.message}
-                    onChange={handleChange}
+                    onChange={(e) => handleChange('message', e.target.value)}
                     required
                     rows={6}
                     className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 text-lg resize-none ${
@@ -419,15 +417,14 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Footer com fundo padrão */}
-      <footer 
-        className="py-6 transition-all duration-300"
-        style={{
-          backgroundColor: 'var(--background)'
-        }}
-      >
+      {/* Footer Clean */}
+      <footer className={`py-8 transition-all duration-300 ${
+        theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
+      }`}>
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-4">
+            
+            {/* Copyright */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -435,12 +432,16 @@ export default function Contact() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <p className={`text-sm font-medium ${
+              <p className={`text-sm ${
                 theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
               }`}>
-                © {new Date().getFullYear()} adyllsxn. {language === 'pt' ? 'Todos os direitos reservados.' : 'All Rights Reserved.'}
+                © {new Date().getFullYear()} adyllsxn. {language === 'pt' 
+                  ? 'Todos os direitos reservados.' 
+                  : 'All rights reserved.'
+                }
               </p>
             </motion.div>
+
           </div>
         </div>
       </footer>
