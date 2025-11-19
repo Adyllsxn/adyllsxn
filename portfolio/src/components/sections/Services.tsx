@@ -4,11 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { 
-  FaCode, 
-  FaServer, 
-  FaRobot
-} from 'react-icons/fa';
+import { FaCode, FaServer, FaRobot } from 'react-icons/fa';
 import WebDevelopmentModal from '@/components/modals/WebDevelopmentModal';
 import BackendModal from '@/components/modals/BackendModal';
 import AutomationModal from '@/components/modals/AutomationModal';
@@ -16,7 +12,7 @@ import AutomationModal from '@/components/modals/AutomationModal';
 export default function Services() {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const [selectedService, setSelectedService] = useState<string | null>(null);
+  const [openModal, setOpenModal] = useState<string | null>(null);
 
   const services = [
     {
@@ -46,21 +42,15 @@ export default function Services() {
   ];
 
   const handleExploreClick = (serviceId: string) => {
-    setSelectedService(serviceId);
+    setOpenModal(serviceId);
   };
 
   const handleCloseModal = () => {
-    setSelectedService(null);
+    setOpenModal(null);
   };
 
   return (
-    <section 
-      id="services" 
-      className="py-20 lg:py-28 transition-all duration-300"
-      style={{
-        backgroundColor: 'var(--background)'
-      }}
-    >
+    <section id="services" className="py-20 lg:py-28 transition-all duration-300 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Title */}
         <div className="text-center mb-16 lg:mb-20">
@@ -78,9 +68,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className={`text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 ${
-              theme === 'dark' ? 'text-white' : 'text-gray-900'
-            }`}
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground"
           >
             {language === 'pt' ? 'O Que Eu Faço' : 'What I Do'}
           </motion.h2>
@@ -89,9 +77,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className={`text-xl max-w-3xl mx-auto leading-relaxed ${
-              theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
-            }`}
+            className="text-xl max-w-3xl mx-auto leading-relaxed text-muted-foreground"
           >
             {language === 'pt' 
               ? 'Serviços completos de desenvolvimento para transformar suas ideias em realidade'
@@ -100,7 +86,7 @@ export default function Services() {
           </motion.p>
         </div>
 
-        {/* Services Grid - Cards estilo imagem */}
+        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <motion.div
@@ -109,15 +95,8 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
-              className={`group relative rounded-xl p-8 transition-all duration-300 hover:shadow-lg ${
-                theme === 'dark'
-                  ? 'bg-gray-800/40 hover:bg-gray-800/60'
-                  : 'bg-white hover:bg-gray-50'
-              } border ${
-                theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
-              }`}
+              className="group relative rounded-xl p-8 transition-all duration-300 hover:shadow-lg bg-card border border-border hover:bg-accent"
             >
-              {/* Content */}
               <div className="flex flex-col h-full">
                 {/* Icon */}
                 <div className={`mb-6 p-3 rounded-lg inline-flex ${
@@ -129,28 +108,20 @@ export default function Services() {
                 </div>
 
                 {/* Title */}
-                <h3 className={`text-xl font-bold mb-4 ${
-                  theme === 'dark' ? 'text-white' : 'text-gray-900'
-                }`}>
+                <h3 className="text-xl font-bold mb-4 text-card-foreground">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className={`leading-relaxed mb-6 flex-grow ${
-                  theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
-                }`}>
+                <p className="leading-relaxed mb-6 flex-grow text-muted-foreground">
                   {service.description}
                 </p>
 
-                {/* Explore Button - Estilo da imagem */}
-                <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700">
+                {/* Explore Button */}
+                <div className="mt-auto pt-4 border-t border-border">
                   <motion.button
                     onClick={() => handleExploreClick(service.id)}
-                    className={`group inline-flex items-center font-medium text-sm transition-all duration-300 cursor-pointer ${
-                      theme === 'dark' 
-                        ? 'text-blue-400 hover:text-blue-300' 
-                        : 'text-blue-600 hover:text-blue-500'
-                    }`}
+                    className="group inline-flex items-center font-medium text-sm transition-all duration-300 cursor-pointer text-primary hover:text-primary/80"
                     whileHover={{ x: 3 }}
                   >
                     <span className="mr-2">
@@ -170,15 +141,18 @@ export default function Services() {
       </div>
 
       {/* Modals */}
-      {selectedService === 'web' && (
-        <WebDevelopmentModal onClose={handleCloseModal} />
-      )}
-      {selectedService === 'api' && (
-        <BackendModal onClose={handleCloseModal} />
-      )}
-      {selectedService === 'automation' && (
-        <AutomationModal onClose={handleCloseModal} />
-      )}
+      <WebDevelopmentModal 
+        isOpen={openModal === 'web'} 
+        onClose={handleCloseModal} 
+      />
+      <BackendModal 
+        isOpen={openModal === 'api'} 
+        onClose={handleCloseModal} 
+      />
+      <AutomationModal 
+        isOpen={openModal === 'automation'} 
+        onClose={handleCloseModal} 
+      />
     </section>
   );
 }
