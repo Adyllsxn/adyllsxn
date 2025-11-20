@@ -1,7 +1,7 @@
-**Full Stack Developer**
+# **Full Stack Developer**
 
 <!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=Web%20%E2%80%A2%20Mobile&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=Frontend%20%E2%80%A2%20Backend&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
 
 <!-- Estatísticas do perfil -->
 <div align="left">
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div> </br>
 
-Olá! Sou **Domingos Nascimento (Adyllsxn)**, um **Desenvolvedor Full Stack** apaixonado por criar soluções completas e eficientes. Especializo-me em desenvolver **backends robustos** com **ASP.NET Core** e **interfaces modernas** com **React.js** e **Next.js**.
+Full Stack Developer focused on creating complete solutions by combining high-performance backends with modern and responsive interfaces. I work on developing RESTful APIs with ASP.NET Core and building efficient frontends using React.js and Next.js. I work daily with technologies like C#, .NET, TypeScript, Node.js, and relational and non-relational databases. I also develop automations and strictly follow best practices to ensure quality, scalability, and maintainability.
 
 ---
 
@@ -48,8 +48,8 @@ Olá! Sou **Domingos Nascimento (Adyllsxn)**, um **Desenvolvedor Full Stack** ap
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **Portfolio** | Meu portfolio pessoal com design moderno e responsivo, apresentando meus projetos e habilidades. | Next.js, Tailwind CSS, TypeScript | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) |
-| **Kairos** | Plataforma moderna com animações 3D, design responsivo e experiência de usuário imersiva. | React.js, Three.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
+| **Portfolio** | My personal portfolio with modern and responsive design, showcasing my projects and skills. | Next.js, Tailwind CSS, TypeScript | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) |
+| **Kairos** | Modern platform with 3D animations, responsive design and immersive user experience. | React.js, Three.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
 
 ---
 
@@ -75,7 +75,7 @@ Olá! Sou **Domingos Nascimento (Adyllsxn)**, um **Desenvolvedor Full Stack** ap
 <!-- Footer estiloso com frase maneira -->
 <div align="center">
   
-  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;Web+%26+Mobile+Solutions+for+a+Connected+World)
+  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;Full+Stack+Solutions+for+a+Connected+World)
   
 </div>
 
