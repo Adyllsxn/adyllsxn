@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import BaseModal from './BaseModal';
 import { FaServer, FaDatabase, FaCloud, FaMicrosoft } from 'react-icons/fa';
-import { SiDotnet, SiPostgresql, SiMongodb, SiDocker } from 'react-icons/si';
+import { SiDotnet, SiPostgresql, SiMongodb, SiDocker, SiGraphql } from 'react-icons/si';
 
 interface BackendModalProps {
   isOpen: boolean;
@@ -19,9 +19,9 @@ export default function BackendModal({ isOpen, onClose }: BackendModalProps) {
     { icon: <SiDotnet className="text-purple-500" />, name: '.NET Core' },
     { icon: <SiPostgresql className="text-blue-400" />, name: 'PostgreSQL' },
     { icon: <SiMongodb className="text-green-500" />, name: 'MongoDB' },
+    { icon: <SiGraphql className="text-pink-500" />, name: 'GraphQL' },
     { icon: <SiDocker className="text-blue-400" />, name: 'Docker' },
-    { icon: <FaMicrosoft className="text-blue-500" />, name: 'Azure' },
-    { icon: <div className="text-orange-500 text-2xl">+2</div>, name: language === 'pt' ? 'e mais...' : 'and more...' }
+    { icon: <FaMicrosoft className="text-blue-500" />, name: 'Azure' }
   ];
 
   const apiTypes = [
@@ -33,6 +33,15 @@ export default function BackendModal({ isOpen, onClose }: BackendModalProps) {
       features: language === 'pt'
         ? ['Endpoints REST', 'Documentação Swagger', 'Versionamento', 'Testes Unitários']
         : ['REST Endpoints', 'Swagger Documentation', 'Versioning', 'Unit Tests']
+    },
+    {
+      title: language === 'pt' ? 'GraphQL APIs' : 'GraphQL APIs',
+      description: language === 'pt'
+        ? 'APIs flexíveis com GraphQL para queries eficientes e schema tipado'
+        : 'Flexible APIs with GraphQL for efficient queries and typed schema',
+      features: language === 'pt'
+        ? ['Queries Flexíveis', 'Schema Tipado', 'Subscriptions', 'Resolvers Otimizados']
+        : ['Flexible Queries', 'Typed Schema', 'Subscriptions', 'Optimized Resolvers']
     },
     {
       title: language === 'pt' ? 'Minimal APIs' : 'Minimal APIs',
@@ -51,8 +60,8 @@ export default function BackendModal({ isOpen, onClose }: BackendModalProps) {
       onClose={onClose}
       title={language === 'pt' ? 'API & Backend Development' : 'API & Backend Development'}
       description={language === 'pt'
-        ? 'APIs robustas e escaláveis com .NET Core, bancos relacionais e NoSQL'
-        : 'Robust and scalable APIs with .NET Core, relational and NoSQL databases'
+        ? 'APIs robustas e escaláveis com .NET Core, GraphQL, bancos relacionais e NoSQL'
+        : 'Robust and scalable APIs with .NET Core, GraphQL, relational and NoSQL databases'
       }
       icon={<FaServer size={28} className="text-white" />}
       iconColor="#10B981" // green-500
@@ -85,7 +94,7 @@ export default function BackendModal({ isOpen, onClose }: BackendModalProps) {
           <FaDatabase className="mr-3 text-purple-500" />
           {language === 'pt' ? 'Tipos de API' : 'API Types'}
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {apiTypes.map((api, index) => (
             <motion.div
               key={index}

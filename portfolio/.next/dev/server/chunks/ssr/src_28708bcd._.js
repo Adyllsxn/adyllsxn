@@ -3490,11 +3490,21 @@ function BackendModal({ isOpen, onClose }) {
             name: 'MongoDB'
         },
         {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SiGraphql"], {
+                className: "text-pink-500"
+            }, void 0, false, {
+                fileName: "[project]/src/components/modals/BackendModal.tsx",
+                lineNumber: 22,
+                columnNumber: 13
+            }, this),
+            name: 'GraphQL'
+        },
+        {
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SiDocker"], {
                 className: "text-blue-400"
             }, void 0, false, {
                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, this),
             name: 'Docker'
@@ -3504,21 +3514,10 @@ function BackendModal({ isOpen, onClose }) {
                 className: "text-blue-500"
             }, void 0, false, {
                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                lineNumber: 23,
-                columnNumber: 13
-            }, this),
-            name: 'Azure'
-        },
-        {
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-orange-500 text-2xl",
-                children: "+2"
-            }, void 0, false, {
-                fileName: "[project]/src/components/modals/BackendModal.tsx",
                 lineNumber: 24,
                 columnNumber: 13
             }, this),
-            name: language === 'pt' ? 'e mais...' : 'and more...'
+            name: 'Azure'
         }
     ];
     const apiTypes = [
@@ -3535,6 +3534,21 @@ function BackendModal({ isOpen, onClose }) {
                 'Swagger Documentation',
                 'Versioning',
                 'Unit Tests'
+            ]
+        },
+        {
+            title: language === 'pt' ? 'GraphQL APIs' : 'GraphQL APIs',
+            description: language === 'pt' ? 'APIs flexíveis com GraphQL para queries eficientes e schema tipado' : 'Flexible APIs with GraphQL for efficient queries and typed schema',
+            features: language === 'pt' ? [
+                'Queries Flexíveis',
+                'Schema Tipado',
+                'Subscriptions',
+                'Resolvers Otimizados'
+            ] : [
+                'Flexible Queries',
+                'Typed Schema',
+                'Subscriptions',
+                'Optimized Resolvers'
             ]
         },
         {
@@ -3557,13 +3571,13 @@ function BackendModal({ isOpen, onClose }) {
         isOpen: isOpen,
         onClose: onClose,
         title: language === 'pt' ? 'API & Backend Development' : 'API & Backend Development',
-        description: language === 'pt' ? 'APIs robustas e escaláveis com .NET Core, bancos relacionais e NoSQL' : 'Robust and scalable APIs with .NET Core, relational and NoSQL databases',
+        description: language === 'pt' ? 'APIs robustas e escaláveis com .NET Core, GraphQL, bancos relacionais e NoSQL' : 'Robust and scalable APIs with .NET Core, GraphQL, relational and NoSQL databases',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaServer"], {
             size: 28,
             className: "text-white"
         }, void 0, false, {
             fileName: "[project]/src/components/modals/BackendModal.tsx",
-            lineNumber: 57,
+            lineNumber: 66,
             columnNumber: 13
         }, void 0),
         iconColor: "#10B981",
@@ -3578,14 +3592,14 @@ function BackendModal({ isOpen, onClose }) {
                                 className: "mr-3 text-green-500"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                lineNumber: 63,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this),
                             language === 'pt' ? 'Tecnologias' : 'Technologies'
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                        lineNumber: 62,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3609,7 +3623,7 @@ function BackendModal({ isOpen, onClose }) {
                                         children: tech.icon
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3617,24 +3631,24 @@ function BackendModal({ isOpen, onClose }) {
                                         children: tech.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                lineNumber: 68,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                        lineNumber: 66,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                lineNumber: 61,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3647,18 +3661,18 @@ function BackendModal({ isOpen, onClose }) {
                                 className: "mr-3 text-purple-500"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                lineNumber: 85,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, this),
                             language === 'pt' ? 'Tipos de API' : 'API Types'
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                        lineNumber: 84,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                        className: "grid grid-cols-1 md:grid-cols-3 gap-6",
                         children: apiTypes.map((api, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
                                     opacity: 0,
@@ -3678,7 +3692,7 @@ function BackendModal({ isOpen, onClose }) {
                                         children: api.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 106,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3686,7 +3700,7 @@ function BackendModal({ isOpen, onClose }) {
                                         children: api.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 107,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3699,7 +3713,7 @@ function BackendModal({ isOpen, onClose }) {
                                                         children: "✓"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 113,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3707,41 +3721,41 @@ function BackendModal({ isOpen, onClose }) {
                                                         children: feature
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 114,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, featureIndex, true, {
                                                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 112,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 110,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                                lineNumber: 90,
+                                lineNumber: 99,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/modals/BackendModal.tsx",
-                        lineNumber: 88,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/modals/BackendModal.tsx",
-                lineNumber: 83,
+                lineNumber: 92,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/modals/BackendModal.tsx",
-        lineNumber: 49,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
