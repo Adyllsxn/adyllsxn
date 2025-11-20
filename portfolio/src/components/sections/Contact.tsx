@@ -290,7 +290,7 @@ export default function Contact() {
                   <label htmlFor="name" className={`block text-sm font-semibold ${
                     theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                   }`}>
-                    {language === 'pt' ? 'Nome Completo' : 'Full Name'} *
+                    {language === 'pt' ? 'Nome' : 'Name'} *
                   </label>
                   <input
                     type="text"
