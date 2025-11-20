@@ -304,7 +304,7 @@ export default function Contact() {
                         ? 'bg-gray-700/50 border-gray-600 text-white focus:border-blue-500 focus:bg-gray-700/80'
                         : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500 focus:bg-white'
                     } placeholder-gray-500`}
-                    placeholder={language === 'pt' ? 'João Silva' : 'John Doe'}
+                    placeholder={language === 'pt' ? 'João' : 'John'}
                   />
                 </div>
 
