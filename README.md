@@ -1,4 +1,4 @@
-# **Full Stack Developer**
+**Full Stack**
 
 <!-- Banner animado com Capsule Render -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=Frontend%20%E2%80%A2%20Backend&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
@@ -48,7 +48,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **Portfolio** | My personal portfolio with modern and responsive design, showcasing my projects and skills. | Next.js, Tailwind CSS, TypeScript | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) |
+| **Portfolio** | My personal portfolio with modern and responsive design, showcasing my projects and skills. | Next.js, Tailwind CSS, JavaScript | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) |
 | **Kairos** | Modern platform with 3D animations, responsive design and immersive user experience. | React.js, Three.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
 
 ---
