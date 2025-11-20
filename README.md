@@ -1,4 +1,4 @@
-** Web & Mobile **
+**Full Stack Developer**
 
 <!-- Banner animado com Capsule Render -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=Web%20%E2%80%A2%20Mobile&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
@@ -10,11 +10,7 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div> </br>
 
-I'm a **Full Stack Developer**. I build **robust backend systems and APIs** using **ASP.NET Core**, with a strong focus on **performance and scalability**.  
-
-On the **frontend**, I develop **modern, responsive, and intuitive interfaces** with **React.js**, delivering **complete and high-quality solutions**.  
-
-For **mobile development**, I create **cross-platform applications** using **React Native** and **Expo**, ensuring **native-like performance** and **seamless user experiences**.
+Olá! Sou **Domingos Nascimento (Adyllsxn)**, um **Desenvolvedor Full Stack** apaixonado por criar soluções completas e eficientes. Especializo-me em desenvolver **backends robustos** com **ASP.NET Core** e **interfaces modernas** com **React.js** e **Next.js**.
 
 ---
 
@@ -31,33 +27,29 @@ For **mobile development**, I create **cross-platform applications** using **Rea
 ![.NET Core](https://img.shields.io/badge/.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 
-**Frontend & Mobile**
+**Frontend & Design UI/UX**
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=white)
-![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
 **Database**
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 
 **Tools & DevOps**
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 
 ---
 
-### 🚀 Featured Projects
+### 🚀 Featured Frontend Projects
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **Kairos** | Frontend project built with React, Tailwind CSS, featuring a fully responsive and modern interface. | React JS, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
-| **FRAPI - REST** | A ready-to-run mock REST API for frontend developers to practice CRUD operations. | ASP.NET Core | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
-| **FRAPI - GraphQL** | A mock GraphQL API built with HotChocolate for practicing queries and mutations. | ASP.NET Core, HotChocolate | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
-| **Climax** | A weather app that uses your location to provide real-time forecasts. | React Native, JavaScript, Expo | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/climax) |
+| **Portfolio** | Meu portfolio pessoal com design moderno e responsivo, apresentando meus projetos e habilidades. | Next.js, Tailwind CSS, TypeScript | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) |
+| **Kairos** | Plataforma moderna com animações 3D, design responsivo e experiência de usuário imersiva. | React.js, Three.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/kairos) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://kaiross.vercel.app/) |
 
 ---
 
