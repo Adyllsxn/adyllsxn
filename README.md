@@ -76,15 +76,6 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
-### 💻 Most Used Languages
-
-<div align="center">
-  
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&theme=github_dark&hide=html,css,scss,less,stylus,markdown,jupyter%20notebook,shell,dockerfile,procfile,cmake,makefile,batchfile&langs_count=6)
-  
-</div>
-
----
 
 ### 📊 Development Analytics
 
