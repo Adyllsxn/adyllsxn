@@ -29,6 +29,8 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
+![HotChocolate](https://img.shields.io/badge/HotChocolate-D44B67?logo=hot-chocolate&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white)
 
 **Frontend & Design UI/UX**
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
@@ -61,7 +63,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
 | **FRAPI GraphQL** | Ready-to-run mock GraphQL API for frontend developers to practice queries and mutations. | .NET 8, HotChocolate, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
-| **FRAPI REST** | Ready-to-run mock REST API for frontend developers to practice CRUD operations and integrations. | .NET 8, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
+| **FRAPI REST** | Ready-to-run mock REST API for frontend developers to practice CRUD operations and integrations. | .NET 8, Swagger, InMemory, Postman | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 
 ---
 
@@ -69,7 +71,17 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&langs_count=7&theme=github_dark&hide=html,css,scss,less,stylus,jupyter%20notebook"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&langs_count=7&theme=github_dark&hide=html,css,scss,less,stylus,markdown,jupyter%20notebook,shell,dockerfile,procfile,cmake,makefile,batchfile"/>
+</div>
+
+---
+
+### 💻 Most Used Languages
+
+<div align="center">
+  
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&theme=github_dark&hide=html,css,scss,less,stylus,markdown,jupyter%20notebook,shell,dockerfile,procfile,cmake,makefile,batchfile&langs_count=6)
+  
 </div>
 
 ---
