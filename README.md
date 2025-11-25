@@ -24,7 +24,6 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
 **Backend & APIs**
-![.NET Core](https://img.shields.io/badge/.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
@@ -63,7 +62,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
 | **FRAPI GraphQL** | Ready-to-run mock GraphQL API for frontend developers to practice queries and mutations. | .NET 8, HotChocolate, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-graphql) |
-| **FRAPI REST** | Ready-to-run mock REST API for frontend developers to practice CRUD operations and integrations. | .NET 8, Scalar, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
+| **FRAPI REST** | Ready-to-run mock REST API for frontend developers to practice CRUD operations and integrations. | .NET 8, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
 
 ---
 
