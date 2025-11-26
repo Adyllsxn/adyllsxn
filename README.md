@@ -1,14 +1,16 @@
 **Full Stack**
 
-<!-- Banner animado com Capsule Render -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=40&desc=Frontend%20%E2%80%A2%20Backend&descSize=18&descAlignY=60&descAlign=50" alt="Header" />
+<!-- Banner simplificado sem section=header -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Frontend%20•%20Backend&descSize=18&descAlignY=55" alt="Header" />
+</div>
 
 <!-- Estatísticas do perfil -->
 <div align="left">
   <img src="https://komarev.com/ghpvc/?username=Adyllsxn&color=00d9ff" alt="Profile views">
   <img src="https://img.shields.io/github/followers/Adyllsxn?color=00d9ff&logo=github" alt="GitHub followers">
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
-</div> </br>
+</div>
 
 Full Stack Developer focused on creating complete solutions by combining high-performance backends with modern and responsive interfaces. I work on developing RESTful APIs with ASP.NET Core and building efficient frontends using React.js and Next.js. I work daily with technologies like C#, .NET, TypeScript, Node.js, and relational and non-relational databases. I also develop automations and strictly follow best practices to ensure quality, scalability, and maintainability.
 
@@ -16,14 +18,14 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ### 🛠️ Tech Stack
 
-**Languages & Markup**
+**Languages & Markup**  
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
-**Backend & APIs**
+**Backend & APIs**  
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
@@ -31,17 +33,17 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 ![Scalar](https://img.shields.io/badge/Scalar-1E90FF?logo=scalar&logoColor=white)
 ![HotChocolate](https://img.shields.io/badge/HotChocolate-D44B67?logo=hot-chocolate&logoColor=white)
 
-**Frontend & Design UI/UX**
+**Frontend & Design UI/UX**  
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
-**Database**
+**Database**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
 
-**Tools & DevOps**
+**Tools & DevOps**  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
