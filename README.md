@@ -54,27 +54,20 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 <div align="center">
 
+<!-- GitHub Stats Overview -->
 <p align="center">
     <picture>
         <source
-            srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Adyllsxn&theme=tokyonight&utcOffset=9"
-            media="(prefers-color-scheme: dark)">
-        <source 
-            srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Adyllsxn&theme=github&utcOffset=9"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Adyllsxn" />
-    </picture>
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=tokyonight"
+            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight"
             media="(prefers-color-scheme: dark)">
         <source
-            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=github"
+            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&count_private=true&include_all_commits=true&theme=github"
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-        <img src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true" />
+        <img src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&count_private=true&include_all_commits=true" />
     </picture>
 </p>
 
+<!-- Top Languages by Repo -->
 <p align="center">
     <picture>
         <source
@@ -84,15 +77,6 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
             srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=github"
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
         <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn" />
-    </picture>
-    <picture>
-        <source
-            srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Adyllsxn&theme=tokyonight"
-            media="(prefers-color-scheme: dark)">
-        <source 
-            srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Adyllsxn&theme=github"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Adyllsxn" />
     </picture>
 </p>
 
