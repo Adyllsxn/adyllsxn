@@ -50,6 +50,56 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
+### 📊 GitHub Analytics
+
+<div align="center">
+
+<p align="center">
+    <picture>
+        <source
+            srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Adyllsxn&theme=tokyonight&utcOffset=9"
+            media="(prefers-color-scheme: dark)">
+        <source 
+            srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Adyllsxn&theme=github&utcOffset=9"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Adyllsxn" />
+    </picture>
+    <picture>
+        <source
+            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=tokyonight"
+            media="(prefers-color-scheme: dark)">
+        <source
+            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=github"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true" />
+    </picture>
+</p>
+
+<p align="center">
+    <picture>
+        <source
+            srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=tokyonight"
+            media="(prefers-color-scheme: dark)">
+        <source 
+            srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=github"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn" />
+    </picture>
+    <picture>
+        <source
+            srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Adyllsxn&theme=tokyonight"
+            media="(prefers-color-scheme: dark)">
+        <source 
+            srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Adyllsxn&theme=github"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Adyllsxn" />
+    </picture>
+</p>
+
+</div>
+
+---
+
 ### 🚀 Featured Frontend Projects
 
 | Project | Description | Tech Stack | Links |
@@ -68,7 +118,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
-### 📊 Development Analytics
+### 📈 Development Analytics
 
 <div align="center">
   
