@@ -50,37 +50,21 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
-### 📊 GitHub Analytics
+### 📈 GitHub Stats
 
 <div align="center">
-
-<!-- GitHub Stats Overview -->
-<p align="center">
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight"
-            media="(prefers-color-scheme: dark)">
-        <source
-            srcset="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&count_private=true&include_all_commits=true&theme=github"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-        <img src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&count_private=true&include_all_commits=true" />
-    </picture>
-</p>
-
-<!-- Top Languages by Repo -->
-<p align="center">
-    <picture>
-        <source
-            srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=tokyonight"
-            media="(prefers-color-scheme: dark)">
-        <source 
-            srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=github"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn" />
-    </picture>
-</p>
-
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
+  <picture>
+    <source
+        srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=tokyonight"
+        media="(prefers-color-scheme: dark)">
+    <source 
+        srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=github"
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn" />
+  </picture>
 </div>
+
 
 ---
 
@@ -102,7 +86,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
-### 📈 Development Analytics
+### 📊 Development Analytics
 
 <div align="center">
   
