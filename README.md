@@ -68,15 +68,6 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
-### 📈 GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adyllsxn&layout=compact&langs_count=7&theme=github_dark&hide=html,css,scss,less,stylus,markdown,jupyter%20notebook,shell,dockerfile,procfile,cmake,makefile,batchfile"/>
-</div>
-
----
-
 ### 📊 Development Analytics
 
 <div align="center">
