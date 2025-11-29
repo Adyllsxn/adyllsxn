@@ -53,7 +53,8 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 ### 📈 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Adyllsxn&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
+  <img height="200em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Adyllsxn&theme=transparent" alt="Stats"/>
+  
   <picture>
     <source
         srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=tokyonight"
@@ -61,7 +62,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
     <source 
         srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=github"
         media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn" />
+    <img height="200em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=transparent" />
   </picture>
 </div>
 
