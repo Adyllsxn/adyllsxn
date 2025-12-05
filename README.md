@@ -79,7 +79,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **FRAPI REST** | Ready-to-run mock REST API for frontend developers to practice CRUD operations and integrations. | .NET 8, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/frapi-rest) |
+| **LearnAPI** | LearnAPI turns theory into practice with real endpoints for study, testing, and experimentation. | .NET 10, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) |
 
 ---
 
