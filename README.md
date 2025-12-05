@@ -67,19 +67,12 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 ---
 
-### 🚀 Featured Frontend Projects
+### 🚀 Featured Projects
 
-| Project | Description | Tech Stack | Links |
-|---------|-------------|------------|-------|
-| **Portfolio** | My personal portfolio with modern and responsive design, showcasing my projects and skills. | Next.js, Tailwind CSS, JavaScript | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Live](https://img.shields.io/badge/Live_Demo-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) |
-
----
-
-### 🔥 Featured Backend Projects
-
-| Project | Description | Tech Stack | Links |
-|---------|-------------|------------|-------|
-| **LearnAPI** | LearnAPI turns theory into practice with real endpoints for study, testing, and experimentation. | .NET 10, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![Swagger](https://img.shields.io/badge/Swagger_Docs-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) |
+| Project | Description | Tech Stack | Links | Type |
+|---------|-------------|------------|-------|------|
+| **Portfolio** | Modern personal portfolio with responsive design showcasing projects and skills. | Next.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) | Frontend |
+| **LearnAPI** | Full-stack API with real endpoints and UI for study, testing, and practical learning. | .NET 10, Swagger, HTML | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnapi-ui.vercel.app/) | Full Stack |
 
 ---
 
