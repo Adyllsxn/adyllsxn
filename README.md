@@ -79,7 +79,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 | Project | Description | Tech Stack | Links |
 |---------|-------------|------------|-------|
-| **LearnAPI** | LearnAPI turns theory into practice with real endpoints for study, testing, and experimentation. | .NET 10, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) |
+| **LearnAPI** | LearnAPI turns theory into practice with real endpoints for study, testing, and experimentation. | .NET 10, Swagger, InMemory | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![Swagger](https://img.shields.io/badge/Swagger_Docs-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) |
 
 ---
 
