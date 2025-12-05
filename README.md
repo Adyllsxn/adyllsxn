@@ -27,11 +27,9 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 
 **Backend & APIs**  
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
 ![Scalar](https://img.shields.io/badge/Scalar-1E90FF?logo=scalar&logoColor=white)
-![HotChocolate](https://img.shields.io/badge/HotChocolate-D44B67?logo=hot-chocolate&logoColor=white)
 
 **Frontend & Design UI/UX**  
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
