@@ -72,7 +72,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 | Project | Description | Tech Stack | Links | Type |
 |---------|-------------|------------|-------|------|
 | **Portfolio** | Modern personal portfolio with responsive design showcasing projects and skills. | Next.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) | Frontend |
-| **LearnAPI** | Full-stack API with real endpoints and UI for study, testing, and practical learning. | .NET 10, Swagger, HTML | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learn-api-ui-three.vercel.app/) | Full Stack |
+| **LearnAPI** | Full-stack API with real endpoints and UI for study, testing, and practical learning. | .NET 10, Swagger, HTML | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnapi0.vercel.app/) | Full Stack |
 
 ---
 
