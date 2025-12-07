@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { 
   FiHome, 
   FiUser, 
-  FiFileText, 
   FiImage, 
   FiLayers, 
   FiMail,

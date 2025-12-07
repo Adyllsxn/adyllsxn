@@ -51,7 +51,7 @@ export function usePortfolio() {
           ? "One Page PWA com animações 3D avançadas para eventos religiosos"
           : "One Page PWA with advanced 3D animations for religious events",
       category: "web",
-      image: "/images/web/kairos-event.png",
+      image: "/images/web/learnapi.png",
       technologies: [
         "React",
         "Next.js",

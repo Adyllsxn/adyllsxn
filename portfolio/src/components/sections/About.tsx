@@ -18,7 +18,10 @@ import {
   FaCode,
   FaGlobe,
   FaServer,
-  FaDatabase
+  FaDatabase,
+  FaCogs,
+  FaShieldAlt,
+  FaLayerGroup
 } from 'react-icons/fa';
 import { 
   SiTypescript, 
@@ -66,15 +69,24 @@ export default function About() {
         { name: 'Docker', icon: <FaDocker className="text-blue-500" /> },
         { name: 'VS Code', icon: <FaCode className="text-blue-500" /> }
       ]
+    },
+    architecture: {
+      title: language === 'pt' ? 'Arquitetura' : 'Architecture',
+      skills: [
+        { name: 'SOLID', icon: <FaShieldAlt className="text-green-500" /> },
+        { name: 'CQRS', icon: <FaCogs className="text-blue-400" /> },
+        { name: 'Design Patterns', icon: <FaLayerGroup className="text-purple-500" /> },
+        { name: 'Clean Architecture', icon: <FaServer className="text-cyan-500" /> },
+        { name: 'Vertical Slice', icon: <FaCode className="text-orange-500" /> },
+        { name: 'RESTful APIs', icon: <FaGlobe className="text-blue-600" /> }
+      ]
     }
   };
 
   const handleDownloadCV = () => {
-    // Define o arquivo baseado no idioma atual
     const cvFile = language === 'pt' ? 'cv-pt.pdf' : 'cv-en.pdf';
     const cvPath = `/cv/${cvFile}`;
     
-    // Cria um link temporário para download
     const link = document.createElement('a');
     link.href = cvPath;
     link.download = cvFile;
@@ -94,6 +106,19 @@ export default function About() {
 
   const handleEmail = () => {
     window.location.href = 'mailto:domingos.nxscimento@gmail.com';
+  };
+
+  const aboutText = {
+    pt: {
+      title: 'Transformando Ideias em Realidade Digital',
+      paragraph1: `Olá! Sou Domingos Nascimento, também conhecido como Adyllsxn, Desenvolvedor Fullstack especializado em transformar problemas complexos em soluções digitais escaláveis. Minha missão é criar sistemas que não apenas funcionam, mas se destacam pela performance excepcional e experiência de usuário memorável.`,
+      paragraph2: `Minha expertise está em desenvolver aplicações de ponta a ponta, desde a concepção de backends otimizados até a construção de interfaces modernas (web e mobile). Foco em entregar valor real através de código bem estruturado, APIs eficientes e integrações seguras que efetivamente impulsionam resultados de negócio.`
+    },
+    en: {
+      title: 'Transforming Ideas into Digital Reality',
+      paragraph1: `Hello! I'm Domingos Nascimento, also known as Adyllsxn, a Fullstack Developer specialized in transforming complex problems into scalable digital solutions. My mission is to create systems that not only work, but stand out through exceptional performance and memorable user experience.`,
+      paragraph2: `My expertise lies in developing end-to-end applications, from designing optimized backends to building modern interfaces (web & mobile). I focus on delivering real value through well-structured code, efficient APIs and secure integrations that effectively drive business results.`
+    }
   };
 
   return (
@@ -143,7 +168,6 @@ export default function About() {
                 
                 {/* Profile Header */}
                 <div className="profile-header text-center pb-6 border-b border-gray-600/30 mb-6">
-                  {/* Substituindo a foto por um ícone/ilustração */}
                   <div className="profile-avatar relative mx-auto mb-6">
                     <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-500/20 relative flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
                       <FaGlobe className="text-white text-5xl" />
@@ -158,38 +182,6 @@ export default function About() {
                   <span className="text-blue-500 font-medium text-sm">
                     Full Stack Developer
                   </span>
-                </div>
-
-                {/* Quick Stats */}
-                <div className="quick-stats grid grid-cols-2 gap-4 mb-6">
-                  <div className={`text-center p-3 rounded-xl ${
-                    theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'
-                  }`}>
-                    <div className={`text-xl font-black ${
-                      theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
-                    }`}>
-                      2+
-                    </div>
-                    <div className={`text-xs ${
-                      theme === 'dark' ? 'text-gray-400' : 'text-gray-500'
-                    }`}>
-                      {language === 'pt' ? 'Anos' : 'Years'}
-                    </div>
-                  </div>
-                  <div className={`text-center p-3 rounded-xl ${
-                    theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'
-                  }`}>
-                    <div className={`text-xl font-black ${
-                      theme === 'dark' ? 'text-green-400' : 'text-green-600'
-                    }`}>
-                      5+
-                    </div>
-                    <div className={`text-xs ${
-                      theme === 'dark' ? 'text-gray-400' : 'text-gray-500'
-                    }`}>
-                      {language === 'pt' ? 'Projetos' : 'Projects'}
-                    </div>
-                  </div>
                 </div>
 
                 {/* Profile Actions */}
@@ -252,35 +244,20 @@ export default function About() {
                   <h2 className={`text-2xl font-bold mb-6 ${
                     theme === 'dark' ? 'text-white' : 'text-gray-900'
                   }`}>
-                    {language === 'pt' ? 'Transformando Ideias em Realidade Digital' : 'Transforming Ideas into Digital Reality'}
+                    {aboutText[language].title}
                   </h2>
                   
                   <div className="space-y-4">
                     <p className={`text-base leading-relaxed ${
                       theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                     }`}>
-                      {language === 'pt' 
-                        ? <>Olá! Sou o <strong className="text-blue-500">Domingos Nascimento</strong>, também conhecido como <strong className="text-blue-500">Adyllsxn</strong>, um apaixonado Desenvolvedor Full Stack dedicado a criar soluções digitais completas. Especializo-me em construir aplicações de ponta a ponta que combinam backends poderosos com interfaces de usuário envolventes.</>
-                        : <>Hey! I'm <strong className="text-blue-500">Domingos Nascimento</strong>, also known as <strong className="text-blue-500">Adyllsxn</strong>, a passionate Full Stack Developer dedicated to creating complete digital solutions. I specialize in building end-to-end applications that combine powerful backends with engaging user interfaces.</>
-                      }
+                      {aboutText[language].paragraph1}
                     </p>
                     
                     <p className={`text-base leading-relaxed ${
                       theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                     }`}>
-                      {language === 'pt' 
-                        ? <>No backend, projeto <strong className="text-blue-500">sistemas robustos e APIs</strong> usando <strong className="text-blue-500">ASP.NET Core</strong>, com forte foco em performance e escalabilidade. Para o frontend, desenvolvo <strong className="text-blue-500">interfaces modernas e responsivas</strong> com <strong className="text-blue-500">React.js</strong> e <strong className="text-blue-500">Next.js</strong>, garantindo experiências de usuário de alta qualidade.</>
-                        : <>On the backend, I architect <strong className="text-blue-500">robust systems and APIs</strong> using <strong className="text-blue-500">ASP.NET Core</strong>, with strong focus on performance and scalability. For the frontend, I develop <strong className="text-blue-500">modern, responsive interfaces</strong> with <strong className="text-blue-500">React.js</strong> and <strong className="text-blue-500">Next.js</strong>, ensuring high-quality user experiences.</>
-                      }
-                    </p>
-                    
-                    <p className={`text-base leading-relaxed ${
-                      theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
-                    }`}>
-                      {language === 'pt' 
-                        ? <>Minha expertise inclui desenvolvimento de <strong className="text-blue-500">aplicações web completas</strong>, desde APIs RESTful usando <strong className="text-blue-500">Minimal API</strong> ou <strong className="text-blue-500">API Controllers</strong> até interfaces de usuário responsivas. Trabalho com tecnologias modernas como <strong className="text-blue-500">TypeScript</strong>, <strong className="text-blue-500">Node.js</strong>, <strong className="text-blue-500">.NET Core</strong>, <strong className="text-blue-500">C#</strong>, e bancos de dados relacionais e não-relacionais. Também desenvolvo <strong className="text-blue-500">automações com console apps</strong>, sempre seguindo as melhores práticas de desenvolvimento.</>
-                        : <>My expertise includes developing <strong className="text-blue-500">complete web applications</strong>, from RESTful APIs using <strong className="text-blue-500">Minimal API</strong> or <strong className="text-blue-500">API Controllers</strong> to responsive user interfaces. I work with modern technologies like <strong className="text-blue-500">TypeScript</strong>, <strong className="text-blue-500">Node.js</strong>, <strong className="text-blue-500">.NET Core</strong>, <strong className="text-blue-500">C#</strong>, and both relational and non-relational databases. I also develop <strong className="text-blue-500">automations with console apps</strong>, always following development best practices.</>
-                      }
+                      {aboutText[language].paragraph2}
                     </p>
                   </div>
                 </div>
