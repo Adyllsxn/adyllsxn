@@ -24,8 +24,8 @@ export default function Home() {
       <main className="lg:ml-80">
         <Hero />
         <About />
-        <Portfolio />
         <Services />
+        <Portfolio />
         <Contact />
         <div className="h-10"></div>
       </main>

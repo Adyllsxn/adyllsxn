@@ -4,84 +4,14 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { 
-  FaDownload, 
-  FaWhatsapp, 
-  FaEnvelope,
-  FaJs, 
-  FaReact, 
-  FaGitAlt, 
-  FaDocker,
-  FaMicrosoft,
-  FaUbuntu,
-  FaCloud,
-  FaCode,
-  FaGlobe,
-  FaServer,
-  FaDatabase,
-  FaCogs,
-  FaShieldAlt,
-  FaLayerGroup
-} from 'react-icons/fa';
-import { 
-  SiTypescript, 
-  SiNextdotjs, 
-  SiSharp, 
-  SiHtml5, 
-  SiCss3,
-  SiPostgresql, 
-  SiMongodb
-} from 'react-icons/si';
+import { aboutTexts } from '@/data/about';
+import { skillCategories } from '@/data/skills';
+import { FaDownload, FaWhatsapp, FaEnvelope, FaGlobe } from 'react-icons/fa';
 
 export default function About() {
   const { theme } = useTheme();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('languages');
-
-  const categories = {
-    languages: {
-      title: language === 'pt' ? 'Linguagens' : 'Languages',
-      skills: [
-        { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
-        { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
-        { name: 'C#', icon: <SiSharp className="text-purple-600" /> },
-        { name: 'HTML5', icon: <SiHtml5 className="text-orange-500" /> },
-        { name: 'CSS3', icon: <SiCss3 className="text-blue-500" /> }
-      ]
-    },
-    frameworks: {
-      title: language === 'pt' ? 'Frameworks' : 'Frameworks',
-      skills: [
-        { name: 'React', icon: <FaReact className="text-cyan-400" /> },
-        { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
-        { name: '.NET Core', icon: <FaMicrosoft className="text-purple-500" /> },
-        { name: 'ASP.NET Core', icon: <FaServer className="text-purple-600" /> }
-      ]
-    },
-    tools: {
-      title: language === 'pt' ? 'Ferramentas' : 'Tools',
-      skills: [
-        { name: 'Git', icon: <FaGitAlt className="text-orange-500" /> },
-        { name: 'Azure', icon: <FaCloud className="text-blue-500" /> },
-        { name: 'Ubuntu', icon: <FaUbuntu className="text-orange-600" /> },
-        { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-700" /> },
-        { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
-        { name: 'Docker', icon: <FaDocker className="text-blue-500" /> },
-        { name: 'VS Code', icon: <FaCode className="text-blue-500" /> }
-      ]
-    },
-    architecture: {
-      title: language === 'pt' ? 'Arquitetura' : 'Architecture',
-      skills: [
-        { name: 'SOLID', icon: <FaShieldAlt className="text-green-500" /> },
-        { name: 'CQRS', icon: <FaCogs className="text-blue-400" /> },
-        { name: 'Design Patterns', icon: <FaLayerGroup className="text-purple-500" /> },
-        { name: 'Clean Architecture', icon: <FaServer className="text-cyan-500" /> },
-        { name: 'Vertical Slice', icon: <FaCode className="text-orange-500" /> },
-        { name: 'RESTful APIs', icon: <FaGlobe className="text-blue-600" /> }
-      ]
-    }
-  };
 
   const handleDownloadCV = () => {
     const cvFile = language === 'pt' ? 'cv-pt.pdf' : 'cv-en.pdf';
@@ -108,19 +38,6 @@ export default function About() {
     window.location.href = 'mailto:domingos.nxscimento@gmail.com';
   };
 
-  const aboutText = {
-    pt: {
-      title: 'Transformando Ideias em Realidade Digital',
-      paragraph1: `Olá! Sou Domingos Nascimento, também conhecido como Adyllsxn, Desenvolvedor Fullstack especializado em transformar problemas complexos em soluções digitais escaláveis. Minha missão é criar sistemas que não apenas funcionam, mas se destacam pela performance excepcional e experiência de usuário memorável.`,
-      paragraph2: `Minha expertise está em desenvolver aplicações de ponta a ponta, desde a concepção de backends otimizados até a construção de interfaces modernas (web e mobile). Foco em entregar valor real através de código bem estruturado, APIs eficientes e integrações seguras que efetivamente impulsionam resultados de negócio.`
-    },
-    en: {
-      title: 'Transforming Ideas into Digital Reality',
-      paragraph1: `Hello! I'm Domingos Nascimento, also known as Adyllsxn, a Fullstack Developer specialized in transforming complex problems into scalable digital solutions. My mission is to create systems that not only work, but stand out through exceptional performance and memorable user experience.`,
-      paragraph2: `My expertise lies in developing end-to-end applications, from designing optimized backends to building modern interfaces (web & mobile). I focus on delivering real value through well-structured code, efficient APIs and secure integrations that effectively drive business results.`
-    }
-  };
-
   return (
     <section 
       id="about" 
@@ -131,7 +48,7 @@ export default function About() {
     >
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Title */}
-        <div className="container section-title text-center mb-12 lg:mb-16" data-aos="fade-up">
+        <div className="container section-title text-center mb-12 lg:mb-16">
           <span className="subtitle text-blue-500 font-bold text-sm uppercase tracking-widest mb-3">
             {language === 'pt' ? 'SOBRE MIM' : 'ABOUT ME'}
           </span>
@@ -198,7 +115,6 @@ export default function About() {
                     {language === 'pt' ? 'Baixar CV' : 'Download CV'}
                   </button>
                   
-                  {/* WhatsApp Button */}
                   <button 
                     onClick={handleWhatsApp}
                     className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 ${
@@ -211,7 +127,6 @@ export default function About() {
                     WhatsApp
                   </button>
 
-                  {/* Email Button */}
                   <button 
                     onClick={handleEmail}
                     className={`w-full py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 border transition-all duration-300 ${
@@ -244,20 +159,20 @@ export default function About() {
                   <h2 className={`text-2xl font-bold mb-6 ${
                     theme === 'dark' ? 'text-white' : 'text-gray-900'
                   }`}>
-                    {aboutText[language].title}
+                    {aboutTexts[language].title}
                   </h2>
                   
                   <div className="space-y-4">
                     <p className={`text-base leading-relaxed ${
                       theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                     }`}>
-                      {aboutText[language].paragraph1}
+                      {aboutTexts[language].paragraph1}
                     </p>
                     
                     <p className={`text-base leading-relaxed ${
                       theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
                     }`}>
-                      {aboutText[language].paragraph2}
+                      {aboutTexts[language].paragraph2}
                     </p>
                   </div>
                 </div>
@@ -276,7 +191,7 @@ export default function About() {
                   {/* Categorias Interativas */}
                   <div className="mb-8">
                     <div className="flex flex-wrap justify-center gap-4 mb-6">
-                      {Object.entries(categories).map(([key, category]) => (
+                      {Object.entries(skillCategories).map(([key, category]) => (
                         <motion.button
                           key={key}
                           onClick={() => setActiveCategory(key)}
@@ -292,12 +207,12 @@ export default function About() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          {category.title}
+                          {category.title[language]}
                         </motion.button>
                       ))}
                     </div>
 
-                    {/* Skills Grid com Ícones React */}
+                    {/* Skills Grid */}
                     <AnimatePresence mode="wait">
                       <motion.div
                         key={activeCategory}
@@ -307,33 +222,37 @@ export default function About() {
                         transition={{ duration: 0.3 }}
                         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
                       >
-                        {categories[activeCategory as keyof typeof categories].skills.map((skill, index) => (
-                          <motion.div
-                            key={skill.name}
-                            className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all duration-300 cursor-default ${
-                              theme === 'dark'
-                                ? 'bg-gray-800/50 border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/20'
-                                : 'bg-white/80 border-blue-400/30 hover:border-blue-500 hover:bg-blue-500/20'
-                            }`}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.1 }}
-                            whileHover={{
-                              scale: 1.05,
-                              y: -2,
-                            }}
-                            whileTap={{ scale: 0.95 }}
-                          >
-                            <div className="text-3xl mb-2">
-                              {skill.icon}
-                            </div>
-                            <span className={`text-sm font-bold text-center ${
-                              theme === 'dark' ? 'text-white' : 'text-gray-900'
-                            }`}>
-                              {skill.name}
-                            </span>
-                          </motion.div>
-                        ))}
+                        {skillCategories[activeCategory].skills.map((skill, index) => {
+                          const Icon = skill.icon;
+                          
+                          return (
+                            <motion.div
+                              key={skill.name}
+                              className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all duration-300 cursor-default ${
+                                theme === 'dark'
+                                  ? 'bg-gray-800/50 border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/20'
+                                  : 'bg-white/80 border-blue-400/30 hover:border-blue-500 hover:bg-blue-500/20'
+                              }`}
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ delay: index * 0.1 }}
+                              whileHover={{
+                                scale: 1.05,
+                                y: -2,
+                              }}
+                              whileTap={{ scale: 0.95 }}
+                            >
+                              <div className="text-3xl mb-2">
+                                <Icon className={skill.color} />
+                              </div>
+                              <span className={`text-sm font-bold text-center ${
+                                theme === 'dark' ? 'text-white' : 'text-gray-900'
+                              }`}>
+                                {skill.name}
+                              </span>
+                            </motion.div>
+                          );
+                        })}
                       </motion.div>
                     </AnimatePresence>
                   </div>

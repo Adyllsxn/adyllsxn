@@ -13,8 +13,8 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const texts = {
-    pt: ['Desenvolvedor Full Stack', 'Desenvolvedor Mobile'],
-    en: ['Full Stack Developer', 'Mobile Developer']
+    pt: ['Desenvolvedor Full Stack'],
+    en: ['Full Stack Developer']
   };
 
   const currentTexts = texts[language];

@@ -29,16 +29,16 @@ export default function MobileMenu() {
   const menuItems = [
     { name: t('home'), href: '#home', icon: <FiHome size={20} /> },
     { name: t('about'), href: '#about', icon: <FiUser size={20} /> },
-    { name: t('portfolio'), href: '#portfolio', icon: <FiImage size={20} /> },
     { name: t('services'), href: '#services', icon: <FiLayers size={20} /> },
+    { name: t('portfolio'), href: '#portfolio', icon: <FiImage size={20} /> },
     { name: t('contact'), href: '#contact', icon: <FiMail size={20} /> },
   ];
 
   const socialLinks = [
     { name: 'GitHub', href: 'https://github.com/Adyllsxn', icon: <FiGithub size={18} /> },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/adyllsxn/', icon: <FiLinkedin size={18} /> },
-    { name: 'Instagram', href: 'https://www.instagram.com/adyllsxn/', icon: <FiInstagram size={18} /> },
-    { name: 'Twitter', href: 'https://x.com/Adyllsxn', icon: <FiTwitter size={18} /> },
+    { name: 'Instagram', href: 'https://www.instagram.com/_adyllsxn/', icon: <FiInstagram size={18} /> },
+    { name: 'Twitter', href: 'https://x.com/_adyllsxn', icon: <FiTwitter size={18} /> },
   ];
 
   const languageOptions = [

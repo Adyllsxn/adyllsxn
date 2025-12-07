@@ -48,25 +48,25 @@ function Sidebar() {
             }, this)
         },
         {
-            name: t('portfolio'),
-            href: '#portfolio',
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiImage"], {
-                size: 24
-            }, void 0, false, {
-                fileName: "[project]/src/components/layouts/Sidebar.tsx",
-                lineNumber: 29,
-                columnNumber: 55
-            }, this)
-        },
-        {
             name: t('services'),
             href: '#services',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiLayers"], {
                 size: 24
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Sidebar.tsx",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 53
+            }, this)
+        },
+        {
+            name: t('portfolio'),
+            href: '#portfolio',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiImage"], {
+                size: 24
+            }, void 0, false, {
+                fileName: "[project]/src/components/layouts/Sidebar.tsx",
+                lineNumber: 30,
+                columnNumber: 55
             }, this)
         },
         {
@@ -106,24 +106,24 @@ function Sidebar() {
         },
         {
             name: 'Instagram',
-            href: 'https://www.instagram.com/adyllsxn/',
+            href: 'https://www.instagram.com/_adyllsxn/',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiInstagram"], {
                 size: 16
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Sidebar.tsx",
                 lineNumber: 37,
-                columnNumber: 77
+                columnNumber: 78
             }, this)
         },
         {
             name: 'Github',
-            href: 'https://github.com/Adyllsxn',
+            href: 'https://x.com/_adyllsxn',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiGithub"], {
                 size: 16
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Sidebar.tsx",
                 lineNumber: 38,
-                columnNumber: 66
+                columnNumber: 62
             }, this)
         }
     ];
@@ -390,25 +390,25 @@ function MobileMenu() {
             }, this)
         },
         {
-            name: t('portfolio'),
-            href: '#portfolio',
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiImage"], {
-                size: 20
-            }, void 0, false, {
-                fileName: "[project]/src/components/layouts/MobileMenu.tsx",
-                lineNumber: 32,
-                columnNumber: 55
-            }, this)
-        },
-        {
             name: t('services'),
             href: '#services',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiLayers"], {
                 size: 20
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/MobileMenu.tsx",
-                lineNumber: 33,
+                lineNumber: 32,
                 columnNumber: 53
+            }, this)
+        },
+        {
+            name: t('portfolio'),
+            href: '#portfolio',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiImage"], {
+                size: 20
+            }, void 0, false, {
+                fileName: "[project]/src/components/layouts/MobileMenu.tsx",
+                lineNumber: 33,
+                columnNumber: 55
             }, this)
         },
         {
@@ -448,24 +448,24 @@ function MobileMenu() {
         },
         {
             name: 'Instagram',
-            href: 'https://www.instagram.com/adyllsxn/',
+            href: 'https://www.instagram.com/_adyllsxn/',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiInstagram"], {
                 size: 18
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/MobileMenu.tsx",
                 lineNumber: 40,
-                columnNumber: 77
+                columnNumber: 78
             }, this)
         },
         {
             name: 'Twitter',
-            href: 'https://x.com/Adyllsxn',
+            href: 'https://x.com/_adyllsxn',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FiTwitter"], {
                 size: 18
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/MobileMenu.tsx",
                 lineNumber: 41,
-                columnNumber: 62
+                columnNumber: 63
             }, this)
         }
     ];
@@ -1856,10 +1856,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/hooks/usePortfolio.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// hooks/usePortfolio.ts
+// hooks/useProjects.ts
 __turbopack_context__.s([
-    "usePortfolio",
-    ()=>usePortfolio
+    "useProjects",
+    ()=>useProjects
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/contexts/LanguageContext.tsx [app-client] (ecmascript)");
@@ -1867,76 +1867,70 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-function usePortfolio() {
+function useProjects() {
     _s();
     const { language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
     const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
-    const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1);
     const [selectedProject, setSelectedProject] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const projectsPerPage = 4;
     const filters = [
         {
             key: "all",
-            label: language === "pt" ? "Todos os Projetos" : "All Projects"
+            label: language === "pt" ? "Todos" : "All"
         },
         {
             key: "web",
-            label: language === "pt" ? "Web/Frontend" : "Web/Frontend"
+            label: language === "pt" ? "Web" : "Web"
+        },
+        {
+            key: "mobile",
+            label: language === "pt" ? "Mobile" : "Mobile"
         },
         {
             key: "api",
-            label: "API"
+            label: "API/Backend"
         },
         {
-            key: "automation",
-            label: language === "pt" ? "Automação" : "Automation"
+            key: "fullstack",
+            label: language === "pt" ? "Full Stack" : "Full Stack"
         }
     ];
     const projects = [
         {
             id: 1,
-            title: language === "pt" ? "Kairos - Plataforma Religiosa" : "Kairos - Religious Platform",
-            description: language === "pt" ? "One Page PWA com animações 3D avançadas para eventos religiosos" : "One Page PWA with advanced 3D animations for religious events",
-            category: "web",
-            image: "/images/web/learnapi.png",
+            title: "Kairos Platform",
+            description: language === "pt" ? "Plataforma religiosa com animações 3D e PWA" : "Religious platform with 3D animations and PWA",
+            type: "web",
+            image: "/images/projects/kairos.jpg",
             technologies: [
-                "React",
                 "Next.js",
                 "TypeScript",
-                "Tailwind CSS",
                 "Three.js",
+                "Tailwind",
                 "PWA"
             ],
-            demo: "https://kaiross.vercel.app/",
-            github: "https://github.com/Adyllsxn/kairos",
+            features: [
+                language === "pt" ? "Animações 3D com Three.js" : "3D animations with Three.js",
+                language === "pt" ? "PWA para experiência nativa" : "PWA for native experience",
+                language === "pt" ? "Design responsivo" : "Responsive design"
+            ],
+            links: {
+                live: "https://kaiross.vercel.app/",
+                github: "https://github.com/Adyllsxn/kairos"
+            },
             details: {
-                longDescription: language === "pt" ? "One Page PWA moderna para eventos religiosos com animações 3D impressionantes usando Three.js. Desenvolvida com React e Next.js, oferecendo experiência imersiva e performance otimizada." : "Modern One Page PWA for religious events with impressive 3D animations using Three.js. Developed with React and Next.js, offering immersive experience and optimized performance.",
-                features: [
-                    language === "pt" ? "Animações 3D com Three.js" : "3D animations with Three.js",
-                    language === "pt" ? "Progressive Web App (PWA)" : "Progressive Web App (PWA)",
-                    language === "pt" ? "Design responsivo com Tailwind CSS" : "Responsive design with Tailwind CSS",
-                    language === "pt" ? "One Page com rolagem suave" : "One Page with smooth scrolling",
-                    language === "pt" ? "Otimização de performance" : "Performance optimization",
-                    language === "pt" ? "Interface moderna e imersiva" : "Modern and immersive interface"
+                longDescription: language === "pt" ? "Plataforma moderna para eventos religiosos com foco em experiência imersiva." : "Modern platform for religious events focused on immersive experience.",
+                challenges: [
+                    language === "pt" ? "Performance das animações 3D" : "3D animations performance",
+                    language === "pt" ? "Compatibilidade mobile" : "Mobile compatibility"
+                ],
+                solutions: [
+                    language === "pt" ? "Otimização de assets 3D" : "3D assets optimization",
+                    language === "pt" ? "Lazy loading estratégico" : "Strategic lazy loading"
                 ]
             }
         }
     ];
-    const filteredProjects = activeFilter === "all" ? projects : projects.filter((project)=>project.category === activeFilter);
-    // Pagination logic
-    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
-    const startIndex = (currentPage - 1) * projectsPerPage;
-    const currentProjects = filteredProjects.slice(startIndex, startIndex + projectsPerPage);
-    const nextPage = ()=>{
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1);
-        }
-    };
-    const prevPage = ()=>{
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1);
-        }
-    };
+    const filteredProjects = activeFilter === "all" ? projects : projects.filter((project)=>project.type === activeFilter);
     const openModal = (project)=>{
         setSelectedProject(project);
     };
@@ -1945,20 +1939,15 @@ function usePortfolio() {
     };
     return {
         filters,
-        projects: currentProjects,
+        projects: filteredProjects,
         activeFilter,
         setActiveFilter,
-        currentPage,
-        totalPages,
-        nextPage,
-        prevPage,
         selectedProject,
         openModal,
-        closeModal,
-        hasProjects: filteredProjects.length > 0
+        closeModal
     };
 }
-_s(usePortfolio, "2bDnmGyWZzUIHLMgJegkKHFNtzI=", false, function() {
+_s(useProjects, "Mx59XS/D9BW4dJHq09tTj8AiwKQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"]
     ];
