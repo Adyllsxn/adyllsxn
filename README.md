@@ -12,7 +12,9 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
-Full Stack Developer focused on creating complete solutions by combining high-performance backends with modern and responsive interfaces. I work on developing RESTful APIs with ASP.NET Core and building efficient frontends using React.js and Next.js. I work daily with technologies like C#, .NET, TypeScript, Node.js, and relational and non-relational databases. I also develop automations and strictly follow best practices to ensure quality, scalability, and maintainability.
+I'm a Full Stack Developer focused on building complete applications, from robust backends to modern, responsive interfaces. My work revolves around creating systems that solve real problems, prioritizing performance, security, and user experience.
+
+I value simplicity and functionality: I build solutions that are both efficient behind the scenes and intuitive for those who use them. The ultimate goal is to deliver software that makes a difference and adds concrete value.
 
 ---
 
@@ -72,7 +74,7 @@ Full Stack Developer focused on creating complete solutions by combining high-pe
 | Project | Description | Tech Stack | Links | Type |
 |---------|-------------|------------|-------|------|
 | **Portfolio** | Modern personal portfolio with responsive design showcasing projects and skills. | Next.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) | Frontend |
-| **LearnAPI** | Full-stack API with real endpoints and UI for study, testing, and practical learning. | .NET 10, Swagger, HTML | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnap1.vercel.app/) | Full Stack |
+| **LearnAPI** | Full-stack API with real endpoints and UI for study, testing, and practical learning. | .NET 10, Swagger, React JS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnap1.vercel.app/) | Full Stack |
 
 ---
 
