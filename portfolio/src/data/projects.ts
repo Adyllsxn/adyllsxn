@@ -9,7 +9,7 @@ export const getProjects = (language: 'pt' | 'en'): Project[] => [
       ? "API educacional .NET 10" 
       : ".NET 10 Educational API",
     type: "api",
-    image: "/images/api/learnApi.png",
+    image: "/images/api/LearnAPI.jpg",
     technologies: [".NET 10", "Entity Framework", "Minimal API", "Swagger", "InMemory DB"],
     features: [
       language === "pt" ? "CRUD completo usuários" : "Complete user CRUD",
