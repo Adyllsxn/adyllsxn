@@ -19,7 +19,10 @@ import {
   FiMessageCircle,  
   FiBriefcase,      
   FiSettings,        
-  FiTrendingUp,      
+  FiTrendingUp,
+  FiGlobe,     
+  FiSmartphone, 
+  FiPenTool,         
 } from 'react-icons/fi';
 
 // Exportação direta
@@ -44,6 +47,9 @@ export {
   FiBriefcase,
   FiSettings,
   FiTrendingUp,
+  FiGlobe,
+  FiSmartphone,
+  FiPenTool,
 };
 
 // Exportação agrupada com nomes semânticos
@@ -74,4 +80,9 @@ export const Icons = {
   // Utilitários
   Check: FiCheckCircle,
   Trending: FiTrendingUp,
+
+  // Serviços
+  Design: FiPenTool,     
+  Web: FiGlobe,        
+  Mobile: FiSmartphone,
 };

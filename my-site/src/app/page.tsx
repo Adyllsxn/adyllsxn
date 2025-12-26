@@ -2,6 +2,7 @@
 import Sidebar from '@/components/layouts/Sidebar';
 import MobileMenu from '@/components/layouts/MobileMenu';
 import Hero from '@/components/sections/Hero';
+import Services from '@/components/sections/Services';
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="lg:ml-80">
         <Hero />
+        <Services />
         <div className="h-10"></div>
       </main>
     </>
