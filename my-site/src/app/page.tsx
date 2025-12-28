@@ -3,6 +3,10 @@ import Sidebar from '@/components/layouts/Sidebar';
 import MobileMenu from '@/components/layouts/MobileMenu';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
+import Process from '@/components/sections/Process';
+import About from '@/components/sections/About';
+import Contact from '@/components/sections/Contact';
+import Footer from '@/components/layouts/Footer';
 export default function Home() {
   return (
     <>
@@ -20,6 +24,10 @@ export default function Home() {
       <main className="lg:ml-80">
         <Hero />
         <Services />
+        <Process/>
+        <About/>
+        <Contact/>
+        <Footer/>
         <div className="h-10"></div>
       </main>
     </>
