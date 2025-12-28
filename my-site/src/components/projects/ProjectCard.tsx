@@ -1,7 +1,8 @@
 // components/projects/ProjectCard.tsx
 'use client';
 import React from 'react';
-import { Project } from '@/utils/projects.utils';
+// ✅ MUDAR PARA SUPABASE
+import { Project } from '@/utils/supabase/projects.utils';
 import { FiGlobe, FiSmartphone, FiPenTool, FiGithub, FiExternalLink, FiFigma } from 'react-icons/fi';
 
 interface ProjectCardProps {
@@ -12,7 +13,10 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, language, theme }: ProjectCardProps) {
   const getCategoryIcon = () => {
-    switch (project.category) {
+    // Garante que category é string
+    const category = String(project.category).toLowerCase();
+    
+    switch (category) {
       case 'web': return <FiGlobe className="w-4 h-4" />;
       case 'mobile': return <FiSmartphone className="w-4 h-4" />;
       case 'designer': return <FiPenTool className="w-4 h-4" />;
@@ -21,11 +25,26 @@ export default function ProjectCard({ project, language, theme }: ProjectCardPro
   };
 
   const getCategoryColor = () => {
-    switch (project.category) {
+    // Garante que category é string
+    const category = String(project.category).toLowerCase();
+    
+    switch (category) {
       case 'web': return theme === 'dark' ? 'text-blue-400' : 'text-blue-600';
       case 'mobile': return theme === 'dark' ? 'text-green-400' : 'text-green-600';
       case 'designer': return theme === 'dark' ? 'text-purple-400' : 'text-purple-600';
       default: return theme === 'dark' ? 'text-gray-400' : 'text-gray-600';
+    }
+  };
+
+  const getCategoryLabel = () => {
+    // Garante que category é string
+    const category = String(project.category).toLowerCase();
+    
+    switch (category) {
+      case 'web': return 'WEB';
+      case 'mobile': return 'MOBILE';
+      case 'designer': return 'DESIGN';
+      default: return category.toUpperCase();
     }
   };
 
@@ -45,18 +64,23 @@ export default function ProjectCard({ project, language, theme }: ProjectCardPro
           <span className={getCategoryColor()}>
             {getCategoryIcon()}
           </span>
-          <span>{project.category.toUpperCase()}</span>
+          <span>{getCategoryLabel()}</span>
         </div>
       </div>
 
-      {/* ✅ CORRIGIDO: IMAGEM REAL EM VEZ DE PLACEHOLDER */}
+      {/* Imagem do Supabase */}
       <div className="aspect-video relative rounded-t-xl overflow-hidden">
         <img 
           src={project.image} 
           alt={project.title[language]}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = `https://via.placeholder.com/800x450/${
+              theme === 'dark' ? '1f2937' : 'f3f4f6'
+            }/${theme === 'dark' ? 'ffffff' : '000000'}?text=${encodeURIComponent(project.title[language])}`;
+          }}
         />
-        {/* Overlay sutil no hover */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
       </div>
 
