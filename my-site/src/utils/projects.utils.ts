@@ -1,3 +1,4 @@
+// utils/projects.utils.ts
 export interface Project {
   id: string;
   title: { pt: string; en: string };
@@ -27,7 +28,8 @@ export const getProjects = (): Project[] => [
       pt: 'Sistema completo para gestão de escolas com painel administrativo.',
       en: 'Complete system for school management with admin panel.'
     },
-    image: 'learnApi.png',
+    // ✅ CORRIGIDO: 'learnapi.png' com 'a' minúsculo e caminho '/img/'
+    image: '/img/LearnAPI.png',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
     features: {
       pt: ['Painel administrativo', 'Gestão de alunos', 'Relatórios em PDF', 'Multi-tenant'],
@@ -50,8 +52,9 @@ export const getProjects = (): Project[] => [
       pt: 'Aplicativo de delivery com rastreamento em tempo real.',
       en: 'Delivery app with real-time tracking.'
     },
-    image: '/projects/food-delivery.jpg',
-    technologies: ['React Native', 'Firebase', 'Google Maps API', 'Redux'],
+    // ✅ CORRIGIDO: caminho '/img/'
+    image: '/img/rn-notion-ui.png',
+    technologies: ['React Native', 'Firebase', 'Redux', 'Google Maps API'],
     features: {
       pt: ['Rastreamento em tempo real', 'Pagamentos online', 'Avaliações', 'Push notifications'],
       en: ['Real-time tracking', 'Online payments', 'Ratings', 'Push notifications']
@@ -72,7 +75,8 @@ export const getProjects = (): Project[] => [
       pt: 'Sistema de design completo com componentes reutilizáveis.',
       en: 'Complete design system with reusable components.'
     },
-    image: '/projects/design-system.jpg',
+    // ✅ CORRIGIDO: caminho '/img/'
+    image: '/img/Portifolio.png',
     technologies: ['Figma', 'Storybook', 'React', 'Styled Components'],
     features: {
       pt: ['Componentes reutilizáveis', 'Documentação interativa', 'Tokens de design', 'Acessibilidade'],
@@ -84,29 +88,7 @@ export const getProjects = (): Project[] => [
     },
     status: 'published'
   },
-  {
-    id: '4',
-    title: {
-      pt: 'E-commerce Moderno',
-      en: 'Modern E-commerce'
-    },
-    category: 'web',
-    description: {
-      pt: 'Loja online com carrinho, checkout e integração de pagamentos.',
-      en: 'Online store with cart, checkout and payment integration.'
-    },
-    image: '/projects/ecommerce.jpg',
-    technologies: ['Next.js', 'Stripe', 'MongoDB', 'TypeScript'],
-    features: {
-      pt: ['Carrinho de compras', 'Checkout seguro', 'Painel do vendedor', 'SEO otimizado'],
-      en: ['Shopping cart', 'Secure checkout', 'Seller dashboard', 'SEO optimized']
-    },
-    links: {
-      live: 'https://store.example.com',
-      github: 'https://github.com/username/project'
-    },
-    status: 'published'
-  }
+
 ];
 
 export const getCategories = (language: 'pt' | 'en') => [
