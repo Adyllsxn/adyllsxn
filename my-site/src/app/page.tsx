@@ -7,6 +7,7 @@ import Process from '@/components/sections/Process';
 import About from '@/components/sections/About';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/layouts/Footer';
+import Projects from '@/components/sections/Projects';
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
       <main className="lg:ml-80">
         <Hero />
         <Services />
+        <Projects />
         <Process/>
         <About/>
         <Contact/>
