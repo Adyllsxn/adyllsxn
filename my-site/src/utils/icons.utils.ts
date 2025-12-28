@@ -1,4 +1,3 @@
-// utils/icons.utils.ts
 import {
   FiHome,
   FiUser,
@@ -22,7 +21,11 @@ import {
   FiTrendingUp,
   FiGlobe,     
   FiSmartphone, 
-  FiPenTool,         
+  FiPenTool,
+  FiSearch,      
+  FiCode,       
+  FiPackage, 
+  FiMessageSquare           
 } from 'react-icons/fi';
 
 // Exportação direta
@@ -50,6 +53,10 @@ export {
   FiGlobe,
   FiSmartphone,
   FiPenTool,
+  FiSearch,
+  FiCode,
+  FiPackage,
+  FiMessageSquare
 };
 
 // Exportação agrupada com nomes semânticos
@@ -81,8 +88,13 @@ export const Icons = {
   Check: FiCheckCircle,
   Trending: FiTrendingUp,
 
-  // Serviços
-  Design: FiPenTool,     
-  Web: FiGlobe,        
-  Mobile: FiSmartphone,
+  // Serviços & Processo (ÚNICAS propriedades)
+  Design: FiPenTool,       
+  Web: FiGlobe,           
+  Mobile: FiSmartphone,    
+  Discovery: FiSearch,    
+  Development: FiCode,    
+  Delivery: FiPackage,     
+  
+  WhatsApp: FiMessageSquare, 
 };
