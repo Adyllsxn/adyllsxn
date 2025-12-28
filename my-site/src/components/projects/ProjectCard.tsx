@@ -1,3 +1,4 @@
+// components/projects/ProjectCard.tsx
 'use client';
 import React from 'react';
 import { Project } from '@/utils/projects.utils';
@@ -48,15 +49,15 @@ export default function ProjectCard({ project, language, theme }: ProjectCardPro
         </div>
       </div>
 
-      {/* Image Placeholder */}
-      <div className={`aspect-video rounded-t-xl overflow-hidden ${
-        theme === 'dark' ? 'bg-gray-800' : 'bg-gray-200'
-      }`}>
-        <div className="w-full h-full flex items-center justify-center">
-          <span className={`text-sm ${theme === 'dark' ? 'text-gray-600' : 'text-gray-400'}`}>
-            {project.title[language]}
-          </span>
-        </div>
+      {/* ✅ CORRIGIDO: IMAGEM REAL EM VEZ DE PLACEHOLDER */}
+      <div className="aspect-video relative rounded-t-xl overflow-hidden">
+        <img 
+          src={project.image} 
+          alt={project.title[language]}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        {/* Overlay sutil no hover */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
       </div>
 
       {/* Content */}
