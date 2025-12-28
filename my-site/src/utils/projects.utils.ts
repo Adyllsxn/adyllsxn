@@ -28,7 +28,6 @@ export const getProjects = (): Project[] => [
       pt: 'Sistema completo para gestão de escolas com painel administrativo.',
       en: 'Complete system for school management with admin panel.'
     },
-    // ✅ CORRIGIDO: 'learnapi.png' com 'a' minúsculo e caminho '/img/'
     image: '/img/LearnAPI.png',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
     features: {
@@ -52,7 +51,6 @@ export const getProjects = (): Project[] => [
       pt: 'Aplicativo de delivery com rastreamento em tempo real.',
       en: 'Delivery app with real-time tracking.'
     },
-    // ✅ CORRIGIDO: caminho '/img/'
     image: '/img/rn-notion-ui.png',
     technologies: ['React Native', 'Firebase', 'Redux', 'Google Maps API'],
     features: {
@@ -75,7 +73,6 @@ export const getProjects = (): Project[] => [
       pt: 'Sistema de design completo com componentes reutilizáveis.',
       en: 'Complete design system with reusable components.'
     },
-    // ✅ CORRIGIDO: caminho '/img/'
     image: '/img/Portifolio.png',
     technologies: ['Figma', 'Storybook', 'React', 'Styled Components'],
     features: {
@@ -87,13 +84,24 @@ export const getProjects = (): Project[] => [
       behance: 'https://behance.net/project'
     },
     status: 'published'
-  },
-
+  }
 ];
 
-export const getCategories = (language: 'pt' | 'en') => [
-  { key: 'all', label: language === 'pt' ? 'Todos' : 'All', count: 4 },
-  { key: 'web', label: 'Web', count: 2 },
-  { key: 'mobile', label: 'Mobile', count: 1 },
-  { key: 'designer', label: language === 'pt' ? 'Designer' : 'Designer', count: 1 }
-];
+// ✅ CORRIGIDO: AGORA CALCULA DINAMICAMENTE
+export const getCategories = (language: 'pt' | 'en') => {
+  const allProjects = getProjects();
+  const publishedProjects = allProjects.filter(p => p.status === 'published');
+  
+  // Conta projetos por categoria
+  const webCount = publishedProjects.filter(p => p.category === 'web').length;
+  const mobileCount = publishedProjects.filter(p => p.category === 'mobile').length;
+  const designerCount = publishedProjects.filter(p => p.category === 'designer').length;
+  const allCount = publishedProjects.length; // Total de projetos publicados
+  
+  return [
+    { key: 'all', label: language === 'pt' ? 'Todos' : 'All', count: allCount },
+    { key: 'web', label: 'Web', count: webCount },
+    { key: 'mobile', label: 'Mobile', count: mobileCount },
+    { key: 'designer', label: language === 'pt' ? 'Designer' : 'Designer', count: designerCount }
+  ];
+};

@@ -1,5 +1,6 @@
+// hooks/useProjects.ts
 'use client';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Project, getProjects, getCategories } from '@/utils/projects.utils';
 
 type Category = 'all' | 'web' | 'mobile' | 'designer';
@@ -9,13 +10,16 @@ export function useProjects(language: 'pt' | 'en') {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
 
-  const allProjects = getProjects();
-  const categories = getCategories(language);
+  const allProjects = useMemo(() => getProjects(), []);
+  const categories = useMemo(() => getCategories(language), [language]);
 
   // Filtrar por categoria
-  const filteredProjects = activeCategory === 'all'
-    ? allProjects.filter(p => p.status === 'published')
-    : allProjects.filter(p => p.category === activeCategory && p.status === 'published');
+  const filteredProjects = useMemo(() => {
+    if (activeCategory === 'all') {
+      return allProjects.filter(p => p.status === 'published');
+    }
+    return allProjects.filter(p => p.category === activeCategory && p.status === 'published');
+  }, [allProjects, activeCategory]);
 
   // Paginação
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
