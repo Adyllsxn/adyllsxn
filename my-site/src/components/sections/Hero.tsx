@@ -72,7 +72,7 @@ export default function Hero() {
               
               {/* Botão Secundário */}
               <a 
-                href="#portfolio" 
+                href="#projects" 
                 className="group relative inline-flex items-center"
               >
                 <span className={`text-[14px] font-medium tracking-wide transition-all duration-300 ${
