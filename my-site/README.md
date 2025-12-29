@@ -1,0 +1,3 @@
+.env.local
+NEXT_PUBLIC_SUPABASE_URL=https://tfoemmetpynfnzikwtzs.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_PwZc-8CaUvs3M5AvJPKW5g_HLutp4jV
