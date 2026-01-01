@@ -1,8 +1,8 @@
-**Full Stack**
+**Web & Mobile Developer**
 
 <!-- Banner simplificado sem section=header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Frontend%20•%20Backend&descSize=18&descAlignY=55" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Web%20%26%20Mobile%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Frontend%20•%20Backend%20•%20Mobile&descSize=18&descAlignY=55" alt="Header" />
 </div>
 
 <!-- Estatísticas do perfil -->
@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
-I'm a Full Stack Developer focused on building complete applications, from robust backends to modern, responsive interfaces. My work revolves around creating systems that solve real problems, prioritizing performance, security, and user experience.
+I'm a Full Stack Developer focused on building complete applications for web and mobile, from robust backends to modern, responsive interfaces. My work revolves around creating systems that solve real problems, prioritizing performance, security, and user experience across all platforms.
 
 I value simplicity and functionality: I build solutions that are both efficient behind the scenes and intuitive for those who use them. The ultimate goal is to deliver software that makes a difference and adds concrete value.
 
@@ -32,12 +32,17 @@ I value simplicity and functionality: I build solutions that are both efficient 
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
 ![Scalar](https://img.shields.io/badge/Scalar-1E90FF?logo=scalar&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 
-**Frontend & Design UI/UX**  
+**Frontend Web**  
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
+
+**Mobile Development**  
+![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
 
 **Database**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
@@ -65,7 +70,6 @@ I value simplicity and functionality: I build solutions that are both efficient 
     <img height="200em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Adyllsxn&theme=transparent" />
   </picture>
 </div>
-
 
 ---
 
@@ -105,7 +109,7 @@ I value simplicity and functionality: I build solutions that are both efficient 
 <!-- Footer estiloso com frase maneira -->
 <div align="center">
   
-  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;Full+Stack+Solutions+for+a+Connected+World)
+  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;Web+%26+Mobile+Solutions+for+a+Connected+World)
   
 </div>
 
