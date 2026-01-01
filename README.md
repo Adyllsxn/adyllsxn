@@ -2,7 +2,7 @@
 
 <!-- Banner simplificado sem section=header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Web%20%26%20Mobile%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Frontend%20•%20Backend%20•%20Mobile&descSize=18&descAlignY=55" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Web%20%26%20Mobile%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Frontend%20%E2%80%A2%20Backend%20%E2%80%A2%20Mobile&descSize=18&descAlignY=55" alt="Header" />
 </div>
 
 <!-- Estatísticas do perfil -->
@@ -31,8 +31,6 @@ I value simplicity and functionality: I build solutions that are both efficient 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
-![Scalar](https://img.shields.io/badge/Scalar-1E90FF?logo=scalar&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 
 **Frontend Web**  
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
@@ -47,6 +45,7 @@ I value simplicity and functionality: I build solutions that are both efficient 
 **Database**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 
 **Tools & DevOps**  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
