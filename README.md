@@ -1,9 +1,10 @@
-**Web & Mobile Developer**
+**Web • Mobile**
 
 <!-- Banner simplificado sem section=header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Web%20%26%20Mobile%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Frontend%20%E2%80%A2%20Backend%20%E2%80%A2%20Mobile&descSize=18&descAlignY=55" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Web%20%E2%80%A2%20Mobile&descSize=18&descAlignY=55" alt="Header" />
 </div>
+
 
 <!-- Estatísticas do perfil -->
 <div align="left">
