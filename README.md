@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
-Hi, I'm Domingos Nascimento 👋  
+Hi, I'm Domingos Nascimento.
 I'm a Software Engineer specializing in building scalable Web and Mobile applications.  
 I work with .NET to create robust backends and APIs, and use React and React Native for modern, responsive interfaces.
 
