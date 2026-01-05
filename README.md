@@ -13,9 +13,9 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
-I'm a Full Stack Developer focused on building complete applications for web and mobile, from robust backends to modern, responsive interfaces. My work revolves around creating systems that solve real problems, prioritizing performance, security, and user experience across all platforms.
-
-I value simplicity and functionality: I build solutions that are both efficient behind the scenes and intuitive for those who use them. The ultimate goal is to deliver software that makes a difference and adds concrete value.
+Hi, I'm Domingos Nascimento 👋  
+I'm a Software Engineer specializing in building scalable Web and Mobile applications.  
+I work with .NET to create robust backends and APIs, and use React and React Native for modern, responsive interfaces.
 
 ---
 
