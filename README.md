@@ -22,37 +22,32 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 
 ### 🛠️ Tech Stack
 
-**Languages & Markup**  
-![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
+**Languages & Markup**: ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
-**Backend & APIs**  
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+**Backend & APIs**: ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
 
-**Frontend Web**  
-![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+**Frontend Web**: ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
-**Mobile Development**  
-![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
+**Mobile Development**: ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
 
-**Database**  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+**Database**: ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 
-**Tools & DevOps**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
+**Tools & DevOps**: ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
 ---
 
@@ -76,10 +71,10 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 
 ### 🚀 Featured Projects
 
-| Project | Description | Tech Stack | Links | Type |
-|---------|-------------|------------|-------|------|
-| **Portfolio** | Modern personal portfolio with responsive design showcasing projects and skills. | Next.js, Tailwind CSS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) | Frontend |
-| **LearnAPI** | REST API with a dedicated user interface for study, testing, and practical learning. | .NET 10, Swagger, React JS | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnap1.vercel.app/) | API |
+| Project | Description | Links | Type |
+|---------|-------------|-------|------|
+| **Portfolio** | Modern personal portfolio with responsive design showcasing projects and skills. | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) | Frontend |
+| **LearnAPI** | REST API with a dedicated user interface for study, testing, and practical learning. | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnap1.vercel.app/) | API |
 
 ---
 
@@ -101,7 +96,7 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/_adyllsxn/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/_adyllsxn/)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://x.com/Adyllsxn)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://x.com/_adyllsxn)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=white)](mailto:domingosa.nxscimento@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://adyllsxn.vercel.app)
 
