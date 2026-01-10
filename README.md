@@ -75,7 +75,7 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 |---------|-------------|-------|------|
 | **Portfolio** | Modern personal portfolio with responsive design showcasing projects and skills. | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/Adyllsxn/tree/main/portfolio) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://adyllsxn.vercel.app/) | Frontend |
 | **LearnAPI** | REST API with a dedicated user interface for study, testing, and practical learning. | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/LearnAPI) [![API](https://img.shields.io/badge/API-85EA2D?logo=swagger)](https://learnapi-h22m.onrender.com) [![Web](https://img.shields.io/badge/Web-0e75b6?logo=google-chrome)](https://learnap1.vercel.app/) | API |
-| **KwaValidator** | Simple .NET library to check Angolan Identity Cards and document formats. | [![NuGet](https://img.shields.io/badge/NuGet-004880?logo=nuget)](https://www.nuget.org/packages/KwaValidator) [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/KwaValidator) | Library |
+| **KwaValidator** | Simple .NET library to check Angolan Identity Cards and document formats. | [![GitHub](https://img.shields.io/badge/Repo-181717?logo=github)](https://github.com/Adyllsxn/KwaValidator) [![NuGet](https://img.shields.io/badge/NuGet-004880?logo=nuget)](https://www.nuget.org/packages/KwaValidator) | Library |
 
 ---
 
