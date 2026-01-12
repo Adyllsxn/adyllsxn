@@ -22,30 +22,33 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 
 ### 🛠️ Tech Stack
 
-**Languages & Markup**: ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
+**Languages & Markup**: 
+![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
-**Backend & APIs**: ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+**Tools & Frameworks**: 
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
-
-**Frontend Web**: ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
+![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
-
-**Mobile Development**: ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
 
-**Database**: ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+**Database & ORM**: 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?logo=dotnet&logoColor=white)
 
-**Tools & DevOps**: ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+**DevOps & Tools**: 
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
