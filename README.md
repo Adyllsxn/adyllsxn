@@ -29,6 +29,7 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 
 **Tools & Frameworks**: 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
@@ -44,6 +45,7 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?logo=dotnet&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
 
 **DevOps & Tools**: 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
