@@ -27,16 +27,19 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-**Tools & Frameworks**: 
+**Backend & APIs**  
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
+
+**Frontend & Mobile**  
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+
+**Design & UX**  
+![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
+
 
 **Database & ORM**: 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
