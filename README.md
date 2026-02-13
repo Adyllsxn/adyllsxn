@@ -24,7 +24,6 @@ I work with .NET to create robust backends and APIs, and I use React and Next.js
 **Languages & Markup**: 
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 **Backend & APIs**: 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
