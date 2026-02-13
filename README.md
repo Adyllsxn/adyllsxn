@@ -1,4 +1,4 @@
-**Web • Mobile**
+**.NET • Web • API**
 
 <!-- Banner simplificado sem section=header -->
 <div align="center">
@@ -13,10 +13,9 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
-Hi, I'm Domingos Nascimento   
-I'm a Software Engineer specializing in building scalable Web and Mobile applications.  
-I work with .NET to create robust backends and APIs, and use React and React Native for modern, responsive interfaces.
-
+Hi, I'm Domingos Nascimento.
+I'm a Software Engineer specializing in building scalable web applications.
+I work with .NET to create robust backends and APIs, and I use React and Next.js to build modern, responsive interfaces.
 
 ---
 
@@ -29,11 +28,12 @@ I work with .NET to create robust backends and APIs, and use React and React Nat
 
 **Backend & APIs**: 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 
 **Frontend & Mobile**: 
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
 
