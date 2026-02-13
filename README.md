@@ -30,11 +30,9 @@ I work with .NET to create robust backends and APIs, and I use React and Next.js
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 
-**Frontend & Mobile**: 
+**Frontend**: 
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=white)
-![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
 
 **Database & ORM**: 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
