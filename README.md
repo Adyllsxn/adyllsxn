@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
-Hi, I'm Domingos Nascimento.
+Hi, I'm Domingos Nascimento.   
 I'm a Software Engineer specializing in building scalable web applications.
 I work with .NET to create robust backends and APIs, and I use React and Next.js to build modern, responsive interfaces.
 
@@ -44,7 +44,6 @@ I work with .NET to create robust backends and APIs, and I use React and Next.js
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?logo=dotnet&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
 
 **DevOps & Tools**: 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
