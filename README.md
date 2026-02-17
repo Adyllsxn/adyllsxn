@@ -28,7 +28,6 @@ I work with .NET to create robust backends and APIs, and I use React and Next.js
 **Backend & APIs**: 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 
 **Frontend**: 
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=white)
