@@ -1,4 +1,4 @@
-**.NET • Web • API**
+**.NET • Node.js**
 
 <!-- Banner simplificado sem section=header -->
 <div align="center">
@@ -27,6 +27,7 @@ I work with .NET to create robust backends and APIs, and I use React and Next.js
 
 **Backend & APIs**: 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 
 **Frontend**: 
@@ -36,8 +37,7 @@ I work with .NET to create robust backends and APIs, and I use React and Next.js
 **Database & ORM**: 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![Prisma](https://img.shields.io/badge/Prisma-0C344B?logo=prisma&logoColor=white)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?logo=dotnet&logoColor=white)
 
 **DevOps & Tools**: 
