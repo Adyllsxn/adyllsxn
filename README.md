@@ -2,7 +2,7 @@
 
 <!-- Banner simplificado sem section=header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Web%20%E2%80%A2%20Mobile&descSize=18&descAlignY=55" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Full%20Stack%20Developer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=.NET%20%E2%80%A2%20Node.js&descSize=18&descAlignY=55" alt="Header" />
 </div>
 
 
