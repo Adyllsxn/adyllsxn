@@ -14,8 +14,8 @@
 </div>
 
 Hi, I'm Domingos Nascimento.   
-I'm a Software Engineer specializing in building scalable web applications.
-I work with .NET and Node.js to create robust backends and APIs, and I use React to build modern, responsive interfaces.
+Software Engineer focused on building scalable web applications.
+I design robust backends and APIs with .NET and Node.js, and build modern interfaces using React and React Native.
 
 ---
 
@@ -28,7 +28,6 @@ I work with .NET and Node.js to create robust backends and APIs, and I use React
 **Backend & APIs**: 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
-![REST API](https://img.shields.io/badge/REST%20API-FF6C37?logo=rest&logoColor=white)
 
 **UI**:
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
