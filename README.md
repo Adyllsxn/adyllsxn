@@ -29,7 +29,7 @@ I design robust backends and APIs with .NET and Node.js, and build modern interf
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 
-**UI**:
+**Frontend**:
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 
