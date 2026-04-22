@@ -15,7 +15,7 @@
 
 Hi, I'm Domingos Nascimento.   
 Software Engineer focused on building scalable web applications.
-I design robust backends and APIs with .NET and Node.js, and build modern interfaces using Next.js and React Native.
+I design robust backends and APIs with .NET and Node.js, and build modern interfaces using Next.js and Blazor.
 
 ---
 
@@ -31,7 +31,7 @@ I design robust backends and APIs with .NET and Node.js, and build modern interf
 
 **UI**:
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-20232A?logo=react&logoColor=61DAFB)
+![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
 
 **Database & ORM**: 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
