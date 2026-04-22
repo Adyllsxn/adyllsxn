@@ -30,8 +30,8 @@ I design robust backends and APIs with .NET and Node.js, and build modern interf
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 
 **UI**:
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 
 **Database & ORM**: 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
