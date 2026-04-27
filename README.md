@@ -13,10 +13,11 @@
   <img src="https://img.shields.io/github/stars/Adyllsxn?color=00d9ff&logo=github" alt="GitHub stars">
 </div>
 
+```markdown
 Hi, I'm Domingos Nascimento.   
 Software Engineer focused on building scalable web applications.
 I design robust backends and APIs with .NET and Node.js, and build modern interfaces using Next.js and Blazor.
-
+```
 ---
 
 ### 🛠️ Tech Stack
