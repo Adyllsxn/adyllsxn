@@ -7,6 +7,8 @@ alt="Header" />
 > Hi, I'm **Domingos Nascimento**.  
 > I'm a **Software Engineer**.
 
+<br/>
+
 <!-- Estatísticas do perfil -->
 <div align="left">
   <img src="https://komarev.com/ghpvc/?username=Adyllsxn&color=00d9ff" alt="Profile views">
