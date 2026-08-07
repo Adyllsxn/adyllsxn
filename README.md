@@ -1,8 +1,8 @@
-**WEB • MOBILE • API**
-
 <!-- Banner simplificado sem section=header  -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Software%20Engineer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Building%20%E2%80%A2%20Scalable%20%E2%80%A2%20Systems&descSize=18&descAlignY=55" alt="Header" />
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&text=Software%20Engineer&fontSize=30&fontColor=00d9ff&animation=fadeIn&fontAlignY=35&desc=Building%20%E2%80%A2%20Scalable%20%E2%80%A2%20Systems&descSize=18&descAlignY=55"
+    alt="Header" />
 </div>
 
 
@@ -19,34 +19,123 @@
 
 </br>
 
-> Hi, I'm **Domingos Nascimento**.  
-> Software Engineer focused on building scalable systems.  
-> I build reliable systems, solve complex problems, and create software designed to deliver real value. 
- 
+> Hi, I'm **Domingos Nascimento**.
+> Software Engineer focused on building scalable systems.
+> I build reliable systems, solve complex problems, and create software designed to deliver real value.
+
 ---
 
-## 🛠 Tech Stack
+## 🛠 My Favorite Tools & Technologies
 
-|  |  |
-|-----------|-------------|
-| **Languages** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-| **Backend** | ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white) |
-| **Frontend** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)  |
-| **ORM** | ![EF Core](https://img.shields.io/badge/EF_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white) |
-| **Database** | ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) |
+<div style="display: flex; align-items: flex-start; align: center">
+
+  <table align="center">
+    <tr>
+      <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/js-icon.svg" width="48" height="48" alt="JavaScript" />
+        <br>JavaScript
+      </td>
+      <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="48" height="48" alt="TypeScript" />
+        <br>TypeScript
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=dart" width="48" height="48" alt="Dart" />
+        <br>Dart
+      </td>
+      <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" width="48" height="48" alt="C#" />
+        <br>C#
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=flutter" width="48" height="48" alt="Flutter" />
+        <br>Flutter
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React Native" />
+        <br>React Native
+      </td>
+      <td align="center" width="96">
+        <img src="https://cdn.simpleicons.org/expo/000020" width="48" height="48" alt="Expo" />
+        <br>Expo
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=dotnet" width="48" height="48" alt=".NET" />
+        <br>.NET
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+        <br>MongoDB
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+        <br>PostgreSQL
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=graphql" width="48" height="48" alt="GraphQL" />
+        <br>GraphQL
+      </td>
+      <td align="center" width="96">
+        <img src="https://cdn.simpleicons.org/fastapi/009688" width="48" height="48" alt="REST API" />
+        <br>REST API
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/github-icon.svg" width="48" height="48" alt="GitHub" />
+        <br>GitHub
+      </td>
+      <td align="center" width="96">
+        <img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
+          width="48" height="48" alt="Git" />
+        <br>Git
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+        <br>Docker
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=linux" width="48" height="48" alt="Linux" />
+        <br>Linux
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=azure" width="48" height="48" alt="Azure" />
+        <br>Azure
+      </td>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VS Code" />
+        <br>VS Code
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+</div>
 
 ---
 
 ### 📊 Development Analytics
 
 <div align="center">
-  
+
   <!-- Streak Stats -->
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Adyllsxn&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" />
-  
+  <img height="180em"
+    src="https://github-readme-streak-stats.herokuapp.com/?user=Adyllsxn&theme=github-dark-blue&hide_border=true"
+    alt="GitHub Streak" />
+
   <!-- Activity Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Adyllsxn&theme=github-dark&hide_border=true&area=true" alt="Activity Graph" width="100%" />
-  
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Adyllsxn&theme=github-dark&hide_border=true&area=true"
+    alt="Activity Graph" width="100%" />
+
 </div>
 
 ---
@@ -60,12 +149,14 @@
 
 <!-- Footer estiloso com frase maneira -->
 <div align="center">
-  
-  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;)
-  
+
+  ![Typing
+  SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Code.+Create.+Conquer.;Turning+ideas+into+digital+reality;)
+
 </div>
 
 <!-- Rodapé animado com efeito ondulado -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=120&section=footer" alt="Footer" style="width: 100%;" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=120&section=footer" alt="Footer"
+    style="width: 100%;" />
 </p>
