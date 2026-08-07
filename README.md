@@ -19,8 +19,8 @@
 
 </br>
 
-> Hi, I'm **Domingos Nascimento**.
-> Software Engineer focused on building scalable systems.
+> Hi, I'm **Domingos Nascimento**.  
+> Software Engineer focused on building scalable systems.  
 > I build reliable systems, solve complex problems, and create software designed to deliver real value.
 
 ---
