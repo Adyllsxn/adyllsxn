@@ -149,7 +149,7 @@ alt="Header" />
 <!-- Footer estiloso com frase maneira -->
 <div align="center">
 
-  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00d9ff&center=true&vCenter=true&width=600&lines=Building+the+future%2C+one+line+of+code+at+a+time;Theory+without+execution+is+just+potential.;The+most+important+thing+is+how+you+think!)
+  ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3500&pause=1000&color=00d9ff&center=true&vCenter=true&width=700&lines=Theory+without+execution+is+just+potential%2E;Competence+is+practice+generating+real+value%2E;The+most+important+thing+is+how+you+think%2E)
 
 </div>
 
